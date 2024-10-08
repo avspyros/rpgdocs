@@ -1,0 +1,20 @@
+---
+title: Guide & reference
+description: Choose a category.
+template: splash
+prev: false,
+next: false
+---
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid>
+  <LinkCard title="Adventuring" href="guides/adventuring" description="Time, space, light and the senses." />
+  <LinkCard
+    title="Encounters"
+    href="guides/encounters"
+    description="Player characters meeting other characters or creatures in uncertain circumstances."
+  />
+  <LinkCard title="Hazards" href="guides/hazards" description="Things that could cause damage or death." />
+  <LinkCard title="Skills" href="guides/skills" description="What can a character do?" />
+</CardGrid>
