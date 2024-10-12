@@ -5,6 +5,7 @@ tableOfContents: true
 ---
 
 import AbbreviationsAside from '../../../components/AbbreviationsAside.astro';
+import { Aside } from '@astrojs/starlight/components';
 
 <AbbreviationsAside />
 
@@ -24,13 +25,32 @@ import AbbreviationsAside from '../../../components/AbbreviationsAside.astro';
 - Only magical healing that causes HP to become 0 may save them.
 - Death is instantaneous at –4 HP.
 
-{/* ### Disease */}
+### Disease
 
-{/* ### Drugs & Alcohol */}
+- When exposed to a disease, the GM will make a **save vs Poison** on behalf of the character.
+- If the save is failed, then the character has contracted the disease.
+- The incubation period describes the length of time before the character is affected, and at that point the character
+  ** must make another save,**
+- Then **another save** at every interval point for the duration of the infection time, or else suffer the effect for
+  each failed save.
+- Each save after the disease is contracted is made with a –2 penalty if the character is not at rest for the duration
+  of the infection.
+
+<Aside type="caution" title="Example">
+  > The Green River Fever has an incubation period of 1 week, an interval of 4 hours, an infection time of 3 days, and
+  the effect of lowering Intelligence. So beginning one week after a character has been infected, that character must
+  make a saving throw vs Poison every 4 hours for 3 days (a total of 18 saving throws), or lose apoint of Intelligence
+  for each failed save
+</Aside>
+
+### Drugs & Alcohol
+
+- Save vs Poison or suffer the effects.
+- Drunk characters get –2 to Dexterity and all saving throws.
 
 ### Falling
 
-- Characters suffer 1d6 points of damage per 10' that they fall, up to a maximum of 20d6 for a 200' fall.
+- Characters suffer **1d6 points of damage per 10'** that they fall, up to a maximum of 20d6 for a 200' fall.
 
 ### Poison
 
