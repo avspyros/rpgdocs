@@ -9,9 +9,11 @@ export default defineConfig({
       tableOfContents: false,
       pagination: false,
       logo: {
-        src: './src/assets/skull-logo.png',
+        src: './src/assets/book-logo.png',
         replacesTitle: true
-      }
+      },
+      customCss: ['./src/styles/custom.css']
     })
-  ]
+  ],
+  output: 'server'
 });

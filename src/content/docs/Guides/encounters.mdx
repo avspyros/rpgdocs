@@ -5,15 +5,37 @@ tableOfContents: true
 ---
 
 import AbbreviationsAside from '../../../components/AbbreviationsAside.astro';
+import { Card } from '@astrojs/starlight/components';
 
 <AbbreviationsAside />
 
 ### Surprise
 
-1. **Roll 1d6** for each side which might be surprised - most actors **suprised on 1-2**.
-2. Suprised actors unable to act **for 1 Round**.
-3. Actors well hidden or prepared for ambush surprise on 1-4.
-4. For each point a **Specialist** puts in **Sneak attack** the damage multiplier is increased by 1
+- **Roll 1d6** for each side which might be surprised - most actors **suprised on 1-2**.
+- Suprised actors unable to act **for 1 Round**.
+- Actors well hidden or prepared for ambush **surprise on 1-4**.
+- For each point a **Specialist** puts in **Sneak attack** the damage multiplier is increased by 1.
+
+### Encounter Distance
+
+- Encounters begin with the closest opposing characters 3d6 × 10' apart, unless there are specific details which would
+  define the encounter distance, such as being in fog or a forest.
+- In environments with limited visibility, the maximum encounter distance will be the visibility distance.
+
+### Reactions
+
+- NPCs’ reactions will be obvious based on the circumstance of the encounter. If there is any doubt, consult the
+  following chart.
+- This chart can also be used in any situation where someone is attempting to convince an NPC as to a course of action
+  and there is doubt as to the outcome.
+
+| Roll | Reaction    |
+| ---- | ----------- |
+| 2    | Hostile     |
+| 3–5  | Unfriendly  |
+| 6–8  | Indifferent |
+| 9–11 | Talkative   |
+| 12   | Helpful     |
 
 ### Initiative
 
@@ -21,22 +43,3 @@ import AbbreviationsAside from '../../../components/AbbreviationsAside.astro';
 2. Surprised actors do not roll this round.
 3. GM counts from 6 to 1 - **Participants act on their number**.
 4. **If tie use Dexterity modifier** or combatants act simultaneously.
-
-### Attack
-
-1. Actor can attack if enemy **within striking range** - GM informs of opponent’s AC.
-2. Player rolls **1d20 + modifiers** - Hits if result equal or higher than defender’s AC .
-3. Strength modifiers apply to melee / Dexterity modifiers apply to ranged attacks.
-4. On succesful hit, actor rolls the weapon’s damage.
-
-### Change Weapons and Attack
-
-1. Changing a weapon means droping the current one and drawing another.
-2. New weapon must be easily accessible.
-3. Attack penalty -2 when that happens.
-
-### Cast Spell
-
-1. Spellcaster may hold **up to a staff or holy symbol** on one hand to cast a spell.
-2. Cannot move at all\* during the round of the spellcasting.
-3. If taken damage earlier in the Round they cannot cast spell that Round.
