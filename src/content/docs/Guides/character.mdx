@@ -1,0 +1,66 @@
+---
+title: Character Creation
+description: Follow these steps to create your character.
+---
+
+import { Steps, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
+
+### Follow these steps to quickly create a character:
+
+<Steps>
+
+1. **Roll Ability Scores**
+
+   <Tabs>
+     <TabItem label="Roll 3d6 for each ability">
+       **Charisma, Constitution, Dexterity, Intelligence, Strength, Wisdom,** in order, and record them on your
+       character sheet. A player can decide to swap the position of one ability score that was rolled with another.
+     </TabItem>
+     <TabItem label="Note modifiers">
+       Each ability score has a [Modifier](../reference/abilities) which is associated with it.
+     </TabItem>
+     <TabItem label="Is the Character suitable?">
+       If the total of all ability score modifiers is less than 0, discard and start again.
+     </TabItem>
+   </Tabs>
+
+2. **Choose a Character Class**
+
+   <Tabs>
+     <TabItem label="Classes">
+       <Badge text="Cleric" size="small" variant="note" />
+       <Badge text="Fighter" size="small" />
+       <Badge text="Magic User" size="small" variant="tip" />
+       <Badge text="Specialist" size="small" variant="caution" />
+       <Badge text="Dwarf" size="small" />
+       <Badge text="Elf" size="small" variant="success" />
+       <Badge text="Halfling" size="small" variant="note" />
+     </TabItem>
+     <TabItem label="Determine Hit Points">
+       1st level characters have a minimum number of HP according to their class. If the rolled amount is less than the
+       indicated number on this [chart], simply use the number shown on the chart instead. Always add the Constitution
+       modifier to the result.
+     </TabItem>
+     <TabItem label="Record modifiers & Saving Throws">
+       Record To-Hit Bonuses and Saving Throws on the Character sheet.
+     </TabItem>
+   </Tabs>
+
+3. **Select Alignment**
+
+4. **Determine Starting Possessions**
+
+   <Tabs>
+     <TabItem label="Roll money">Every character begins with 3d6 × 10 sp (silver pieces)</TabItem>
+     <TabItem label="Buy equipment">
+       All characters are assumed to begin play with a decent set of traveling clothes appropriate for the weather
+       conditions in the starting area of play. Apart from that, they can use the cheapest column prices from the
+       equipment table to buy their starting equipment.
+     </TabItem>
+   </Tabs>
+
+5. **Choose a Name**
+
+   Anything not (that) ridiculous...
+
+</Steps>

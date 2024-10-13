@@ -12,7 +12,7 @@ export default defineConfig({
         src: './src/assets/book-logo.png',
         replacesTitle: true
       },
-      customCss: ['./src/styles/custom.css', '@fontsource-variable/literata']
+      customCss: ['./src/styles/custom.css']
     })
   ],
   output: 'server'
