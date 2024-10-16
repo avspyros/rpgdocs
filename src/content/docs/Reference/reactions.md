@@ -4,6 +4,8 @@ description: NPC encounter reactions.
 tableOfContents: false
 ---
 
+When NPC reaction is uncertain, GM rolls 2d6:
+
 | Roll | Reaction    |
 | ---- | ----------- |
 | 2    | Hostile     |

@@ -17,7 +17,7 @@ import { Steps, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
        character sheet. A player can decide to swap the position of one ability score that was rolled with another.
      </TabItem>
      <TabItem label="Note modifiers">
-       Each ability score has a [Modifier](../reference/abilities) which is associated with it.
+       Each ability score has a [Modifier](/reference/abilities) which is associated with it.
      </TabItem>
      <TabItem label="Is the Character suitable?">
        If the total of all ability score modifiers is less than 0, discard and start again.
@@ -38,8 +38,8 @@ import { Steps, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
      </TabItem>
      <TabItem label="Determine Hit Points">
        1st level characters have a minimum number of HP according to their class. If the rolled amount is less than the
-       indicated number on this [chart], simply use the number shown on the chart instead. Always add the Constitution
-       modifier to the result.
+       indicated number on this [chart](/reference/hitpoints), simply use the number shown on the chart instead. Always
+       add the Constitution modifier to the result.
      </TabItem>
      <TabItem label="Record modifiers & Saving Throws">
        Record To-Hit Bonuses and Saving Throws on the Character sheet.
@@ -47,6 +47,15 @@ import { Steps, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
    </Tabs>
 
 3. **Select Alignment**
+
+   Alignment is a character’s orientation on a cosmic scale. It has nothing to do with a character’s allegiances,
+   personality, morality, or actions.
+
+   <Tabs>
+     <TabItem label="Lawful">Clerics must be Lawful</TabItem>
+     <TabItem label="Chaotic">Magic Users and Elves must be Chaotic</TabItem>
+     <TabItem label="Neutral">All others are free to choose their alignment, neutral or otherwise.</TabItem>
+   </Tabs>
 
 4. **Determine Starting Possessions**
 
