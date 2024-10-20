@@ -1,6 +1,8 @@
 ---
 title: Cleric
 description: Cleric Class details.
+sidebar:
+  order: 1
 ---
 
 import { Tabs, TabItem } from '@astrojs/starlight/components';
@@ -11,16 +13,16 @@ from the Cleric spell list.
 
 ---
 
-| LVL | HP   | PARALYZE | POISON | BREATH | DEVICE | MAGIC | 1   | 2   | 3   |
-| --- | ---- | -------- | ------ | ------ | ------ | ----- | --- | --- | --- |
-| 1   | 1d6  | 14       | 11     | 16     | 12     | 15    | 1   |     |     |
-| 2   | +1d6 | 14       | 11     | 16     | 12     | 15    | 2   |     |     |
-| 3   | +1d6 | 14       | 11     | 16     | 12     | 15    | 3   |     |     |
-| 4   | +1d6 | 14       | 11     | 16     | 12     | 15    | 3   | 1   |     |
-| 5   | +1d6 | 12       | 9      | 14     | 10     | 12    | 3   | 2   | 1   |
-| 6   | +1d6 | 12       | 9      | 14     | 10     | 12    | 3   | 3   | 2   |
-| 7   | +1d6 | 12       | 9      | 14     | 10     | 12    | 4   | 3   | 3   |
-| 8   | +1d6 | 12       | 9      | 14     | 10     | 12    | 4   | 3   | 3   |
+| Lvl | XP      | HP   | Paralyze | Poison | Breath | Device | Magic | 1 2 3 4 |
+| --- | ------- | ---- | -------- | ------ | ------ | ------ | ----- | ------- |
+| 1   | 0       | 1d6  | 14       | 11     | 16     | 12     | 15    | 1       |
+| 2   | 1,750   | +1d6 | 14       | 11     | 16     | 12     | 15    | 2       |
+| 3   | 3,500   | +1d6 | 14       | 11     | 16     | 12     | 15    | 3       |
+| 4   | 7,000   | +1d6 | 14       | 11     | 16     | 12     | 15    | 3 1     |
+| 5   | 14,000  | +1d6 | 12       | 9      | 14     | 10     | 12    | 3 2 1   |
+| 6   | 28,000  | +1d6 | 12       | 9      | 14     | 10     | 12    | 3 3 2   |
+| 7   | 56,000  | +1d6 | 12       | 9      | 14     | 10     | 12    | 4 3 3 1 |
+| 8   | 112,000 | +1d6 | 12       | 9      | 14     | 10     | 12    | 4 3 3 2 |
 
 ### Spells
 
@@ -59,6 +61,16 @@ from the Cleric spell list.
       4. Remove Curse
       5. Sacrifice
       6. Water Walk
+  
+  </TabItem>
+  <TabItem label="3rd Level">
+  
+      1. Cure Serious Wounds
+      2. Detect Lie
+      3. Divination
+      4. Neutralize Poison
+      5. Protection from Evil 10' Radius
+      6. Spell Immunity
   
   </TabItem>
 </Tabs>

@@ -1,6 +1,9 @@
 ---
 title: Character Creation
 description: Follow these steps to create your character.
+
+sidebar:
+  order: 0
 ---
 
 import { Steps, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
@@ -42,7 +45,8 @@ import { Steps, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
        add the Constitution modifier to the result.
      </TabItem>
      <TabItem label="Record modifiers & Saving Throws">
-       Record To-Hit Bonuses and Saving Throws on the Character sheet.
+       Record To-Hit Bonuses and Saving Throws on the Character sheet. Most classes get a +1 Attack Bonus. The Fighter
+       gets an Attack Bonus of +2 at 1st level, and gains an additional +1 every time a level is gained.
      </TabItem>
    </Tabs>
 
@@ -52,19 +56,19 @@ import { Steps, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
    personality, morality, or actions.
 
    <Tabs>
-     <TabItem label="Lawful">Clerics must be Lawful</TabItem>
-     <TabItem label="Chaotic">Magic Users and Elves must be Chaotic</TabItem>
+     <TabItem label="Lawful">Clerics must be Lawful.</TabItem>
+     <TabItem label="Chaotic">Magic Users and Elves must be Chaotic.</TabItem>
      <TabItem label="Neutral">All others are free to choose their alignment, neutral or otherwise.</TabItem>
    </Tabs>
 
 4. **Determine Starting Possessions**
 
    <Tabs>
-     <TabItem label="Roll money">Every character begins with 3d6 × 10 sp (silver pieces)</TabItem>
+     <TabItem label="Roll money">Every character begins with **3d6 × 10 sp** (silver pieces)</TabItem>
      <TabItem label="Buy equipment">
        All characters are assumed to begin play with a decent set of traveling clothes appropriate for the weather
-       conditions in the starting area of play. Apart from that, they can use the cheapest column prices from the
-       equipment table to buy their starting equipment.
+       conditions in the starting area of play. Apart from that, they can use the relevant equipment tables to buy their
+       starting equipment.
      </TabItem>
    </Tabs>
 
