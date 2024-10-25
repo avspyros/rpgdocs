@@ -17,5 +17,13 @@ export default defineConfig({
     })
   ],
   output: 'server',
-  adapter: netlify()
+  adapter: netlify(),
+  vite: {
+    resolve: {
+      alias: {
+        '@': '/src',
+        '~': '/src'
+      }
+    }
+  }
 });
