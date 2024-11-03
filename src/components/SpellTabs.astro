@@ -1,0 +1,41 @@
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import clericSpells from '../data/clericSpells.json';
+import magicSpells from '../data/magicSpells.json';
+
+export interface Props {
+  SpellCaster: string;
+}
+
+const { SpellCaster } = Astro.props;
+
+let spellList: { [level: string]: string[] } = {};
+
+if (SpellCaster === 'Cleric') {
+  spellList = clericSpells;
+} else if (SpellCaster === 'Magic-User' || SpellCaster === 'Elf') {
+  spellList = magicSpells;
+} else {
+  console.log('Invalid spellcaster: ' + SpellCaster);  
+}
+---
+
+
+<div id={SpellCaster}>
+  <Tabs>
+    {Object.entries(spellList).map(([level, spells]) => (
+      <TabItem label={level}>
+        <ol>
+          {spells.map((spell) => (
+            <li>{spell}</li>  
+          ))}
+        </ol>
+      </TabItem>
+    ))}
+  </Tabs>
+</div>
+
+
+
+  

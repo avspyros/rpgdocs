@@ -9,6 +9,7 @@ sidebar:
 ---
 
 import { Tabs, TabItem } from '@astrojs/starlight/components';
+import SpellTabs from '../../../../components/SpellTabs.astro';
 
 Magic-Users see the forces of magic as a new frontier to explore, a new tool for the attainment of power and knowledge.
 If it blackens the soul to equal that of any devil, it is but a small price to pay. Magic-Users can cast spells from the
@@ -16,116 +17,17 @@ Magic-User spell list.
 
 ---
 
-| Lvl | XP      | HP   | Paralyze | Poison | Breath | Device | Magic | 1 2 3 4 |
-| --- | ------- | ---- | -------- | ------ | ------ | ------ | ----- | ------- |
-| 1   | 0       | 1d6  | 13       | 13     | 16     | 13     | 14    | 1       |
-| 2   | 2,250   | +1d4 | 13       | 13     | 16     | 13     | 14    | 2       |
-| 3   | 4,500   | +1d4 | 13       | 13     | 16     | 13     | 14    | 2 1     |
-| 4   | 9,000   | +1d4 | 13       | 13     | 16     | 13     | 14    | 2 2     |
-| 5   | 18,000  | +1d4 | 13       | 13     | 16     | 13     | 14    | 3 2 1   |
-| 6   | 36,000  | +1d4 | 11       | 11     | 14     | 11     | 12    | 3 2 2   |
-| 7   | 72,000  | +1d4 | 11       | 11     | 14     | 11     | 12    | 3 3 2 1 |
-| 8   | 144,000 | +1d4 | 11       | 11     | 14     | 11     | 12    | 4 3 2 2 |
+| Lvl | XP      | HP   | Paralyze | Poison | Breath | Device | Magic | 1   | 2   | 3   | 4   |
+| --- | ------- | ---- | -------- | ------ | ------ | ------ | ----- | --- | --- | --- | --- |
+| 1   | 0       | 1d6  | 13       | 13     | 16     | 13     | 14    | 1   |     |     |     |
+| 2   | 2,250   | +1d4 | 13       | 13     | 16     | 13     | 14    | 2   |     |     |     |
+| 3   | 4,500   | +1d4 | 13       | 13     | 16     | 13     | 14    | 2   | 1   |     |     |
+| 4   | 9,000   | +1d4 | 13       | 13     | 16     | 13     | 14    | 2   | 2   |     |     |
+| 5   | 18,000  | +1d4 | 13       | 13     | 16     | 13     | 14    | 3   | 2   | 1   |     |
+| 6   | 36,000  | +1d4 | 11       | 11     | 14     | 11     | 12    | 3   | 2   | 2   |     |
+| 7   | 72,000  | +1d4 | 11       | 11     | 14     | 11     | 12    | 3   | 3   | 2   | 1   |
+| 8   | 144,000 | +1d4 | 11       | 11     | 14     | 11     | 12    | 4   | 3   | 2   | 2   |
 
 ### Spells
 
-<Tabs>
-  <TabItem label="1st Level">
-  
-      0. Read Magic
-      1. Bookspeak
-      2. Charm Person
-      3. Comprehend Languages
-      4. Detect Magic
-      5. Enlarge
-      6. Faerie Fire
-      7. Feather Fall
-      8. Floating Disc
-      9. Hold Portal
-      10. Identify
-      11. Light
-      12. Magic Aura
-      13. Magic Missile
-      14. Mending
-      15. Message
-      16. Shield
-      17. Sleep
-      18. Spider Climb
-      19. Summon
-      20. Unseen Servant
-
-  </TabItem>
-  <TabItem label="2nd Level">
-  
-      1. Audible Glamour
-      2. Change Self
-      3. Detect Invisible
-      4. ESP
-      5. Force of Forbidment
-      6. Forget
-      7. Invisibility
-      8. Knock
-      9. Levitate
-      10. Light, Continual
-      11. Locate Object
-      12. Magic Mouth
-      13. Mirror Image
-      14. Phantasmal Force
-      15. Ray of Enfeeblement
-      16. Speak with Animals
-      17. Stinking Cloud
-      18. Wall of Fog
-      19. Web
-      20. Wizard Lock
-  
-  </TabItem>
-  <TabItem label="3rd Level">
-  
-      1. Army of One
-      2. Clairvoyance
-      3. Detect Illusion
-      4. Dispel Magic
-      5. Explosive Runes
-      6. False Alignment
-      7. Fly
-      8. Gaseous Form
-      9. Gust of Wind
-      10. Haste
-      11. Hold Person
-      12. Howl of the Moon
-      13. Invisibility 10' Radius
-      14. Phantasmal Psychedelia
-      15. Protection from Normal Missiles
-      16. Secret Page
-      17. Speak with Dead
-      18. Strange Waters II
-      19. Suggestion
-      20. Water Breathing
-  
-  </TabItem>
-  <TabItem label="4th Level">
-  
-      1. Charm Monster
-      2. Confusion
-      3. Creation, Minor
-      4. Dig
-      5. Dimension Door
-      6. Extension
-      7. Globe of Invulnerability, Minor
-      8. Hallucinatory Terrain
-      9. Invisibility, Improved
-      10. Mnemonic Enhancer
-      11. Plant Growth
-      12. Polymorph Others
-      13. Polymorph Self
-      14. Protection
-      from Normal Weapons
-      15. Seven Gates
-      16. Shadow Monsters
-      17. Speak with Plants
-      18. Wall of Fire
-      19. Wall of Ice
-      20. Wizard Eye
-  
-  </TabItem>
-</Tabs>
+<SpellTabs SpellCaster="Magic-User" />

@@ -1,0 +1,33 @@
+{
+  "1st level": [
+    "Bless",
+    "Command",
+    "Cure Light Wounds",
+    "Detect Evil",
+    "Invisibility to Undead",
+    "Protection from Evil",
+    "Purify Food & Drink",
+    "Remove Fear",
+    "Sanctuary",
+    "Turn Undead"
+  ],
+  "2nd level": [
+    "Augury",
+    "Delay Poison",
+    "Enthrall",
+    "Heat Metal",
+    "Heroism",
+    "Resist Cold",
+    "Resist Fire",
+    "Silence 15' Radius"
+  ],
+  "3rd level": ["Cure Disease", "Dispel Magic", "Magic Vestment", "Remove Curse", "Sacrifice", "Water Walk"],
+  "4th level": [
+    "Cure Serious Wounds",
+    "Detect Lie",
+    "Divination",
+    "Neutralize Poison",
+    "Protection from Evil 10' Radius",
+    "Spell Immunity"
+  ]
+}

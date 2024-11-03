@@ -5,7 +5,7 @@ sidebar:
   order: 1
 ---
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+import SpellTabs from '../../../../components/SpellTabs.astro';
 
 All religions serving true powers have one thing in common: orders of those selected few who are not mere priests, but
 spiritual warriors endowed by their deity with mystic powers. These few are known as Clerics. Clerics can cast spells
@@ -13,64 +13,17 @@ from the Cleric spell list.
 
 ---
 
-| Lvl | XP      | HP   | Paralyze | Poison | Breath | Device | Magic | 1 2 3 4 |
-| --- | ------- | ---- | -------- | ------ | ------ | ------ | ----- | ------- |
-| 1   | 0       | 1d6  | 14       | 11     | 16     | 12     | 15    | 1       |
-| 2   | 1,750   | +1d6 | 14       | 11     | 16     | 12     | 15    | 2       |
-| 3   | 3,500   | +1d6 | 14       | 11     | 16     | 12     | 15    | 3       |
-| 4   | 7,000   | +1d6 | 14       | 11     | 16     | 12     | 15    | 3 1     |
-| 5   | 14,000  | +1d6 | 12       | 9      | 14     | 10     | 12    | 3 2 1   |
-| 6   | 28,000  | +1d6 | 12       | 9      | 14     | 10     | 12    | 3 3 2   |
-| 7   | 56,000  | +1d6 | 12       | 9      | 14     | 10     | 12    | 4 3 3 1 |
-| 8   | 112,000 | +1d6 | 12       | 9      | 14     | 10     | 12    | 4 3 3 2 |
+| Lvl | XP      | HP   | Paralyze | Poison | Breath | Device | Magic | 1   | 2   | 3   | 4   |
+| --- | ------- | ---- | -------- | ------ | ------ | ------ | ----- | --- | --- | --- | --- |
+| 1   | 0       | 1d6  | 14       | 11     | 16     | 12     | 15    | 1   |     |     |     |
+| 2   | 1,750   | +1d6 | 14       | 11     | 16     | 12     | 15    | 2   |     |     |     |
+| 3   | 3,500   | +1d6 | 14       | 11     | 16     | 12     | 15    | 3   |     |     |     |
+| 4   | 7,000   | +1d6 | 14       | 11     | 16     | 12     | 15    | 3   | 1   |     |     |
+| 5   | 14,000  | +1d6 | 12       | 9      | 14     | 10     | 12    | 3   | 2   | 1   |     |
+| 6   | 28,000  | +1d6 | 12       | 9      | 14     | 10     | 12    | 3   | 3   | 2   |     |
+| 7   | 56,000  | +1d6 | 12       | 9      | 14     | 10     | 12    | 4   | 3   | 3   | 1   |
+| 8   | 112,000 | +1d6 | 12       | 9      | 14     | 10     | 12    | 4   | 3   | 3   | 2   |
 
 ### Spells
 
-<Tabs>
-  <TabItem label="1st Level">
-
-      1. Bless
-      2. Command
-      3. Cure Light Wounds
-      4. Detect Evil
-      5. Invisibility to Undead
-      6. Protection from Evil
-      7. Purify Food & Drink
-      8. Remove Fear
-      9. Sanctuary
-      10. Turn Undead
-
-  </TabItem>
-  <TabItem label="2nd Level">
-  
-      1. Augury
-      2. Delay Poison
-      3. Enthrall
-      4. Heat Metal
-      5. Heroism
-      6. Resist Cold
-      7. Resist Fire
-      8. Silence 15' Radius
-  
-  </TabItem>
-  <TabItem label="3rd Level">
-  
-      1. Cure Disease
-      2. Dispel Magic
-      3. Magic Vestment
-      4. Remove Curse
-      5. Sacrifice
-      6. Water Walk
-  
-  </TabItem>
-  <TabItem label="3rd Level">
-  
-      1. Cure Serious Wounds
-      2. Detect Lie
-      3. Divination
-      4. Neutralize Poison
-      5. Protection from Evil 10' Radius
-      6. Spell Immunity
-  
-  </TabItem>
-</Tabs>
+<SpellTabs SpellCaster="Cleric" />
