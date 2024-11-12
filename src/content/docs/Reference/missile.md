@@ -23,3 +23,5 @@ tableOfContents: false
   ignore 4 AC points.
 - Each missile weapon can be fired once per round with the exception of the crossbows noted above.
 - Slings fired with stones instead of bullets have half the listed range.
+
+![Crossbow](/crossbow.png)
