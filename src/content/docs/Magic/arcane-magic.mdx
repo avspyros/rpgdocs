@@ -7,6 +7,12 @@ sidebar:
   order: 2
 ---
 
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside type="caution" title="Notes on spellcasters">
+  All rules for Magic-Users also apply to Elves unless noted otherwise.
+</Aside>
+
 While spells are somewhat standardized effects used repeatedly by many Magic-Users, each spellcaster’s understanding and
 recording of a spell is highly individualized. Magic-Users must rely on spellbooks because human minds cannot naturally
 contain magical knowledge. However, spell notation is not a set formula; it varies wildly from one user to another. For
@@ -15,19 +21,24 @@ would be unique in style and content. Elves do not use a spellbook but instead h
 
 ### Access & Preparation
 
-Each Magic-User begins with a spellbook containing the Read Magic spell plus 3 randomly chosen 1st-level spells. With
-each new level, they can add one additional spell, chosen at random, though it still requires standard time for research
-or transcription.
+Each Magic-User starts with a spellbook containing the **Read Magic spell, 3 random 1st-level spells, and one chosen
+specialization spell**. At each new level, they gain a random additional spell, which they must still research or
+transcribe. When they gain access to a new spell level, they can add a new specialization spell for that level.
+Magic-Users can prepare spells according to the Magic-User table, plus one extra specialization spell per level. Elves,
+however, begin only with Read Magic and gain one spell each level.
 
-To prepare spells, a Magic-User must rest for 6 continuous hours. After resting, they study their spellbook for a
-duration that corresponds to the highest level spell they wish to prepare. This preparation process (aka memorization),
-imprints the spells temporarily in the Magic-User’s mind. Once a spell is cast, it fades from memory and must be
-re-prepared to use again. However, the Magic-User can prepare the same spell multiple times if desired, up to the limits
-set by their spell chart.
+To prepare spells, a Magic-User must rest for 6 hours, then study their spellbook for an additional time based on the
+highest-level spell they wish to prepare. This process, called memorization, temporarily stores spells in their memory.
+Once cast, a spell fades and must be re-prepared. They can memorize the same spell multiple times up to their spell
+chart limits.
 
-Prepared spells cannot be simply dismissed; they must be cast to free up space in the mind. Additionally, reversed
-versions of spells, are treated as separate spells, requiring distinct research, transcription, and preparation.
-Magic-Users can safely prepare spells only once every 24 hours, as over-preparation strains the mind.
+Elves have all their spells always prepared, matching the number they can cast. They only need to rest for 4 hours and
+can cast each spell once per day.
+
+_(Will add examples here...)_
+
+Prepared spells cannot be dismissed; they must be cast to free mental space. Reversed spells require separate research,
+transcription, and preparation. Magic-Users can only prepare spells once every 24 hours to avoid mental strain.
 
 ### Spell Scrolls
 
@@ -36,6 +47,8 @@ user must first cast Read Magic to understand the scroll, but once understood, a
 contain multiple spells, but each spell can only be cast once, erasing it from the scroll. To cast from a scroll, the
 Magic-User must hold it with both hands, and in combat, it requires a full action. The effects of the spell depend on
 the level of the Magic-User casting it, not the one who created the scroll.
+
+![Scroll](/Scrolls_1b.png)
 
 ### Writing a Scroll
 

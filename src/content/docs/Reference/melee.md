@@ -67,6 +67,8 @@ These weapons must be wielded with two hands. Two-handed swords, mauls, and grea
 
 These weapons include standard swords, battle axes, and maces. Halflings must wield them two-handed.
 
+![Infesto](/Mace_2b.png)
+
 ### Weapon, Minor
 
 These are small one-handed weapons including daggers and clubs, and suffer a –2 penalty to hit opponents with an
