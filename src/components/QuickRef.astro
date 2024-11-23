@@ -1,0 +1,25 @@
+---
+export interface Props {
+  SpellTitle: string;
+  SpellDuration: string;
+  SpellRange: string;
+}
+
+const { SpellTitle, SpellDuration, SpellRange } = Astro.props;
+
+import { Badge, Tabs, TabItem } from '@astrojs/starlight/components';
+---
+
+<div>
+  <h3 id={SpellTitle}>{SpellTitle}</h3>
+  <Badge text={SpellDuration} variant='note'/>
+  <Badge text={SpellRange} variant='tip' />
+  <Tabs>
+    <TabItem label="Summary">
+      <slot name="spellsummary"/>
+    </TabItem>
+    <TabItem label="Detailed description">
+      <slot name="spelldescription"/>
+    </TabItem>
+  </Tabs>
+</div>
