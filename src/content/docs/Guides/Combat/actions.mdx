@@ -5,12 +5,24 @@ tableOfContents: true
 next: true
 ---
 
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Actor:" type="caution">
+  Character, PC, NPC or creature.
+</Aside>
+
 ### Attack
 
 1. Actor can attack if enemy **within striking range** - GM informs of opponent’s AC.
 2. Actor rolls **1d20 + modifiers**. Hits if result equal or higher than defender’s AC.
 3. **Strength** modifiers apply to **melee**. **Dexterity** modifiers apply to **ranged** attacks.
 4. On succesful hit, actor rolls the weapon’s damage.
+
+##### Fighters, Dwarfs, and Elves have 2 extra mêlée attack options:
+
+- **Press:** This is a fierce attack made at the expense of defense. +2 to hit, –4 AC penalty.
+- **Defensive Fighting:** This is a more conservative attack, emphasizing defense more than offense.+2 AC bonus, –4 to
+  hit.
 
 ### Change Weapons and Attack
 

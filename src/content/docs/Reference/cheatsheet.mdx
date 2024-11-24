@@ -1,0 +1,60 @@
+---
+title: Quick Reference
+description: Quick Reference and examples of common actions.
+template: 'splash'
+---
+
+import { CardGrid, Card, Badge, LinkButton } from '@astrojs/starlight/components';
+
+<LinkButton href="/" variant="secondary" icon="left-arrow" iconPlacement="start">
+  Back Home
+</LinkButton>
+
+---
+
+<CardGrid stagger>
+  <Card title="Sneak Attack for all Classes">
+    <Badge text="Foe loses round" size="large" variant="caution" />
+  </Card>
+  <Card title="Sneak Attack (> 1 points in Sneak)">
+    <Badge text="+2 attack bonus" size="large" variant="danger" />
+    <Badge text="multiply damage by number of Sneak points" size="large" variant="caution" />
+  </Card>
+  <Card title="Parry">
+    <Badge text="No other action is allowed" size="large" variant="caution" />
+    <Badge text="Decide to parry at any point during the Round" size="large" variant="caution" />
+    <Badge text="+2 AC bonus for the Round" size="large" variant="danger" />
+    <Badge text="+4 AC bonus for Elves & Dawrves" size="large" variant="danger" />
+  </Card>
+  <Card title="Attacking unaware foe from behind">
+    <Badge text="Foe loses Dex & Shield AC bonuses" size="large" variant="caution" />
+    <Badge text="+2 extra Attack bonus" size="large" variant="danger" />
+  </Card>
+  <Card title="Charge">
+    <Badge text="Move full rate (instead of 1/3rd)" size="large" variant="caution" />
+    <div>
+      <Badge text="x2 damage" size="large" variant="danger" />
+      <Badge text="-2 AC penalty" size="large" variant="danger" />
+    </div>
+  </Card>
+  <Card title="Press">
+    <Badge text="Only Fighters, Elves & Dwarves" size="large" variant="caution" />
+    <div>
+      <Badge text="+2 attack bonus" size="large" variant="danger" />
+      <Badge text="-4 AC penalty" size="large" variant="danger" />
+    </div>
+  </Card>
+  <Card title="Defensive Fighting">
+    <Badge text="Only Fighters, Elves & Dwarves" size="large" variant="caution" />
+    <div>
+      <Badge text="+2 AC bonus" size="large" variant="danger" />
+      <Badge text="-4 attack penalty" size="large" variant="danger" />
+    </div>
+  </Card>
+</CardGrid>
+
+---
+
+<LinkButton href="/" variant="secondary" icon="left-arrow" iconPlacement="start">
+  Back Home
+</LinkButton>
