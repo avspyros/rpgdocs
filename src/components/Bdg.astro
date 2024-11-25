@@ -1,0 +1,11 @@
+---
+export interface Props {
+  bt: string;
+}
+
+const { bt } = Astro.props;
+
+import { Badge } from '@astrojs/starlight/components';
+---
+
+<Badge text={bt} size="medium" />

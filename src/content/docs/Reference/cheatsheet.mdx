@@ -2,6 +2,9 @@
 title: Quick Reference
 description: Quick Reference and examples of common actions.
 template: 'splash'
+
+sidebar:
+  order: 0
 ---
 
 import { CardGrid, Card, Badge, LinkButton } from '@astrojs/starlight/components';
@@ -13,11 +16,17 @@ import { CardGrid, Card, Badge, LinkButton } from '@astrojs/starlight/components
 ---
 
 <CardGrid stagger>
-  <Card title="Sneak Attack for all Classes">
-    <Badge text="Foe loses round" size="large" variant="caution" />
+  <Card title="Surprised">
+    <Badge text="Actors don't act that Round" size="large" variant="caution" />
+    <Badge text="Surprised: 1-2 on a d6" size="large" variant="danger" />
+    <Badge text="Elves: -1 on the range" size="large" variant="danger" />
+    <Badge text="If foe prepared for ambush 1-4 on a d6" size="large" variant="danger" />
   </Card>
-  <Card title="Sneak Attack (> 1 points in Sneak)">
-    <Badge text="+2 attack bonus" size="large" variant="danger" />
+  <Card title="Sneak Attack for all Classes">
+    <Badge text="Attack made by Surprise" size="large" variant="caution" />
+  </Card>
+  <Card title="Specialist Sneak Attack">
+    <Badge text="+2 attack bonus (if > 1 point in the skill)" size="large" variant="danger" />
     <Badge text="multiply damage by number of Sneak points" size="large" variant="caution" />
   </Card>
   <Card title="Parry">

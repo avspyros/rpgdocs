@@ -7,6 +7,7 @@ sidebar:
 ---
 
 import { Steps, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
+import Bdg from '../../../components/Bdg.astro';
 
 ### Follow these steps to quickly create a character:
 
@@ -15,14 +16,17 @@ import { Steps, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
 1. **Roll Ability Scores**
 
    <Tabs>
-     <TabItem label="Roll 3d6 for each ability">
-       **Charisma, Constitution, Dexterity, Intelligence, Strength, Wisdom,** in order, and record them on your
-       character sheet. A player can decide to swap the position of one ability score that was rolled with another.
+     <TabItem label="1.1">
+       <Bdg bt="Roll 3d6 for each ability:" />
+       **Charisma, Constitution, Dexterity, Intelligence, Strength, Wisdom,** in order, and record them on your character
+       sheet. A player can decide to swap the position of one ability score that was rolled with another.
      </TabItem>
-     <TabItem label="Note modifiers">
+     <TabItem label="1.2">
+       <Bdg bt="Note modifiers" />
        Each ability score has a [Modifier](/reference/abilities) which is associated with it.
      </TabItem>
-     <TabItem label="Is the Character suitable?">
+     <TabItem label="1.3">
+       <Bdg bt="Is the Character suitable?" />
        If the total of all ability score modifiers is less than 0, discard and start again.
      </TabItem>
    </Tabs>
@@ -30,7 +34,7 @@ import { Steps, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
 2. **Choose a Character Class**
 
    <Tabs>
-     <TabItem label="Classes">
+     <TabItem label="2.1">
        <Badge text="Cleric" size="small" variant="note" />
        <Badge text="Fighter" size="small" />
        <Badge text="Magic User" size="small" variant="tip" />
@@ -39,14 +43,16 @@ import { Steps, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
        <Badge text="Elf" size="small" variant="success" />
        <Badge text="Halfling" size="small" variant="note" />
      </TabItem>
-     <TabItem label="Determine HP">
-       1st level characters have a minimum number of HP according to their class. If the rolled amount is less than the
-       indicated number on this [chart](/reference/hitpoints), simply use the number shown on the chart instead. Always
-       add the Constitution modifier to the result.
+     <TabItem label="2.2">
+       <Bdg bt="Determine HP" />
+       1st level characters have a minimum number of HP according to their class. If the rolled amount is less than the indicated
+       number on this [chart](/reference/hitpoints), simply use the number shown on the chart instead. Always add the Constitution
+       modifier to the result.
      </TabItem>
-     <TabItem label="Record modifiers & Saving Throws">
-       Record To-Hit Bonuses and Saving Throws on the Character sheet. Most classes get a +1 Attack Bonus. The Fighter
-       gets an Attack Bonus of +2 at 1st level, and gains an additional +1 every time a level is gained.
+     <TabItem label="2.3">
+       <Bdg bt="Record modifiers & Saving Throws" />
+       Record To-Hit Bonuses and Saving Throws on the Character sheet. Most classes get a +1 Attack Bonus. The Fighter gets
+       an Attack Bonus of +2 at 1st level, and gains an additional +1 every time a level is gained.
      </TabItem>
    </Tabs>
 
@@ -64,11 +70,14 @@ import { Steps, Tabs, TabItem, Badge } from '@astrojs/starlight/components';
 4. **Determine Starting Possessions**
 
    <Tabs>
-     <TabItem label="Roll money">Every character begins with **3d6 × 10 sp** (silver pieces)</TabItem>
-     <TabItem label="Buy equipment">
-       All characters are assumed to begin play with a decent set of traveling clothes appropriate for the weather
-       conditions in the starting area of play. Apart from that, they can use the relevant equipment tables to buy their
-       starting equipment.
+     <TabItem label="4.1">
+       <Bdg bt="Roll money" />
+       Every character begins with **3d6 × 10 sp** (silver pieces)
+     </TabItem>
+     <TabItem label="4.2">
+       <Bdg bt="Buy equipment" />
+       All characters are assumed to begin play with a decent set of traveling clothes appropriate for the weather conditions
+       in the starting area of play. Apart from that, they can use the relevant equipment tables to buy their starting equipment.
      </TabItem>
    </Tabs>
 
