@@ -8,12 +8,17 @@ sidebar:
 ---
 
 import { CardGrid, Card, Badge, LinkButton } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
 
 <LinkButton href="/" variant="secondary" icon="left-arrow" iconPlacement="start">
   Back Home
 </LinkButton>
 
 ---
+
+<Aside title="Actor:" type="caution">
+  Character, PC, NPC or creature.
+</Aside>
 
 <CardGrid stagger>
   <Card title="Surprised">
@@ -29,18 +34,27 @@ import { CardGrid, Card, Badge, LinkButton } from '@astrojs/starlight/components
     <Badge text="+2 attack bonus (if > 1 point in the skill)" size="large" variant="danger" />
     <Badge text="multiply damage by number of Sneak points" size="large" variant="caution" />
   </Card>
+  <Card title="Attacking unaware foe from behind">
+    <Badge text="Foe loses Dex & Shield AC bonuses" size="large" variant="caution" />
+    <Badge text="+2 extra Attack bonus" size="large" variant="danger" />
+  </Card>
   <Card title="Parry">
     <Badge text="No other action is allowed" size="large" variant="caution" />
     <Badge text="Decide to parry at any point during the Round" size="large" variant="caution" />
     <Badge text="+2 AC bonus for the Round" size="large" variant="danger" />
     <Badge text="+4 AC bonus for Elves & Dawrves" size="large" variant="danger" />
   </Card>
-  <Card title="Attacking unaware foe from behind">
-    <Badge text="Foe loses Dex & Shield AC bonuses" size="large" variant="caution" />
-    <Badge text="+2 extra Attack bonus" size="large" variant="danger" />
+  <Card title="Moving in combat">
+    <Badge text="Move according to" size="large" variant="caution" /> [movement
+    table](../../reference/movement_encumbrance)
+    <div>
+      <Badge text="30' unencumbered" size="large" variant="danger" />
+      <Badge text="40' lightly encumbered etc..." size="large" variant="danger" />
+    </div>
   </Card>
   <Card title="Charge">
-    <Badge text="Move full rate (instead of 1/3rd)" size="large" variant="caution" />
+    <Badge text="Use Running Move" size="large" variant="caution" /> [movement
+    table](../../reference/movement_encumbrance)
     <div>
       <Badge text="x2 damage" size="large" variant="danger" />
       <Badge text="-2 AC penalty" size="large" variant="danger" />
