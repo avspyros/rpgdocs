@@ -1,6 +1,6 @@
 ---
-title: Ability Scores
-description: Ability Scores and modifiers tables.
+title: Ability Modifiers
+description: Ability Scores and modifiers table.
 ---
 
 | Ability Score | Mod |
@@ -12,3 +12,12 @@ description: Ability Scores and modifiers tables.
 | 13–15         | +1  |
 | 16–17         | +2  |
 | 18            | +3  |
+
+| Ability | Affects                       |
+| ------- | ----------------------------- |
+| CHA     | Retainer Recruitment, Loyalty |
+| CON     | HP, Daily Travel Distance     |
+| DEX     | AC, Ranged AB, Initiative     |
+| INT     | Saves vs Magic Effects        |
+| STR     | Melee AB, Open Doors          |
+| WIS     | Saves vs non Magic Effects    |
