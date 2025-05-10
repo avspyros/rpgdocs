@@ -36,3 +36,7 @@
   background-color: var(--sl-color-gray-6);
   border-color: #460b05;
 }
+
+.sl-link-button.not-content.secondary.astro-xwgiixxa {
+  border-radius: 0;
+}
