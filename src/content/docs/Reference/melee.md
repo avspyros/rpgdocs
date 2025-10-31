@@ -1,6 +1,6 @@
 ---
-title: Mêlée Weapons
-description: Mêlée Weapons Table.
+title: Melee Weapons
+description: Melee Weapons Table.
 tableOfContents: true
 ---
 
@@ -24,13 +24,11 @@ tableOfContents: true
 
 ### Cestus
 
-This includes all sorts of fist wrappings and brass knuckle weapon types. Users suffer a–2 penalty to hit any opponent
-with an unadjusted\* AC of 15 or better.
+This includes all sorts of fist wrappings and brass knuckle weapon types. Users suffer a–2 penalty to hit any opponent with an unadjusted\* AC of 15 or better.
 
 ### Garrote
 
-Use of this weapon requires an attack from surprise, or a successful grapple. If a hit is scored, the target is
-considered grappled and will take 1d6 damage per round.
+Use of this weapon requires an attack from surprise, or a successful grapple. If a hit is scored, the target is considered grappled and will take 1d6 damage per round.
 
 ### Lance
 
@@ -38,14 +36,12 @@ This weapon can be used one-handed if charging on horseback. Otherwise, it is ef
 
 ### Mancatcher
 
-A successful hit with this weapon requires the victim to make a saving throw vs Paralysis. If unsuccessful, the victim
-is considered helpless, as is the wielder of the mancatcher while the target is being held for purposes of defending
-against attacks. This weapon must be wielded with two hands.
+A successful hit with this weapon requires the victim to make a saving throw vs Paralysis. If unsuccessful, the victim is considered helpless, as is the wielder of the mancatcher while the target is
+being held for purposes of defending against attacks. This weapon must be wielded with two hands.
 
 ### Polearm
 
-This two-handed weapon can be used to attack from the second rank\*\*, can be used to receive a charge, and receives a
-+1 bonus to hit opponents with an unadjusted\* AC of 16 or better.
+This two-handed weapon can be used to attack from the second rank\*\*, can be used to receive a charge, and receives a +1 bonus to hit opponents with an unadjusted\* AC of 16 or better.
 
 ### Rapier
 
@@ -71,8 +67,7 @@ These weapons include standard swords, battle axes, and maces. Halflings must wi
 
 ### Weapon, Minor
 
-These are small one-handed weapons including daggers and clubs, and suffer a –2 penalty to hit opponents with an
-unadjusted\* AC of 15 or better.
+These are small one-handed weapons including daggers and clubs, and suffer a –2 penalty to hit opponents with an unadjusted\* AC of 15 or better.
 
 ### Weapon, Small
 
@@ -80,14 +75,11 @@ These are one-handed weapons, including short swords and hand axes.
 
 ### Whip
 
-This weapon is ineffective against targets with unadjusted AC 14 or better, but allows mêlée attacks on opponents up to
-10' away.
+This weapon is ineffective against targets with unadjusted AC 14 or better, but allows melee attacks on opponents up to 10' away.
 
 ---
 
-\* _An “unadjusted” Armor Class is that of solely the armor and shield. Dexterity modifiers, magical modifiers, or any
-other adjustments are not countedwhen determining unadjusted AC._
+\* _An “unadjusted” Armor Class is that of solely the armor and shield. Dexterity modifiers, magical modifiers, or any other adjustments are not countedwhen determining unadjusted AC._
 
-\*\* Some weapons can attack “from the second rank.” This is used when there is a definite battle line in combat.
-Usually only those on the front line of battle can strike, but those weapons usable from the second rank allow anyone
-immediately behind the battle line to strike as well.
+\*\* Some weapons can attack “from the second rank.” This is used when there is a definite battle line in combat. Usually only those on the front line of battle can strike, but those weapons usable
+from the second rank allow anyone immediately behind the battle line to strike as well.

@@ -19,82 +19,64 @@ import SpellAside from '../../../components/SpellAside.astro';
 
 <Spell SpellTitle="Bless" SpellDuration="Instantaneous" SpellRange="Touch">
   <p slot="spellsummary">
-    Grants the target 1d6 + caster's level points to improve rolls (e.g., To-Hit, saving throws) on a one-for-one basis,
-    excluding damage or magic-related rolls. Points must be declared before rolling and expire at dawn.
+    Grants the target 1d6 + caster's level points to improve rolls (e.g., To-Hit, saving throws) on a one-for-one basis, excluding damage or magic-related rolls. Points must be declared before
+    rolling, and expire at dawn.
   </p>
   <p slot="spelldescription">
-    Bestows the favor of the Cleric's deity upon the subject. That subject receives a number of points (1d6 + caster's
-    level) to allocate to any future die rolls—To-Hit, saving throws, skill checks, surprise checks, whatever the
-    subject desires—except damage rolls. The subject trades the points on a one-for-one basis and can adjust the roll by
-    that many points however he sees fit. The number of points to be used on a roll must be declared before the roll is
-    made. All unused points are lost at dawn the following day. No rolls relating to damage or anything concerning the
-    use of magic use can be modified by Bless.
+    Bestows the favor of the Cleric's deity upon the subject. That subject receives a number of points (1d6 + caster's level) to allocate to any future die rolls—To-Hit, saving throws, skill checks,
+    surprise checks, whatever the subject desires—except damage rolls. The subject trades the points on a one-for-one basis and can adjust the roll by that many points however they see fit. The number
+    of points to be used on a roll must be declared before the roll is made. All unused points are lost at dawn the following day. No rolls relating to damage or anything concerning the use of magic
+    can be modified by Bless.
   </p>
 </Spell>
 
 <Spell SpellTitle="Command" SpellDuration="1 Round" SpellRange="10'">
-  <p slot="spellsummary">
-    Gives a one-word command the target obeys for 1 Round. Targets with over 5 levels/HD or Intelligence over 12 get a
-    saving throw versus Magic. Does not affect undead.
-  </p>
+  <p slot="spellsummary">Gives a one-word command the target obeys for 1 Round. Targets with over 5 levels/HD or Intelligence over 12 get a saving throw versus Magic. Does not affect undead.</p>
   <p slot="spelldescription">
-    When a Cleric casts this spell, he can give the subject a single word command, which it obeys to the best of its
-    ability. The single word must make sense as a single command, such as approach, drop, fall, flee, halt, surrender,
-    sleep, etc. Although a target could be instructed to die, this will only make the target collapse into a comatose
-    state for a single Round. Note that the caster must be able to speak the language of the target. Any intended target
-    that has more than 5 levels or Hit Dice, or an Intelligence of over 12 is entitled to a saving throw versus Magic.
-    This spell is ineffective against undead.
+    When a Cleric casts this spell, they can give the subject a single-word command, which it obeys to the best of its ability. The single word must make sense as a single command, such as approach,
+    drop, fall, flee, halt, surrender, sleep, etc. Although a target could be instructed to die, this will only make the target collapse into a comatose state for a single Round. Note that the caster
+    must be able to speak the language of the target. Any intended target that has more than 5 levels or Hit Dice, or an Intelligence of over 12 is entitled to a saving throw versus Magic. This spell
+    is ineffective against undead.
   </p>
 </Spell>
 
 <Spell SpellTitle="Cure Light Wounds*" SpellDuration="Instantaneous" SpellRange="Touch">
   <p slot="spellsummary">
-    Restores 1d6 + caster's level HP to one character or removes one temporary negative condition (e.g., paralyzed,
-    stunned). Only one effect per casting; cannot exceed maximum HP. The reverse spell inflicts damage instead.
+    Restores 1d6 + caster's level HP to one character or removes one temporary negative condition (e.g., paralyzed, stunned). Only one effect per casting; cannot exceed maximum HP. The reverse spell
+    inflicts damage instead.
   </p>
   <p slot="spelldescription">
-    By the power of the Cleric’s faith, this spell restores 1d6 HP to one damaged character, plus a number of points
-    equal to the level of the caster. For example, if the caster is 5th level, the spell restores 1d6+5 HP. The spell
-    can also be used to remove one temporary negative condition instead of restoring lost HP. For example, if a
-    character is paralyzed, stunned, or blinded for a set period of time, then this spell will remove any of these
-    conditions. It will not work on permanent conditions, and only one condition (or damage) can be treated per casting
-    of the spell. Recipients of the spell can only be restored to their normal maximum HP, and no more. Any excess
-    restored points are lost. The reverse of the spell can only be used to inflict points of damage.
+    By the power of the Cleric’s faith, this spell restores 1d6 HP to one damaged character, plus a number of points equal to the level of the caster. For example, if the caster is 5th level, the
+    spell restores 1d6+5 HP. The spell can also be used to remove one temporary negative condition instead of restoring lost HP. For example, if a character is paralyzed, stunned, or blinded for a set
+    period of time, then this spell will remove any of these conditions. It will not work on permanent conditions, and only one condition (or damage) can be treated per casting of the spell.
+    Recipients of the spell can only be restored up to their normal maximum HP, and no more. Any excess restored points are lost. The reverse of the spell can only be used to inflict points of damage.
   </p>
 </Spell>
 
 <Spell SpellTitle="Detect Chaos*" SpellDuration="Instantaneous" SpellRange="Line of Sight">
   <p slot="spellsummary">
-    Reveals if anything within the caster's field of vision is Chaotic, including undead, extra-planar beings (excluding
-    lawful Powers), and magical creatures (excluding Clerics). Does not detect mortal beings, non-evil objects, traps,
-    or magical items. The reverse, Detect Law, identifies lawful entities instead.
+    Reveals if anything within the caster's field of vision is Chaotic, including undead, extra-planar beings (excluding lawful Powers), and magical creatures (excluding Clerics). Does not detect
+    mortal beings, non-evil objects, traps, or magical items. The reverse, Detect Law, identifies lawful entities instead.
   </p>
   <p slot="spelldescription">
-    Allows the caster to know if anything that is within his field of vision (or on his person) is Chaotic. For the
-    purposes of this spell, Chaotic is defined as, but not limited to, undead creatures, any extra-dimensional or
-    extra-planar creatures that are not specifically Powers of Law or angels, any creature with innate magical abilities
-    (including Magic-Users, but not Clerics), artifacts, symbols, or sacred places dedicated to evil gods, and
-    supernatural creatures incapable of being good. Mortal creatures, physical objects not directly connected to evil
-    deities, traps, poison, or places where great atrocities have taken place are not considered Chaotic or evil for the
-    purposes of this spell. It detects supernatural disturbances, not ill intent or foul deeds. Curiously, this spell
-    does not detect magical items or effects. The reverse of this spell, Detect Law, detects Law instead of Chaos.
+    Allows the caster to know if anything that is within his field of vision (or on his person) is Chaotic. For the purposes of this spell, Chaotic is defined as, but not limited to, undead creatures,
+    any extra-dimensional or extra-planar creatures that are not specifically Powers of Law or angels, any creature with innate magical abilities (including Magic-Users, but not Clerics), artifacts,
+    symbols, or sacred places dedicated to evil gods, and supernatural creatures incapable of being good. Mortal creatures, physical objects not directly connected to evil deities, traps, poison, or
+    places where great atrocities have taken place are not considered Chaotic or evil for the purposes of this spell. It detects supernatural disturbances, not ill intent or foul deeds. Curiously,
+    this spell does not detect magical items or effects. The reverse of this spell, Detect Law, detects Law instead of Chaos.
   </p>
 </Spell>
 
 <Spell SpellTitle="Invisibility to Undead*" SpellDuration="1 Turn/level" SpellRange="Touch">
   <p slot="spellsummary">
-    The subject becomes completely unnoticed by undead creatures for the spell's duration. Undead cannot see, hear, or
-    smell the subject unless the subject attacks or otherwise gains their attention, which ends the spell. The reverse,
-    Undead Attraction, causes undead to ignore all living beings except the subject until the subject is killed or
-    attacks.
+    The subject becomes completely unnoticed by undead creatures for the spell's duration. Undead cannot see, hear, or smell the subject unless the subject attacks or otherwise gains their attention,
+    which ends the spell. The reverse, Undead Attraction, causes undead to ignore all living beings except the subject until the subject is killed or attacks.
   </p>
   <p slot="spelldescription">
-    The subject of this spell becomes completely unnoticed by undead creatures for the duration of the spell. Undead
-    creatures cannot see, hear, or smell the subject at all for the duration of the spell or until the subject does
-    something to intentionally gain an undead creature’s attention (including attacking). This breaks the spell
-    completely, with all undead in the area being then able to sense the subject. The reverse of this spell, Undead
-    Attraction, causes all present undead to ignore all living beings other than the subject until the subject is dead
-    or until one of the ignored beings attacks the undead.
+    The subject of this spell becomes completely unnoticed by undead creatures for the duration of the spell. Undead creatures cannot see, hear, or smell the subject at all for the duration of the
+    spell or until the subject does something to intentionally gain an undead creature’s attention (including attacking). This breaks the spell completely, with all undead in the area then able to
+    sense the subject. The reverse of this spell, Undead Attraction, causes all present undead to ignore all living beings other than the subject until the subject is dead or until one of the ignored
+    beings attacks the undead.
   </p>
 </Spell>
 
@@ -102,7 +84,7 @@ import SpellAside from '../../../components/SpellAside.astro';
   <p slot="spellsummary">
   The subject gains enhanced resistance against Chaotic creatures and effects:
 
-    - Mêlée Combat: Chaotic creatures suffer a penalty to hit equal to the caster's level.
+    - Melee Combat: Chaotic creatures suffer a penalty to hit equal to the caster's level.
     - Saving Throws: The subject receives a +1 bonus per caster level on saves against Chaotic attacks. The spell allows a saving throw against Magic-User spells that typically do not grant saves (damage spells deal half damage on a successful save, while others fail completely).
     - Spell Restrictions: The subject must save against beneficial spells cast on them.
     Chaotic Creatures Include: Undead,
@@ -113,11 +95,11 @@ import SpellAside from '../../../components/SpellAside.astro';
   </p>
   <p slot="spelldescription">
     The subject of this spell becomes more resistant to Chaotic creatures and effects. Any Chaotic creature suffers a
-    penalty to hit the subject in mêlée combat equal to the level of the caster, and the subject gets a +1 bonus per
+    penalty to hit the subject in melee combat equal to the level of the caster, and the subject gets a +1 bonus per
     level of the caster to save against any attack or effect caused by a Chaotic creature. The spell also allows a
     saving throw against Magic-User spells and effects against the subject which normally do not grant saves (spells
     which deliver damage do half on a successful save, other spells fail entirely on a successful save), but the subject
-    must also save against the effects of the beneficial spells he wants to be cast on him. For purposes of this spell,
+    must also save against the effects of the beneficial spells they want to be cast on them. For purposes of this spell,
     “Chaotic creatures” include undead creatures, monsters with any sort of magical ability or attack, any creature that
     is able to use magic (including Magic-Users and Elves, but not Clerics), beings carrying magical items ( excluding
     potions and scrolls), and any sort of supernatural creature incapable of acting beneficently. Beings and
@@ -130,41 +112,36 @@ import SpellAside from '../../../components/SpellAside.astro';
 
 <Spell SpellTitle="Purify Food and Drink*" SpellDuration="Instantaneous" SpellRange="30'">
   <p slot="spellsummary">
-    Enough food and water for up to a dozen people is made pure, removing all spoilage and poisons. The reverse of the
-    spell, Foul Food and Drink, contaminates food and water and will spoil holy water.
+    Enough food and water for up to a dozen people is made pure, removing all spoilage and poisons. The reverse of the spell, Foul Food and Drink, contaminates food and water and will spoil holy
+    water.
   </p>
   <p slot="spelldescription">
-    Enough food and water for up to a dozen people is made pure, removing all spoilage and poisons. The reverse of the
-    spell, Foul Food and Drink, contaminates food and water and will spoil holy water.
+    Enough food and water for up to a dozen people is made pure, removing all spoilage and poisons. The reverse of the spell, Foul Food and Drink, contaminates food and water and will spoil holy
+    water.
   </p>
 </Spell>
 
 <Spell SpellTitle="Remove Fear*" SpellDuration="See below" SpellRange="Touch">
   <p slot="spellsummary">
-    Grants the subject a new saving throw with a +1 bonus per caster level to overcome magic-induced fear and ensures
-    automatic success on morale checks for caster level Rounds. Counters Cause Fear. The reverse, Cause Fear, causes the
-    target to flee hysterically for caster level Rounds.
+    Grants the subject a new saving throw with a +1 bonus per caster level to overcome magic-induced fear and ensures automatic success on morale checks for caster level Rounds. Counters Cause Fear.
+    The reverse, Cause Fear, causes the target to flee hysterically for caster level Rounds.
   </p>
   <p slot="spelldescription">
-    This spells instills courage in the subject, and potentially removes the effect of magic-induced fear by allowing
-    the target a saving throw versus Magic to attempt to remove the effects. The subject receives a saving throw bonus
-    of +1 per level of the caster. The subject automatically succeeds in any morale checks for a number of Rounds equal
-    to the caster’s level. Remove Fear counters and dispels Cause Fear. The reverse, Cause Fear, will cause a subject
-    who is touched to run away, hysterical, at full running movement for a number of Rounds equal to the caster’s level.
+    This spell instill courage in the subject, and potentially removes the effect of magic-induced fear by allowing the target a saving throw versus Magic to attempt to remove the effects. The subject
+    receives a saving throw bonus of +1 per level of the caster. The subject automatically succeeds in any morale checks for a number of Rounds equal to the caster’s level. Remove Fear counters and
+    dispels Cause Fear. The reverse, Cause Fear, will cause a subject who is touched to run away, hysterical, at full running movement for a number of Rounds equal to the caster’s level.
   </p>
 </Spell>
 
 <Spell SpellTitle="Sanctuary" SpellDuration="2 Rounds/level" SpellRange="Touch">
   <p slot="spellsummary">
-    Forces any creature attempting to attack the subject to succeed on a saving throw versus Magic or be unable to
-    attack them. The attacker may choose other actions or targets. Applies to area effects unless another target is
-    within range. Ends if the subject takes any offensive action.
+    Forces any creature attempting to attack the subject to succeed on a saving throw versus Magic or be unable to attack them. The attacker may choose other actions or targets. Applies to area
+    effects unless another target is within range. Ends if the subject takes any offensive action.
   </p>
   <p slot="spelldescription">
-    Any creature attempting to attack the subject must first make a saving throw versus Magic, or else it is not
-    permitted to make an attack. The attacker does not lose its turn; it can still attack another target, move, or do
-    anything else it is normally allowed to do. This restriction applies to area effect attacks as well, unless there is
-    another target within that area. The spell ends immediately if the subject makes any violent or offensive action.
+    Any creature attempting to attack the subject must first make a saving throw versus Magic, or else it is not permitted to make an attack. The attacker does not lose its turn; it can still attack
+    another target, move, or do anything else it is normally allowed to do. This restriction applies to area effect attacks as well, unless there is another target within that area. The spell ends
+    immediately if the subject makes any violent or offensive action.
   </p>
 </Spell>
 
@@ -174,7 +151,7 @@ import SpellAside from '../../../components/SpellAside.astro';
 
     - Turned Undead: If successful, 1d6 + Cleric's level in undead Hit Dice flee. Lower HD undead are turned first.
     - Special Results: "T" means undead are automatically turned, and an asterisk allows turning double the usual undead.
-    - Command Option: Instead of turning, the Cleric can command undead as loyal slaves until they are destroyed.
+    - Command Option: Instead of turning, the Cleric can command undead as loyal slaves until  they  are destroyed.
     - Continuous Effect: The Cleric can continue turning undead each Round until failing a roll or ending the spell. While
       concentrating, undead cannot approach within 10 feet.
 
@@ -183,8 +160,7 @@ Attacking turned undead ends the effect for those undead.
   </p>
   <p slot="spelldescription">
     One true measure of divine power is the command over life and death. In particular, power over the walking dead.
-    They are abominations, a crime against creation. One of a Cleric’s first duties is to ensure that the dead shall
-    dead remain. And so they have the power to first ward against, and later outright destroy, these creations. When the
+    They are abominations, a crime against creation. One of a Cleric’s first duties is to ensure that the dead shall remain dead. And so they have the power to first ward against, and later outright destroy, these creations. When the
     spell is cast, the Cleric’s player rolls 2d6. The GM will then reference the result on the [Turn Undead table](/reference/turn_undead). If the roll is less than the listed number, then the undead are seemingly unaffected (but see
     below). If the roll is greater than, or equal to, the listed number, then undead totaling no more than 1d6 + the
     level of the casting Cleric in Hit Dice, will flee to the best of their ability for the duration of the spell.
@@ -193,11 +169,11 @@ Attacking turned undead ends the effect for those undead.
     applied to all types. Lower Hit Dice undead are always turned before greater Hit Dice undead.
 
     - A “T” signifies that no roll is necessary; the undead are automatically turned.
-    - A “D” signifies that the power of the Cleric is so great that the undead are instantly destroyed, rather than turned.Alternately, a Cleric can instead choose to command the undead, and in this case they become the Cleric’s loyal slaves until destroyed. Note that intelligent undead creatures are allowed a saving throw versus Magic to avoid a “D” result; if successful, the creature is simply turned.
+    - A “D” signifies that the power of the Cleric is so great that the undead are instantly destroyed, rather than turned. Alternately, a Cleric can instead choose to command the undead, and in this case they become the Cleric’s loyal slaves until destroyed. Note that intelligent undead creatures are allowed a saving throw versus Magic to avoid a “D” result; if successful, the creature is simply turned.
     - A “–” signifies that a Cleric of that level cannot turn an undead creature of that many Hit Dice.
     - An asterisk denotes that twice the usual number of undead are turned.
 
-    If the turning was successful and there are still unturned undead remaining, the Cleric can roll to turn additional undead every Round until he fails a turning roll or the spell ends. Regardless of the result, as long as the Cleric is concentrating (neither movement nor fighting nor other spellcasting allowed) and holding his holy symbol before him, undead creatures cannot approach within ten feet of him, and if already within that distance, will back away. Attacking or approaching a turned undead creature will negate the effects of the spell and allow the creature to act freely.
+    If the turning was successful and there are still unturned undead remaining, the Cleric can roll to turn additional undead every Round until they fail a turning roll or the spell ends. Regardless of the result, as long as the Cleric is concentrating (neither movement nor fighting nor other spellcasting allowed) and holding his holy symbol before him, undead creatures cannot approach within ten feet of him, and if already within that distance, will back away. Attacking or approaching a turned undead creature will negate the effects of the spell and allow the creature to act freely.
 
   </p>
 
