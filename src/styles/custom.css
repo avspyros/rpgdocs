@@ -40,3 +40,7 @@
 .sl-link-button.not-content.secondary.astro-xwgiixxa {
   border-radius: 0;
 }
+
+.home-brew > * {
+  color: rgb(90, 129, 179);
+}
