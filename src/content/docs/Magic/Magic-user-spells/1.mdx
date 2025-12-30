@@ -1,0 +1,349 @@
+---
+title: 1st Level Spells
+description: Magic-User Spell List
+tableOfContents: true
+
+sidebar:
+  order: 3
+---
+
+import { Card, Aside } from '@astrojs/starlight/components';
+import Spell from '../../../../components/Spell.astro';
+import SpellAside from '../../../../components/SpellAside.astro';
+
+<SpellAside />
+
+---
+
+<Spell SpellTitle="Read Magic" SpellDuration="Instantaneous" SpellRange="0">
+  <p slot="spellsummary">
+    Allows the caster to decipher 1d4 magical inscriptions per casting. The caster can then read that specific writing again without using Read Magic. The spell can trigger cursed scrolls but does not
+    activate other magic. Only the original owner can read their spellbook without this spell. If lost, Read Magic must be re-researched and rewritten in a new spellbook.
+  </p>
+  <p slot="spelldescription">
+    By means of Read Magic, the caster can decipher magical inscriptions on objects—books, scrolls, weapons, and the like—that would otherwise be unintelligible. This does not normally invoke the
+    magic contained in the writing, although it can do so in the case of a cursed scroll. Furthermore, once the spell is cast and the caster has read the magical inscription, they thereafter are able
+    to read that particular writing without recourse to the use of Read Magic. All spellbooks are written such that only the Elf or Magic-User who owns the book can decipher it without the use of this
+    spell. Each casting of the spell allows the reading of 1d4 items. If a character loses access to Read Magic (a spellbook is stolen or destroyed, for instance), the character must research the
+    spell as if it was unknown to them and then written up in a new spellbook.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Bookspeak" SpellDuration="Instantaneous" SpellRange="1 Round/level">
+  <p slot="spellsummary">
+    Allows the subject to ask an animated book one question per Round, receiving answers if the information is within the book. Only the spell's subject can question it; the book will growl at others.
+    Intelligent books can save to resist, and magical books do not reveal effects. Provides no more information than reading would.
+  </p>
+  <p slot="spelldescription">
+    When the subject of this spell touches a book, it animates, forming a mouth around the edge where the paper shows. The subject can ask the book one question per Round, and if the information is
+    contained within the book, it will answer. If anyone else approaches or asks questions the book snaps and growls that Round instead of answering a question. Intelligent books can save to resist
+    the spell (as a Magic-User of a level equal to the author). Magical books do not impart their effect when they answer. The spell is a shortcut to actually reading a book, and it will not give more
+    information than a careful reading would.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Charm Person" SpellDuration="See Below" SpellRange="120'">
+  <p slot="spellsummary">
+    Causes one target to become deeply enamored with the caster if they fail a saving throw versus Magic. The charmed subject follows requests unless they contradict their interests, which prompts a
+    new saving throw to resist. If the caster promises desirable rewards, no save is needed for compliance. Targets get additional saves if abused or threatened, with a +5 bonus if attacked. Works on
+    humans and human-like creatures (except Elves) with up to 4 HD. After the spell ends, intelligent subjects retain memories of their actions.
+  </p>
+  <p slot="spelldescription">
+    The Charm Person spell makes a single subject utterly enamored with the caster and desperate to please him if the saving throw versus Magic is failed. This is not mind control, as the subject
+    retains their personality and controls how they act but for their utter fascination with the caster. The caster must articulate their desires if they expect the subject to fulfill them. Any
+    request which is not against the subject’s interests or personality will be followed. Any request which is against the subject’s interests or personality triggers a saving throw to refuse the
+    request. If the saving throw is successful, the request will be refused, but this will not break the Charm. If as part of a request, the caster promises the subject something that the subject is
+    normally inclined to want, then this saving throw is not necessary, and the subject will comply. This spell works on all humans and human-like creatures (except Elves); other (non player character
+    class) humanoids are not affected if they have more than four Hit Dice. Abuse or neglect of the subject will trigger another saving throw to negate the Charm, and murderous violence towards the
+    subject also triggers a save, but with a +5 bonus to the roll. The subject, if intelligent, will realize that they have been victim to mesmerism, and retain full memory of their actions while
+    under the Charm after the spell ends.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Comprehend Languages" SpellDuration="1 Turn/level" SpellRange="0'">
+  <p slot="spellsummary">
+    Allows the caster to understand spoken words or read unknown written messages by touching the source and summoning spirits to translate, giving only the literal meaning. Does not enable speaking
+    or writing in the unknown language. The reverse, Obscure Languages, nullifies Comprehend Languages or makes speech and writing incomprehensible by possessing the speaker's lips or reader's eyes.
+  </p>
+  <p slot="spelldescription">
+    The caster can understand the spoken words of creatures or read otherwise incomprehensible written messages by summoning the spirits of the all-knowing dead to translate for him. The creature or
+    the writing must be touched by the caster before the spirits can deliver any translation. The ability to read does not necessarily impart insight into the material, merely its literal meaning. The
+    spell enables the caster to understand or read an unknown language, not speak or write it. Obscure Languages, the opposite of Comprehend Languages, dispels the effects of Comprehend Languages, or
+    can be used to make spoken or written language incomprehensible by summoning spirits to possess the lips of a speaker, or the eyes of a reader, ruining all chances of communication.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Detect Magic" SpellDuration="Instantaneous" SpellRange="Line of Sight">
+  <p slot="spellsummary">
+    Reveals if anything within the caster's field of vision is magical, including magical creatures, items, or subjects of active spells. Does not identify the type of magic. Does not detect
+    concealed, covered, or invisible objects, nor does it register spellcasters without active spell effects.
+  </p>
+  <p slot="spelldescription">
+    This spell allows the caster to know if anything within their field of vision (or on their person) is in any way magical. This includes magical creatures, magical items, or any creature or object
+    under the effect of an ongoing spell. Spellcasters such as Magic-Users and Elves do not detect as magic with this spell, but anyone that is under the effects of an active spell does. The spell
+    does not identify the nature of the magic, only that magic is present. The caster must already be able to see the object in question in order to detect it as magical. Concealed, covered, or
+    invisible objects will not be revealed by this spell.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Enlarge" SpellDuration="1 Turn/level" SpellRange="5'/level">
+  <p slot="spellsummary">
+    Increases the size of one creature or object within visible range:
+
+    - Living Creatures: Enlarged by 20% per caster level, up to 300% of their original size.
+    - Non-Living Objects: Enlarged by 10% per level, up to 200% of their original size.
+    - Effect Area: Affects 10' cube of living matter or 5' cube of non-living matter per caster level.
+
+    The target’s weight, strength, and melee damage increase proportionally to size. Magical item properties remain
+    unchanged. The reverse spell, Reduce, shrinks targets by the same proportions. Targets may make a saving throw versus
+    Magic to resist, which can be voluntarily failed if desired.
+
+  </p>
+  <p slot="spelldescription">
+    The forces of magic do not recognize the relationships of size and distance between things; it is the limitations of
+    the mind’s ability to master magic that results in strictures such as “spell range,” but sometimes the infinite
+    nature of magic can be applied to material objects. This spell causes instant growth (and corresponding increase in
+    weight and damage done) of a single object or creature that is in visible range. This increase changes a creature’s
+    size by 20% per caster level, up to three times the original size of the creature. The effectiveness of this spell
+    is half of this on non-living objects, which are only enlarged 10% per level and to a maximum of double the original
+    size of the object. The caster can affect a 10' cube of living matter per level or a 5' cube per level of non-living
+    matter. Magical item properties are not affected by this spell. For instance, a wand will have the same function
+    even though it is increased to the size of a staff, and potion dosages are not increased, though they may take
+    longer to drink. Objects do become stronger or heavier, so that a small rock gains the weight of an appropriately
+    sized larger one, and a person enlarged will have a strength appropriate to their size (as an ogre or a giant, for
+    example) with corresponding strength adjustments. The damage done by an Enlarged character during melee is increased
+    by the same percentage as their size. The reverse of Enlarge, Reduce, can reduce objects or creatures in size by the
+    same proportions as Enlarge. These spells cancel each other out. For either version of the spell a saving throw
+    versus Magic is allowed to negate the effect. This save can be forfeited if the recipient desires.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Faerie Fire" SpellDuration="2 Rounds/level" SpellRange="80'">
+  <p slot="spellsummary">
+    Creates a pale glow around subjects, making them visible in darkness up to 80 feet away. It can affect creatures within a 40' radius and outlines up to one human-sized creature per caster level in
+    blue, green, or violet light. The glow provides a +2 bonus to attackers but does no damage. Visibility range is halved near light sources.
+  </p>
+  <p slot="spelldescription">
+    A pale glow surrounds and outlines the subjects, making them hypervisible. Outlined subjects shed light that makes them visible in darkness at a distance of 80', or half this if the creatures are
+    near a light source. The Magic-User can affect creatures within a 40' radius, and may outline up to one human-sized creature per caster level. The Faerie Fire can be blue, green, or violet,
+    according to the Magic-User’s choice at the time of casting. The Faerie Fire does not cause any harm to the objects or creatures thus outlined. However, their greater visibility grants attackers a
+    +2 bonus to hit them while the spell is in effect.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Feather Fall" SpellDuration="See below" SpellRange="10/level">
+  <p slot="spellsummary">
+    Slows the descent of affected creatures or objects to 5 feet per Round, eliminating fall damage while the spell is active.
+
+    - Effect Limit: Affects up to 200 lbs + 200 lbs per caster level (e.g., 400 lbs at level 1) within a 10' cube.
+    - Instant Cast: Can be used reactively to prevent fall damage if Initiative is on the caster's side.
+    - Restrictions: Only affects falling targets, not those grounded or flying. No saving throw is allowed.
+
+    The spell ends as soon as the subject stops falling.
+
+  </p>
+  <p slot="spelldescription">
+    The affected creatures or objects in range fall slowly. Feather Fall instantly changes the rate at which the targets
+    fall to that of a feather (about 5' per Round), and the subjects take no damage upon landing while the spell is in
+    effect. The spell ends immediately when the subject stops falling. The spell can affect one or more objects or
+    creatures, including gear and carried objects up to each creature’s maximum encumbrance. The maximum volume is a 10'
+    cube, and 200 pounds + 200 pounds per level can also be affected, such that a 1st level Magic-User can affect 400
+    pounds. The spell can be cast with an instant utterance, quickly enough to save the caster or another creature if he
+    unexpectedly falls, but Initiative, if appropriate, must be on the side of the caster. The spell can be cast on
+    falling items or creatures and missiles, but is ineffective against creatures firmly on the ground or flying. No
+    saving throw is permitted.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Floating Disc" SpellDuration="6 turns" SpellRange="20'">
+  <p slot="spellsummary">
+    Creates a 3-foot-diameter concave disk of force that follows the caster, carrying up to 500 lbs or 2 gallons of liquid.
+
+    - Height: Floats 3 feet above the ground, staying level.
+    - Range and Movement: Follows the caster within spell range, maintaining a 6-foot distance.
+    - Duration End: When the spell expires, the disk disappears, dropping its load.
+
+    The disk keeps pace with the caster's movement and remains stable until the spell ends.
+
+  </p>
+  <p slot="spelldescription">
+    The caster creates a slightly concave, circular plane of force that follows him about and carries a heavy load for
+    him. The disk is 3 feet in diameter and 1 inch deep at its center. It can hold 500 pounds. If used to transport a
+    liquid, its capacity is 2 gallons. The disk floats approximately 3 feet above the ground at all times and remains
+    level. It floats along horizontally within spell range and will accompany the caster with an equal movement rate. If
+    not otherwise directed, it maintains a constant interval of 6' between itself and the caster, and will follow the
+    caster without prompting to maintain a minimum of 6' distance. When the disk winks out at the end of the spell’s
+    duration, whatever it was supporting falls to the surface beneath it.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Hold Portal" SpellDuration="2d6 turns" SpellRange="10'">
+  <p slot="spellsummary">
+    Magically locks a door, gate, window, or shutter (wood, metal, or stone) as if it were physically locked.
+
+    - Countered by: Knock spell or successful Dispel Magic spell.
+    - Effect: Keeps the portal shut, preventing it from opening until the spell is negated.
+
+  </p>
+  <p slot="spelldescription">
+    This spell magically holds shut a door, gate, window, or shutter of wood, metal, or stone. The magic affects the
+    portal just as if it were securely closed and normally locked. A Knock spell or a successful Dispel Magic spell can
+    negate a Hold Portal spell.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Identify" SpellDuration="Instantaneous" SpellRange="Touch">
+  <p slot="spellsummary">
+    Reveals one magical property of an item per casting.
+
+    - Requirements: 1 uninterrupted day in a 1,000 sp lab; costs 100 sp in materials per use.
+    - Process: Each casting reveals one property; repeated castings needed to discover all properties.
+    - Limitations: Does not reveal command words or detect curses.
+
+  </p>
+  <p slot="spelldescription">
+    This spell allows the Magic-User to discern the magical properties of an item. The spell requires one uninterrupted
+    day in a laboratory worth at least 1,000 sp to cast. At the end of the day, the Magic-User will have successfully
+    determined one magical property of an item. The character will not know if there are additional properties unless he
+    casts Identify again and another magical property of the item is determined. They will only know all of the magical
+    properties of an item when they cast the spell and no new property is identified; both the “wasted” day and the
+    “wasted” casting of Identify confirming that the item has no further properties. Note that a cursed item will not be
+    identified as cursed, but as the item it pretends to be. This spell does not reveal command words. Each casting of the
+    spell, successful or not, requires the expenditure of 100 sp worth of ingredients.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Light*" SpellDuration="3 Turns/caster level" SpellRange="120'">
+  <p slot="spellsummary">
+    - Light Effect: Creates light equal to a torch, fixed in place or moving if cast on an object.
+    - Targeting: Can be cast on an area or object. If resisted by an unwilling creature, the light defaults to the area.
+    - Properties: Emits no heat and cannot be extinguished by water or wind, but can be blocked by covering.
+    - Darkness (Reverse): Creates total darkness, blinding even creatures with dark vision. Can blind a creature if aimed at the eyes (saving throw applies).
+
+  </p>
+  <p slot="spelldescription">
+    This spell creates a light source equivalent to that of a torch in the target area of the spell. The effect is immobile
+    if cast on an area, but if cast on an object it moves with the object. Once cast, the caster has no control over the
+    light, but can end the spell if they so wish. If cast on a person or on the equipment of a person who does not wish to
+    be the target of the spell, that person is allowed a saving throw versus Magic; success means that the spell is cast on
+    the area the person is in, but not on a particular object. The light caused by the spell emits no heat, nor can it be
+    extinguished by water or high winds. The source of the light can be covered, which will block the light, but this will
+    not end the spell. Darkness, the reverse of the spell causes an area to be covered in total darkness; even creatures
+    able to see in the dark are blind here. The spell can be targeted at a creature’s eyes specifically to blind it,
+    assuming it has eyes in close proximity to one another. The target gets a saving throw versus Magic. If successful, the
+    spell fails to work at all.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Magic Aura" SpellDuration="Permanent" SpellRange="Touch">
+  <p slot="spellsummary">
+    - Magic Aura Effect: Imbues an object with a false magical aura, detectable by spells like Detect Magic. If the object is physically examined, the examiner may identify the aura as false with a successful saving throw versus Magic.
+
+    - Obscure Aura (Reverse): Conceals the aura of a genuine magical item from Detect Magic and similar spells. If a caster both examines and holds the item, they may make a saving throw vs Magic to detect the concealed aura.
+
+    - Limitations: Magic Aura only affects detection, not functionality or magical properties.
+
+  </p>
+  <p slot="spelldescription">
+    This spell makes an object appealing to the microcosmic forces of magic, giving the item an aura that causes it to
+    register to Detect spells (and spells with similar capabilities) as though it were magical. If the object bearing
+    Magic Aura is physically examined (touched), the examiner recognizes that the aura is false if they succeed in a
+    saving throw versus Magic. Otherwise, they believe the aura, but no amount of testing reveals what the true magic is.
+    The reverse of this spell, Obscure Aura, hides the magic aura of a legitimate magical item. A Magic-User casting
+    Detect Magic and actually handling the item is permitted a saving throw versus Magic to see the magical aura of the
+    item.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Magic Missile" SpellDuration="Instantaneous" SpellRange="60' + 10'/level">
+  <p slot="spellsummary">
+    A forceful missile of magic energy automatically strikes a chosen target within range, dealing 1d4 damage per caster level. Targets struck by divided missiles (when the caster is at least 2nd
+    level) may save for half damage. The missile always hits unless the target has total cover or concealment, and each caster’s missile has a unique visual signature.
+  </p>
+  <p slot="spelldescription">
+    A missile of magical energy shoots forth from the caster’s fingertip and strikes its target, dealing damage equal to 1d4 per level of the caster (so a second level Magic-User deals 2d4 points of
+    damage). The missile strikes unerringly, even if the target is in melee combat or has less than total cover or total concealment. Specific parts of a creature cannot be singled out. The caster can
+    throw the full force of the missile at a single target, but if the caster is 2nd level or higher, they can choose to divide the dice of damage between targets as they wish. Dice must be assigned
+    to targets before any damage is rolled, and targets of these divided dice are allowed a saving throw versus Magic, with success meaning that the target takes half damage. Each Magic-User’s Magic
+    Missile is unique in appearance and always looks the same. When the caster writes a scroll, the resulting Missile looks identical to the normally cast version. When using a scroll written by
+    another Magic-User, or memorizing a spell out of another’s spellbook, the resulting spell will look like that other caster’s Missile. Each different ‘signature’ for a Magic Missile must be
+    researched and/or transcribed as if it were a different spell.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Mending" SpellDuration="Instantaneous" SpellRange="30'">
+  <p slot="spellsummary">
+    Repairs small breaks or tears in non-magical objects, making them as strong as new. It works on a single break in metal items or multiple breaks in wood and ceramic, as well as holes in fabric or
+    leather. This spell does not affect magical items or living creatures.
+  </p>
+  <p slot="spelldescription">
+    Mending repairs small breaks or tears in objects. It will weld broken metallic objects such as a ring, a chain link, a medallion, or a slender dagger, provided but one break exists. Ceramic or
+    wooden objects with multiple breaks can be invisibly rejoined to be as strong as new. A hole in a leather sack or a wineskin is completely healed over by Mending. The spell cannot repair magic
+    items, nor does it affect creatures.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Message" SpellDuration="Instantaneous" SpellRange="60' + 10'/level">
+  <p slot="spellsummary">
+    Allows the caster to send a whispered message to a creature in direct line of sight, which can reply in a whisper audible only to the caster. The spell transmits only sound, not meaning, so
+    language barriers still apply. Subtle gestures allow the spell to be cast discreetly.
+  </p>
+  <p slot="spelldescription">
+    This spell grants the caster the ability to whisper messages and receive whispered replies. The caster points their finger at a creature they want to receive the message. The target must be in
+    direct line of sight, with no barrier. The whispered message is audible only to the target. The creature that receives the message can whisper a reply that the caster can hear. The spell transmits
+    sound, not meaning. It does not transcend language barriers.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Shield" SpellDuration="2 Turns" SpellRange="Touch">
+  <p slot="spellsummary">
+    Creates a magical barrier that shields the caster from attacks, granting AC 19 against missile attacks and AC 17 against all other attacks. The spell also reduces damage taken from successful
+    attacks by 1 point.
+  </p>
+  <p slot="spelldescription">
+    Magic-Users are masters of matter and as such can command objects racing towards them to stop. The objects are sometimes impertinent, it is true, but this spell will protect the caster from many
+    attacks which would otherwise harm them. Against missile attacks, the spell grants the caster AC 19, and an effective AC 17 for all other attacks. Even if an attack hits, it does one less point of
+    damage than it otherwise would have.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Sleep" SpellDuration="d4 Turns" SpellRange="30' + 10'/level">
+  <p slot="spellsummary">
+    Causes creatures with 4+1 or fewer Hit Dice to fall into a magical slumber. The spell affects one creature with 4+1 Hit Dice or a group of creatures totaling up to 2d8 Hit Dice, starting with
+    those with the lowest Hit Dice. Creatures can only be awakened by slapping or wounding. Does not affect undead, constructs, or magical beings like Elves.
+  </p>
+  <p slot="spelldescription">
+    A Sleep spell causes a magical slumber to come upon creatures with 4+1 or fewer Hit Dice. The caster can only affect 1 creature if it has 4+1 or more Hit Dice, but the spell will otherwise affect
+    creatures totaling no more than 2d8 Hit Dice. Calculate monsters with less than 1 Hit Die as having 1 Hit Die, and monsters with a bonus to their Hit Dice as having the flat amount. For example, a
+    3+2 Hit Die monster would be calculated as having 3 Hit Dice. Excess Hit Dice that are not sufficient to affect a creature are wasted. Creatures with the fewest Hit Dice are affected first.
+    Slapping or wounding awakens an affected creature, but normal noise does not. Sleep does not affect undead, constructs, or other magical or unnatural creatures (such as Elves).
+  </p>
+</Spell>
+
+<Spell SpellTitle="Spider Climb" SpellDuration="1 Turn/level" SpellRange="Touch">
+  <p slot="spellsummary">
+    Grants the target the ability to climb on walls and ceilings as a spider would, as long as their hands and feet are free. Objects under 5 pounds cling to the target's hands and feet. This spell
+    can be cast on another being without requiring a saving throw.
+  </p>
+  <p slot="spelldescription">
+    The subject can climb and travel on vertical surfaces or even traverse ceilings as a spider does. The affected creature must have its hands and feet free to climb in this manner. Any objects
+    weighing less than 5 pounds cling to the spell recipient’s hands and feet. This spell can be used on another being (touch required) with no saving throw.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Summon" SpellDuration="See Below" SpellRange="10'">
+  <p slot="spellsummary">This spell has a huge description. It is easier to use this link: https://summon.totalpartykill.ca/</p>
+  <p slot="spelldescription">Just use this: https://summon.totalpartykill.ca/</p>
+</Spell>
+
+<Spell SpellTitle="Unseen Servant" SpellDuration="1 Hour/level" SpellRange="30'">
+  <p slot="spellsummary">
+    Summons an invisible, mindless force to perform simple tasks at the caster’s direction, like fetching, cleaning, or holding items. The servant can lift up to 20 pounds or drag up to 40 pounds but
+    cannot attack or be harmed as it is a magical force.
+  </p>
+  <p slot="spelldescription">
+    An Unseen Servant is an invisible, mindless, shapeless force that performs simple tasks at the caster’s command. It can run and fetch things, open unstuck doors, and hold chairs, as well as clean
+    and mend. It can open only normal doors, drawers, lids, and the like. It can lift 20 pounds or drag 40 pounds. The Servant cannot attack in any way, and it cannot be killed because it is a magical
+    force, not a living thing.
+  </p>
+</Spell>
