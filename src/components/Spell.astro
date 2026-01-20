@@ -3,23 +3,44 @@ export interface Props {
   SpellTitle: string;
   SpellDuration: string;
   SpellRange: string;
+  id?: string; // optional override
 }
 
-const { SpellTitle, SpellDuration, SpellRange } = Astro.props;
+const { SpellTitle, SpellDuration, SpellRange, id: idProp } = Astro.props;
 
 import { Badge, Tabs, TabItem } from '@astrojs/starlight/components';
+
+// Slugifies the title to become the id and serve as an anchor link.
+const id =
+  idProp ??
+  SpellTitle
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
 ---
 
-<div>
-  <h3 id={SpellTitle}>{SpellTitle}</h3>
-  <Badge text={SpellDuration} variant='note'/>
-  <Badge text={SpellRange} variant='tip' />
+<div class="spell">
+  <h3 id={id}>
+    <a href={`#${id}`}>{SpellTitle}</a>
+  </h3>
+
+  <Badge text={SpellDuration} variant="note" />
+  <Badge text={SpellRange} variant="tip" />
+
   <Tabs>
     <TabItem label="Summary">
-      <slot name="spellsummary"/>
+      <slot name="spellsummary" />
     </TabItem>
     <TabItem label="Detailed description">
-      <slot name="spelldescription"/>
+      <slot name="spelldescription" />
     </TabItem>
   </Tabs>
 </div>
+
+<style>
+  /* helps with Starlight sticky header so the heading isn't hidden */
+  .spell h3 {
+    scroll-margin-top: 6rem;
+  }
+</style>
+
