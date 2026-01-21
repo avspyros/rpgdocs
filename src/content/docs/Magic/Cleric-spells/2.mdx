@@ -1,0 +1,123 @@
+---
+title: 2nd Level Spells
+description: Cleric 2nd Spell List
+
+sidebar:
+  order: 2
+---
+
+import { Card, Aside } from '@astrojs/starlight/components';
+import Spell from '../../../../components/Spell.astro';
+import SpellAside from '../../../../components/SpellAside.astro';
+
+<SpellAside />
+
+---
+
+1. [Augury](#augury)
+2. [Delay Poison](#delay-poison)
+3. [Enthrall](#enthrall)
+4. [Heat Metal](#heat-metal)
+5. [Heroism](#heroism)
+6. [Resist Cold](#resist-cold)
+7. [Resist Fire](#resist-fire)
+8. [Silence 15' Radius](#silence-15-radius)
+
+<Spell SpellTitle="Augury" SpellDuration="Instantaneous" SpellRange="0">
+  <p slot="spellsummary">Reveals whether a contemplated action will likely result in benefit or harm in the near future.</p>
+  <p slot="spelldescription">
+    This spell allows the caster to see a vision of all timelines, possibilities, and probabilities for but a moment, allowing him the chance to determine whether a particular action will bring weal
+    or woe. Because the caster is afforded only a glimpse of the possibilities, and because he does not know all the forces at work at any particular time, the vision can be misinterpreted.
+  </p>
+  <p slot="spelldescription">
+    The base chance for deciphering a true answer is 70% + 1% per caster level. This roll is made secretly. The Augury can see into the future only 3 Turns, so anything that might happen after that
+    does not affect the result. Thus, the result will not take into account the long-term consequences of a contemplated action.
+  </p>
+  <p slot="spelldescription">
+    If there is a reward for a particular action, but no risk, the answer is “weal.” If a certain action will bring the caster closer to a stated goal, the answer is “weal.” If there is a reward for a
+    particular action, but risk involved, the answer is “weal.” Risk, but no reward is “woe.” Reward, but with overwhelming risk is “woe.” An action that leads the caster further away from a stated
+    goal is “woe.” The Referee must judge all outcomes to determine the correct answer. If there is no clear answer, then there is a flat 50% chance of either “weal” or “woe.” These answers are for
+    successful rolls as noted above, and a failed roll will always give the opposite answer.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Delay Poison" SpellDuration="Instantaneous" SpellRange="Touch">
+  <p slot="spellsummary">Gives a poisoned creature a second chance to resist the effects of poison.</p>
+  <p slot="spelldescription">
+    This spell counteracts the work of poison already done, weakening it, giving its victim a new chance at life. Any character that has succumbed to poison within the previous 24 hours can
+    immediately make a new saving throw versus Poison to resist its effects when this spell is cast.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Enthrall" SpellDuration="See Below" SpellRange="100'">
+  <p slot="spellsummary">Captivates a crowd’s attention and may compel them to act based on the cleric’s words.</p>
+  <p slot="spelldescription">
+    When one’s voice is given divine authority, it will be listened to. This spell allows the Cleric to hold the attention of a crowd and possibly to influence that crowd. Any non-hostile beings
+    within 100' will stop what they are doing to listen to the Cleric speak. The Cleric can compel a crowd to action. If the Cleric attempts to persuade the crowd to do something that they are already
+    inclined to do, they will act if they fail a saving throw versus Magic (just because they want to do something, it does not necessarily make it a good idea, otherwise they would already have done
+    it). If the Cleric attempts to persuade the crowd to do something that offends their sensibilities, they will attack the Cleric if they fail their saving throw. The spell ends immediately if any
+    of the subjects of the spell are attacked or harmed in any way, if there is a powerful distraction that breaks the crowd's attention, or if the Cleric stops speaking to them.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Heat Metal" SpellDuration="7 Rounds" SpellRange="40'">
+  <p slot="spellsummary">Heats a foe’s metal weapons and armor to inflict burning pain and injury over several rounds (but also affects the caster).</p>
+  <p slot="spelldescription">
+    Those who would dare take up arms against the gods' chosen shall burn. This spell targets one opponent and causes all metal arms and armor (including impromptu weapons!) to become hot enough to
+    burn flesh. As insurance against hypocrisy, the caster's arms and armor heats up as well.
+  </p>
+  <p slot="spelldescription">
+    On the first Round of the spell, the metal becomes warm and uncomfortable to touch, but deals no damage. The same effect also occurs on the last Round of the spell's duration. During the second
+    (and also the next-to-last) Round, intense heat causes pain and damage. In the third, fourth, and fifth Rounds, the metal is searing hot, causing more damage, as shown on the table below.
+  </p>
+    <p slot="spelldescription">
+| Round | Metal Temperature | Damage |
+| ----- | ----------------- | ------ |
+| 1     | Warm              | None   |
+| 2     | Hot               | 1d4    |
+| 3–5   | Scorching         | 2d4    |
+| 6     | Hot               | 1d4    |
+| 7     | Warm              | None   |
+  </p>
+
+  <p slot="spelldescription">
+    Note that when searing damage is delivered, additional effects occur depending on the body parts which are in contact with metal. A target may experience more than one of these effects if metal is
+    contacting multiple body parts. Effects are as follows: extremities (hands, feet), unusable; body (covered by metal armor), bedridden from extreme burns; head (covered by a helmet), severely
+    burned, victim is unconscious. These effects remain until the damage caused by the spell heals.
+  </p>
+  <p slot="spelldescription">If searing metal makes contact with flammable material (leather, cloth, etc.), it burns, dealing and additional 1d4 damage on the next Round.</p>
+</Spell>
+
+<Spell SpellTitle="Heroism" SpellDuration="1 Round/level" SpellRange="Touch">
+  <p slot="spellsummary">Temporarily grants increased combat effectiveness and resilience.</p>
+  <p slot="spelldescription">
+    This spell grants the subject 1d4 levels’ worth of Hit Points and saving throws (and, for Fighters, Attack Bonus) for the duration of the spell. When the spell ends, if the subject has more Hit
+    Points than when the spell was cast, his Hit Points return to their previous level. If the subject has less than or equal the number of Hit Points, then there is no adjustment once the spell ends.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Resist Cold" SpellDuration="1 Turn/level" SpellRange="Touch">
+  <p slot="spellsummary">Protects a creature from cold and reduces damage from cold-based attacks.</p>
+  <p slot="spelldescription">
+    While under the effects of this spell, a character or monster is unharmed by freezing (non-magical) cold, and receives a bonus of +2 to all saving throws versus cold-based magical or breath
+    attacks. In addition, 1 point of damage is subtracted from each dice of damage dealt by a cold-based attack. Each die will still inflict a minimum of 1 point of damage.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Resist Fire" SpellDuration="1 Turn/level" SpellRange="Touch">
+  <p slot="spellsummary">Protects a creature from heat and reduces damage from fire-based attacks.</p>
+  <p slot="spelldescription">
+    While under the effects of this spell, a character or monster is unharmed by intense (non-magical) heat, and he receives a bonus of +3 to all saving throws versus heat-based magical or breath
+    attacks. In addition, 1 point of damage is subtracted from each die of damage dealt by a heat-based attack. Each die will still inflict a minimum of 1 point of damage.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Silence 15' Radius" SpellDuration="2 Rounds/level" SpellRange="120'">
+  <p slot="spellsummary">Creates an area of complete silence that prevents all sound within its radius.</p>
+  <p slot="spelldescription">
+    Upon the casting of this spell, complete silence prevails in a diameter of 30'. All sound is stopped and conversation is impossible. No noise whatsoever issues from the area, but noise originating
+    from outside the silenced area can be heard by those within it. The spell can be cast on a point in space, but the effect is stationary unless cast on a mobile object. The spell can be centered on
+    a creature, and the effect then radiates from the creature and moves as it moves. An unwilling creature can attempt a saving throw versus Magic, and if successful the spell takes effect in a
+    stationary location near the creature, but the creature can move out of the affected area.
+  </p>
+</Spell>
