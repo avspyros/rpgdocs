@@ -31,7 +31,7 @@ const id =
     <TabItem label="Summary">
       <slot name="spellsummary" />
     </TabItem>
-    <TabItem label="Detailed description">
+    <TabItem label="Description">
       <slot name="spelldescription" />
     </TabItem>
   </Tabs>
@@ -39,8 +39,12 @@ const id =
 
 <style>
   /* helps with Starlight sticky header so the heading isn't hidden */
+  .spell {
+    margin-bottom: 1.5rem;
+  }
   .spell h3 {
     scroll-margin-top: 6rem;
+    margin-bottom: 0.25rem;
   }
   .spell h3 > a {
     text-decoration: none;

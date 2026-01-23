@@ -20,52 +20,45 @@ import { Aside } from '@astrojs/starlight/components';
   Character, PC, NPC or creature.
 </Aside>
 
-<CardGrid stagger>
+<CardGrid>
   <Card title="Surprised">
     - Roll a d6. 
     - If the result is 1-2, the target is surprised.
-    - If the foe is prepared for ambush the target is surprised on 1-4.
-    - Elves get a +1 on the roll.
 
   </Card>
   <Card title="Sneak Attack">
-    <Badge text="Attacking surprised (or unaware) actors" size="large" variant="caution" />
-    <Badge text="For specialists with at least 2 points in the skill:" size="large" variant="caution" />
-    
-    <Badge text="+2 attack bonus" size="large" variant="danger" />
-    <Badge text="Multiply damage by number of Sneak points" size="large" variant="danger" />
+    Attacking surprised (or unaware) actors.
+    - For specialists with at least 2 points in the skill:
+      - +2 attack bonus.
+      - Multiply damage by number of Sneak points.
   </Card>
   <Card title="Attacking unaware foe from behind">
-    <Badge text="Foe: loses Dex & shield AC bonuses" size="large" variant="caution" />
-    <Badge text="Attacker: +2 extra Attack bonus" size="large" variant="danger" />
+    - **Foe:** loses Dex & shield AC bonuses.
+    - **Attacker:** +2 extra Attack bonus.
   </Card>
   <Card title="Parry">
-    <Badge text="Decide to parry at any point during the Round" size="large" variant="caution" />
-    <Badge text="No other action is allowed" size="large" variant="caution" />
-    <Badge text="+2 AC bonus for the Round" size="large" variant="danger" />
-    <Badge text="+4 AC bonus for Elves & Dawrves" size="large" variant="danger" />
+    - Decide to parry at any point during the Round.
+    - No other action is allowed.
+    - +2 AC for the Round.
+    - +4 AC for Elves & Dawrves.
   </Card>
   <Card title="Charge">
-    <Badge text="Use Running Move" size="large" variant="caution" /> [movement
-    table](../../reference/movement_encumbrance)
-    <div>
-      <Badge text="x2 damage" size="large" variant="danger" />
-      <Badge text="-2 AC penalty" size="large" variant="danger" />
-    </div>
+    - Use Running Move.  
+    - x2 damage.
+    - -2 AC penalty.
+  
   </Card>
   <Card title="Press">
-    <Badge text="Only Fighters, Elves & Dwarves" size="large" variant="caution" />
-    <div>
-      <Badge text="+2 attack bonus" size="large" variant="danger" />
-      <Badge text="-4 AC penalty" size="large" variant="danger" />
-    </div>
+    - Only Fighters, Elves & Dwarves.
+    - +2 attack.
+    - -4 AC.
+
   </Card>
   <Card title="Defensive Fighting">
-    <Badge text="Only Fighters, Elves & Dwarves" size="large" variant="caution" />
-    <div>
-      <Badge text="+2 AC bonus" size="large" variant="danger" />
-      <Badge text="-4 attack penalty" size="large" variant="danger" />
-    </div>
+    - Only Fighters, Elves & Dwarves.
+    - +2 AC.
+    - -4 attack.
+
   </Card>
 </CardGrid>
 
