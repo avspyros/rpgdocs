@@ -44,3 +44,16 @@
 .home-brew > * {
   color: rgb(90, 129, 179);
 }
+
+.back-to-top {
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.back-to-top > a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 0.5rem;
+}

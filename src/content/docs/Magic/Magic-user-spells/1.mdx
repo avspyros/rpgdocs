@@ -1,6 +1,7 @@
 ---
 title: 1st Level Spells
 description: Magic-User 1st Spell List
+next: true
 
 sidebar:
   order: 1
@@ -13,6 +14,8 @@ import SpellAside from '../../../../components/SpellAside.astro';
 <SpellAside />
 
 ---
+
+<div id="top"></div>
 
 0. [Read Magic](#read-magic)
 1. [Bookspeak](#bookspeak)
@@ -41,9 +44,11 @@ import SpellAside from '../../../../components/SpellAside.astro';
   <p slot="spelldescription">
     The caster can decipher magical inscriptions on objects—books, scrolls, weapons, and the like—that would otherwise be unintelligible. This does not normally invoke the magic contained in the
     writing, although it can do so in the case of a cursed scroll. Furthermore, once the spell is cast and the caster has read the magical inscription, they thereafter are able to read that particular
-    writing without recourse to the use of Read Magic. All spellbooks are written such that only the Elf or Magic-User who owns the book can decipher it without the use of this spell. Each casting of
-    the spell allows the reading of 1d4 items. If a character loses access to Read Magic (a spellbook is stolen or destroyed, for instance), the character must research the spell as if it was unknown
-    to them and then written up in a new spellbook.
+    writing without recourse to the use of Read Magic.
+  </p>
+  <p slot="spelldescription">
+    All spellbooks are written such that only the Magic-User who owns the book can decipher it without the use of this spell. Each casting of the spell allows the reading of 1d4 items. If a character
+    loses access to Read Magic (a spellbook is stolen or destroyed, for instance), the character must research the spell as if it was unknown to them and then written up in a new spellbook.
   </p>
 </Spell>
 
@@ -64,10 +69,12 @@ import SpellAside from '../../../../components/SpellAside.astro';
     and controls how they act but for their utter fascination with the caster. The caster must articulate their desires if they expect the subject to fulfill them. Any request which is not against the
     subject’s interests or personality will be followed. Any request which is against the subject’s interests or personality triggers a saving throw to refuse the request. If the saving throw is
     successful, the request will be refused, but this will not break the Charm. If as part of a request, the caster promises the subject something that the subject is normally inclined to want, then
-    this saving throw is not necessary, and the subject will comply. This spell works on all humans and human-like creatures (except Elves); other (non player character class) humanoids are not
-    affected if they have more than four Hit Dice. Abuse or neglect of the subject will trigger another saving throw to negate the Charm, and murderous violence towards the subject also triggers a
-    save, but with a +5 bonus to the roll. The subject, if intelligent, will realize that they have been victim to mesmerism, and retain full memory of their actions while under the Charm after the
-    spell ends.
+    this saving throw is not necessary, and the subject will comply.
+  </p>
+  <p slot="spelldescription">
+    This spell works on all humans and human-like creatures (except Elves); other (non player character class) humanoids are not affected if they have more than four Hit Dice. Abuse or neglect of the
+    subject will trigger another saving throw to negate the Charm, and murderous violence towards the subject also triggers a save, but with a +5 bonus to the roll. The subject, if intelligent, will
+    realize that they have been victim to mesmerism, and retain full memory of their actions while under the Charm after the spell ends.
   </p>
 </Spell>
 
@@ -248,3 +255,7 @@ import SpellAside from '../../../../components/SpellAside.astro';
     force, not a living thing.
   </p>
 </Spell>
+
+<div class="back-to-top">
+  <a href="#top">Back to top ^</a>
+</div>
