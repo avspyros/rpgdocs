@@ -3,6 +3,16 @@ title: Movement & Encumbrance
 description: Movement & Encumbrance Tables.
 ---
 
+- Worn items, such as cloaks, jewelry, backpacks, etc., do not themselves count as items for encumbrance purposes.
+- Carried sacks full of stuff count as an oversized item. 100 coins count as one regular item.
+- Chain and Plate armor add to the number of Encumbrance points but do not get recorded with the rest of the usual equipment for encumbrance purposes.
+- Multiple small items of the same type (spikes, arrows, etc.) count as one item for this purpose.
+- Worn clothing, armor, and jewelry do not count for encumbrance purposes.
+- All weapons count as separate items.
+- Very small single items do not count for encumbrance purposes.
+- Oversized items are counted separately.
+- Oversized items include great and other two-handed weapons, any item that requires two hands to carry or is as tall as the carrying character.
+
 ### Encumbrance
 
 | Character is:                               |                   |
