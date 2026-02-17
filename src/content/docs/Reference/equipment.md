@@ -7,7 +7,7 @@ description: Equipment Tables.
 
 \*\* Items are considered to be Oversized.
 
-A quiver plus the arrows or bolts it carries (20 maximum) count as one item together for encumbrance purposes.
+A quiver plus the arrows or bolts it carries (20 maximum) count as one item together for [encumbrance](/reference/movement_encumbrance) purposes.
 
 | Containers  | Cost |
 | ----------- | ---- |
