@@ -1,0 +1,187 @@
+---
+title: 3rd Level Spells
+description: Magic-User 3rd Level Spell List
+prev: true
+
+sidebar:
+  order: 3
+---
+
+import { Card, Aside } from '@astrojs/starlight/components';
+import Spell from '../../../../components/Spell.astro';
+import SpellAside from '../../../../components/SpellAside.astro';
+
+<SpellAside />
+
+---
+
+<div id="top"></div>
+
+1. [Army of One](#army-of-one)
+2. [Clairvoyance](#clairvoyance)
+3. [Detect Illusion](#detect-illusion)
+4. [Dispel Magic](#dispel-magic)
+5. [Explosive Runes](#explosive-runes)
+6. [False Alignment](#false-alignment)
+7. [Fly](#fly)
+8. [Gaseous Form](#gaseous-form)
+9. [Gust of Wind](#gust-of-wind)
+10. [Haste\*](#haste)
+11. [Hold Person](#hold-person)
+12. [Howl of the Moon](#howl-of-the-moon)
+13. [Invisibility 10' Radius](#invisibility-10-radius)
+14. [Phantasmal Psychedelia](#phantasmal-psychedelia)
+
+<Spell SpellTitle="Army of One" SpellDuration="1 Round/level" SpellRange="Touch">
+  <p slot="spellsummary">Grants extra melee attacks against multiple adjacent foes.</p>
+  <p slot="spelldescription">The recipient becomes a peerless warrior, moving with inhuman reflexes in battle to strike enemies within immediate mêlée range.</p>
+  <p slot="spelldescription">The subject may make one melee attack for each opponent currently engaging him, with each attack directed at a different foe.</p>
+</Spell>
+
+<Spell SpellTitle="Clairvoyance" SpellDuration="1 Turn/level" SpellRange="See Below">
+  <p slot="spellsummary">Allows remote viewing and hearing of a distant location.</p>
+  <p slot="spelldescription">
+    Enables the caster to see and hear events at a distant location that is either familiar or clearly identifiable. The spell has no effective range limit but cannot penetrate metal.
+  </p>
+  <p slot="spelldescription">The caster hears sounds within a 10' radius of the focal point and, if the area is lit, sees as though standing there, in all directions at once.</p>
+</Spell>
+
+<Spell SpellTitle="Detect Illusion" SpellDuration="3 Rounds + 2 Rounds/level" SpellRange="0">
+  <p slot="spellsummary">Allows the caster to see through illusions.</p>
+  <p slot="spelldescription">The caster enchants himself with sight that penetrates illusion, revealing false images within an area 10' wide and 10' long per level.</p>
+  <p slot="spelldescription">By maintaining physical contact, the caster may grant the same ability to one other creature.</p>
+</Spell>
+
+<Spell SpellTitle="Dispel Magic" SpellDuration="Instantaneous" SpellRange="120'">
+  <p slot="spellsummary">Negates active spells and suppresses magic within an area.</p>
+  <p slot="spelldescription">
+    Empowers the proper forces of existence to expel the foul energies known as magic as if they never were. The spell affects a 20' cubic area. All spells in that area that are currently in effect
+    are automatically negated. If cast on the same Segment in combat as a spell from an enemy combatant, Dispel Magic can be used to disrupt and negate that spell.
+  </p>
+  <p slot="spelldescription">
+    Monsters with magical ability or able to create magical effects (including Elves, but not Magic- Users) lose the ability to use these powers for 2d6 Turns if they are within the area of effect and
+    fail a saving throw versus Magic.
+  </p>
+  <p slot="spelldescription">
+    All magical items within the area of effect are temporarily disenchanted. They regain their enchantment after 2d6 Turns. If the caster casts Dispel Magic as a touch effect, then any item so
+    touched is permanently disenchanted.
+  </p>
+  <p slot="spelldescription">Dispel Magic negates magical curses or diseases for 2d6 Turns only.</p>
+</Spell>
+
+<Spell SpellTitle="Explosive Runes" SpellDuration="Permanent until triggered" SpellRange="Touch">
+  <p slot="spellsummary">Inscribes hidden runes that explode when read.</p>
+  <p slot="spelldescription">
+    The caster traces magical runes upon a written object such as a book or scroll. When read, the runes detonate, dealing 2d6 damage in a 10' radius. The reader takes full damage with no saving
+    throw, while others may save for half damage.
+  </p>
+  <p slot="spelldescription">
+    The inscribed object is destroyed unless immune to fire. The caster and designated beings may read the writing safely, and the caster may remove the runes at will. They can also be removed with
+    Dispel Magic. A Magic-User has a 5% chance per level of detecting the runes while a Specialist has a flat 5% chance.
+  </p>
+</Spell>
+
+<Spell SpellTitle="False Alignment" SpellDuration="1 Turn/level" SpellRange="0">
+  <p slot="spellsummary">Masks the caster’s alignment as Neutral.</p>
+  <p slot="spelldescription">
+    This spell masks the caster’s true alignment. For all intents and purposes, not to mention spell effects, the caster will be considered to have a Neutral alignment for the duration of this spell.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Fly" SpellDuration="d6 Turns + 1 Turn/level" SpellRange="Touch">
+  <p slot="spellsummary">Grants the ability to fly at high speed for a limited duration.</p>
+  <p slot="spelldescription">
+    For a number of Turns equal to the caster’s level + 1d6 Turns, the caster can fly with a maximum movement of 120' each Round. The caster can vary the speed as desired and is capable of hovering.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Gaseous Form" SpellDuration="1 minute/level" SpellRange="Touch">
+  <p slot="spellsummary">Transforms a willing subject into a drifting, insubstantial mist.</p>
+  <p slot="spelldescription">
+    The subject, but not his gear, becomes insubstantial, shapeless, misty, and translucent. The character cannot touch or affect material objects, pass through solid objects, or cast spells while in
+    gaseous form.
+  </p>
+  <p slot="spelldescription">
+    A gaseous creature floats at a 10' movement rate and can pass through small holes or narrow openings, even mere cracks, as long as the spell persists. The creature is subject to the effects of
+    wind and cannot enter water or other liquid.
+  </p>
+  <p slot="spelldescription">
+    The subject must be willing for the spell to take effect. The subject, not the caster, may end the spell before the duration expires. When regaining physical form, the subject can do so into an
+    empty set of clothes and/or suit of armor.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Gust of Wind" SpellDuration="1 Round" SpellRange="10'/level">
+  <p slot="spellsummary">Creates a powerful blast of wind that pushes creatures and extinguishes flames.</p>
+  <p slot="spelldescription">Summons forth a powerful blast of air, forceful enough to blow out unprotected flames.</p>
+  <p slot="spelldescription">The wind is strong enough to hurl a small flying creature backwards by 1d6 × 10', and will hold medium-sized creatures back from moving.</p>
+</Spell>
+
+<Spell SpellTitle="Haste*" SpellDuration="1 Round/level" SpellRange="60'">
+  <p slot="spellsummary">Doubles speed and actions of multiple creatures, or halves them in reverse.</p>
+  <p slot="spelldescription">
+    Makes creatures move and act more quickly than normal. One creature per caster level within a diameter of 60' can be affected. A Hasted creature can make double the normal number of actions and
+    automatically wins Initiative (effectively going on Segment 7). All of the Hasted creature’s modes of movement (including land movement, burrow, climb, fly, and swim) double in speed. Multiple
+    Haste effects do not stack. Only one spell can be cast per Round while hasted.
+  </p>
+  <p slot="spelldescription">Haste dispels and counters Slow effects.</p>
+  <p slot="spelldescription">Slow, the reverse of Haste, halves all attacks and movement, including spell casting such that only one spell can be cast every two Rounds.</p>
+</Spell>
+
+<Spell SpellTitle="Hold Person" SpellDuration="2 Rounds/level" SpellRange="120'">
+  <p slot="spellsummary">Paralyzes one or more human or humanlike targets.</p>
+  <p slot="spelldescription">Projects a mystic force that paralyzes living human and human-like targets (but not Elves). A successful save versus Paralyzation will negate the effect.</p>
+  <p slot="spelldescription">
+    The spell can be cast at a single target which makes its save at –2, or at a group, in which case 1d3+1 targets can be affected and their save is not made at a penalty. Only humans or humanlike
+    beings are affected. Characters of a greater level than the Magic-User are unaffected, as are undead and mindless creatures.
+  </p>
+  <p slot="spelldescription">
+    Victims of the spell are aware and breathe normally but cannot take actions of any kind, including speech. A winged creature which is paralyzed cannot flap its wings and falls if airborne. A
+    paralyzed swimmer cannot swim and may drown.
+  </p>
+  <p slot="spelldescription">
+    If a magic item or spell operates to partially negate the effects of paralysis, failure on the saving throw results in the effects of a Slow spell rather than complete immobilization.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Invisibility 10' Radius" SpellDuration="1 Turn/level" SpellRange="10' Radius Area">
+  <p slot="spellsummary">Makes creatures within 10' of the caster invisible.</p>
+  <p slot="spelldescription">Any beings and their carried equipment within 10' of the caster at the time of casting become invisible as per the Invisibility spell.</p>
+  <p slot="spelldescription">After the spell is cast, those affected do not have to remain near the caster; it is as if individual Invisibility spells had been cast on each of them.</p>
+</Spell>
+
+<Spell SpellTitle="Howl of the Moon" SpellDuration="1 hour/level (× 2 during full moon)" SpellRange="Touch">
+  <p slot="spellsummary">Drives the subject into a savage, wolf-like frenzy with enhanced speed and ferocity.</p>
+  <p slot="spelldescription">
+    The Magic-User summons the primal self that exists within all humanity, but only at night. The subject abandons reason and civilization, tearing at his clothes and appearing as a naked, raving
+    madman. The transformation takes a full Turn.
+  </p>
+  <p slot="spelldescription">
+    Once complete, the subject moves with a 180' movement rate, gains heightened senses, can eat raw meat safely, attacks at +2 to hit, and deals 1d6 damage with bare hands and teeth. No physical
+    transformation occurs. If attacked during the change, he attempts to flee or defend himself with these bonuses.
+  </p>
+  <p slot="spelldescription">
+    If the caster targets himself, he retains purpose but with animal intelligence. To end the spell early (before duration or sunrise), he must succeed on a saving throw versus Magic. When cast on
+    another, the subject must be touched, including through scrying. The subject loses all memory of actions taken while transformed. A saving throw versus Magic negates the spell.
+  </p>
+  <p slot="spelldescription">
+    Animals, except wolves, flee from the subject. He attracts 1d6 normal wolves per hour if present nearby; they treat him as pack leader but are not magically controlled. When the spell ends, the
+    wolves scatter unless attacked.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Phantasmal Psychedelia" SpellDuration="1 Round/level" SpellRange="10'/level">
+  <p slot="spellsummary">Creates a convincing illusory creature that can cause real harm.</p>
+  <p slot="spelldescription">
+    This spell creates a creature the caster has previously seen that will obey his every mental command. However, it exists only in the minds of those who see, hear, or smell it.
+  </p>
+  <p slot="spelldescription">
+    The first time the phantasmal creature causes damage in combat, the victim receives a saving throw versus Magic. On a success, the creature ceases to exist for that character and no damage is
+    taken; otherwise, the illusion is as deadly as a real creature.
+  </p>
+  <p slot="spelldescription">Whenever the illusory creature is struck in combat by someone who believes in it, the attacker gains another saving throw to disbelieve the illusion.</p>
+</Spell>
+
+<div class="back-to-top">
+  <a href="#top">Back to top ^</a>
+</div>
