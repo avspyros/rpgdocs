@@ -6,6 +6,7 @@ tableOfContents: true
 
 | Item           | Dmg  | Cost (sp) |
 | -------------- | ---- | --------- |
+| Caltrops       | 0    | 1         |
 | Cestus         | 1d3  | 10        |
 | Garrote        | 1d6  | 5         |
 | Lance          | 1d10 | 30        |
@@ -21,6 +22,22 @@ tableOfContents: true
 | Whip           | 1d3  | 10        |
 
 ---
+
+### Caltrops &#x2697;
+
+A bag contains 20 small or 10 large caltrops.
+
+To cover a 5' square:
+
+- Careful placement: Spend 1 full turn.
+- Quick scatter: Spend 2 rounds (bag must be ready).
+
+Any humanoid moving through the area must Save vs. Paralysis:
+
+- Careful placement: –2 penalty to the save.
+- Quick scatter: +2 bonus to the save.
+
+Failure: Movement is halved and –2 AC while in the area, until spending 1 round to remove the caltrops. Success: No effect.
 
 ### Cestus
 

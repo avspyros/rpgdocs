@@ -27,7 +27,6 @@ A quiver plus the arrows or bolts it carries (20 maximum) count as one item toge
 | Book, Blank             | 7 sp    |
 | Book, Reading           | 15 sp   |
 | Book, Spell (Blank)     | 100 sp  |
-| Caltrop                 | 5 cp    |
 | Candle\*                | 1 cp    |
 | Chain, per foot         | 1 sp    |
 | Chalk\*                 | 1 cp    |
