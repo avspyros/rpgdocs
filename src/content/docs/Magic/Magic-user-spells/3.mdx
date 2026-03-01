@@ -31,6 +31,12 @@ import SpellAside from '../../../../components/SpellAside.astro';
 12. [Howl of the Moon](#howl-of-the-moon)
 13. [Invisibility 10' Radius](#invisibility-10-radius)
 14. [Phantasmal Psychedelia](#phantasmal-psychedelia)
+15. [Protection from Normal Missiles](#protection-from-normal-missiles)
+16. [Secret Page](#secret-page)
+17. [Speak with Dead](#speak-with-deead)
+18. [Strange Waters II](#strange-waters-ii)
+19. [Suggestion](#suggestion)
+20. [Water Breathing\*](#water-breathing)
 
 <Spell SpellTitle="Army of One" SpellDuration="1 Round/level" SpellRange="Touch">
   <p slot="spellsummary">Grants extra melee attacks against multiple adjacent foes.</p>
@@ -180,6 +186,104 @@ import SpellAside from '../../../../components/SpellAside.astro';
     taken; otherwise, the illusion is as deadly as a real creature.
   </p>
   <p slot="spelldescription">Whenever the illusory creature is struck in combat by someone who believes in it, the attacker gains another saving throw to disbelieve the illusion.</p>
+</Spell>
+
+<Spell SpellTitle="Protection from Normal Missiles" SpellDuration="1 Round/level" SpellRange="Touch">
+  <p slot="spellsummary">Grants immunity to small, non-magical missile attacks.</p>
+  <p slot="spelldescription">While under the effects of this spell, the caster or subject is completely unharmed by small and non-magical missiles. Only the subject receives this protection.</p>
+  <p slot="spelldescription">The spell does not protect against large hurled boulders, enchanted arrows, or any spells, including those with missile-like qualities.</p>
+</Spell>
+
+<Spell SpellTitle="Secret Page" SpellDuration="Permanent" SpellRange="Touch">
+  <p slot="spellsummary">Disguises written content to appear as something else.</p>
+  <p slot="spelldescription">This spell allows the caster to disguise a single page in a book (or inscriptions on a tombstone, a framed painting, or any analogous medium) as something else.</p>
+  <p slot="spelldescription">The caster sees the information as it truly is, but all others see the illusory content determined at the time of casting.</p>
+</Spell>
+
+<Spell SpellTitle="Speak with Dead" SpellDuration="See Below" SpellRange="10'">
+  <p slot="spellsummary">Forces a human corpse to answer a limited number of questions.</p>
+  <p slot="spelldescription">
+    This spell rips the spirit of a corpse from the afterlife and returns it to its body. The habitation is imperfect, and the spirit can only move the lips and tongue to answer questions.
+  </p>
+  <p slot="spelldescription">The corpse’s knowledge is limited to what it knew in life, including languages spoken. Answers are often brief, cryptic, or repetitive.</p>
+  <p slot="spelldescription">
+    Decent or devout individuals are eager to answer, having found the afterlife a void of awareness and sensation. Even the agony of briefly reanimating a decaying body is preferable to that
+    emptiness.
+  </p>
+  <p slot="spelldescription">Cads and heretics, having found unexpected peace in death, resent being disturbed and may attempt a saving throw versus Magic to resist answering questions.</p>
+  <p slot="spelldescription">The spell permits three questions. If the death occurred more than a day ago, one fewer question may be asked; if more than a year, one fewer still.</p>
+  <p slot="spelldescription">The spell does not affect undead creatures. The head or at least the mouth must be intact. Speak with Dead functions only on human corpses.</p>
+</Spell>
+
+<Spell SpellTitle="Strange Waters II" SpellDuration="See Below" SpellRange="10'">
+  <p slot="spellsummary">Creates magical fish that grant unpredictable effects when eaten.</p>
+  <p slot="spelldescription">
+    This spell creates a small sphere of water containing twenty small fish that crashes to the ground. The fish begin suffocating immediately and die in one Turn. If eaten before dying, a fish
+    delivers a magical effect to the consumer. Each fish appears identical, and its effect cannot be known without eating it.
+  </p>
+  <p slot="spelldescription">
+    <ol>
+      <li>Poisonous: Save versus Poison or die.</li>
+      <li>Flight: As per Fly for 1d6 Turns.</li>
+      <li>Diminution: Shrinks to one inch tall for 2d6 Turns.</li>
+      <li>Climbing: As per Spider Climb for d6 Turns.</li>
+      <li>Gaseous Form: As per Gaseous Form for 1d6 Turns.</li>
+      <li>Strength: +3 Strength modifier for 1d6 Turns.</li>
+      <li>Fire Breath: One breath for 2d6 damage, automatic hit, no save.</li>
+      <li>Time Stop: 1d4+1 Rounds of actions before anyone else can act.</li>
+      <li>Dexterity: +3 Dexterity modifier for 1d6 Turns.</li>
+      <li>Haste: As per Haste for 1d4 Turns.</li>
+      <li>Invulnerability: Immune to non-magical weapons for 1d4 Turns.</li>
+      <li>Levitation: As per Levitate for 1d4 Turns.</li>
+      <li>Enspelled: Cast one random 1st level Magic-User spell once; Clerics instead must save versus Poison or die.</li>
+      <li>Mirror Image: 1d6 mirror images for 1d4 Turns.</li>
+      <li>Invisibility: As per Invisibility for 1d6 Turns.</li>
+      <li>Begone: Teleported d6 × 1d100% feet in a random direction to the nearest open area.</li>
+      <li>Energy Blast: 1d8 damage to all within 20', save versus Breath Weapon for half damage.</li>
+      <li>Blinding Flash: All within 30' must save versus Paralyzation or be blinded for 3d10 Turns.</li>
+      <li>Poison Kiss: Must kiss another within one Turn or suffer the poison; save versus Poison or die.</li>
+      <li>Giant Strength: +6 Strength modifier and +3 melee damage for 1d4 Turns.</li>
+    </ol>
+  </p>
+  <p slot="spelldescription">
+    A character may eat multiple fish, but effects are not guaranteed to function together. Roll separately for each fish’s effect, then roll on the following table to determine the combined result:
+  </p>
+  <p slot="spelldescription">
+    <ol>
+      <li>Both effects cancel.</li>
+      <li>Both function normally.</li>
+      <li>One effect overpowers the other (50% chance each).</li>
+      <li>One effect has half duration; the other has half again duration (randomly determined).</li>
+      <li>Poison! Death! No save!</li>
+      <li>Only one effect works, but at ten times duration.</li>
+      <li>Both work, but the consumer is blinded for 1d6 hours.</li>
+      <li>Both work, but the consumer is drugged (–2 Strength and Dexterity, –3 Intelligence and Wisdom).</li>
+    </ol>
+  </p>
+</Spell>
+
+<Spell SpellTitle="Suggestion" SpellDuration="Permanent until Triggered" SpellRange="30'">
+  <p slot="spellsummary">Implants a hidden command that activates upon a set trigger.</p>
+  <p slot="spelldescription">
+    Suggestion is cast subtly during conversation, noticeable only to Magic-Users and Elves. If the target fails a saving throw versus Magic, the caster implants a suggestion in the mind of one
+    listener.
+  </p>
+  <p slot="spelldescription">
+    The suggestion remains dormant until a trigger event set by the caster occurs, at which point the victim carries out the action. Broader suggestions may instead alter attitudes; each time the
+    victim acts against their normal nature, they receive another saving throw to break the spell.
+  </p>
+  <p slot="spelldescription">
+    The suggestion must be reasonably worded and not immediately suicidal. The victim does not detect as cursed or magical, and the spell’s energy is expended at casting, with its effects stored in
+    the victim’s thoughts.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Water Breathing*" SpellDuration="6 Turns/level" SpellRange="Touch">
+  <p slot="spellsummary">Allows the subject to breathe water, or air in reverse.</p>
+  <p slot="spelldescription">
+    The subject grows gills, develops scaly skin, and gains the ability to breathe water freely for the duration of the spell. The spell does not grant any increased swimming ability.
+  </p>
+  <p slot="spelldescription">Air Breathing, the reverse of Water Breathing, allows sea creatures to breathe air but does not grant them the ability to move on land if they lack the means to do so.</p>
 </Spell>
 
 <div class="back-to-top">
