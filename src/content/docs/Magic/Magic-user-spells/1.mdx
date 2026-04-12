@@ -83,8 +83,11 @@ import SpellAside from '../../../../components/SpellAside.astro';
   <p slot="spelldescription">
     The caster can understand the spoken words of creatures or read otherwise incomprehensible written messages by summoning the spirits of the all-knowing dead to translate for him. The creature or
     the writing must be touched by the caster before the spirits can deliver any translation. The ability to read does not necessarily impart insight into the material, merely its literal meaning. The
-    spell enables the caster to understand or read an unknown language, not speak or write it. Obscure Languages, the opposite of Comprehend Languages, dispels the effects of Comprehend Languages, or
-    can be used to make spoken or written language incomprehensible by summoning spirits to possess the lips of a speaker, or the eyes of a reader, ruining all chances of communication.
+    spell enables the caster to understand or read an unknown language, not speak or write it.
+  </p>
+  <p slot="spelldescription">
+    Obscure Languages, the opposite of Comprehend Languages, dispels the effects of Comprehend Languages, or can be used to make spoken or written language incomprehensible by summoning spirits to
+    possess the lips of a speaker, or the eyes of a reader, ruining all chances of communication.
   </p>
 </Spell>
 
@@ -101,14 +104,19 @@ import SpellAside from '../../../../components/SpellAside.astro';
 <Spell SpellTitle="Enlarge" SpellDuration="1 Turn/level" SpellRange="5'/level">
   <p slot="spellsummary">Temporarily increases the size, strength, and melee damage of a creature or object.</p>
   <p slot="spelldescription">
-    This spell causes instant growth (and corresponding increase in weight and damage done) of a single object or creature that is in visible range. This increase changes a creature’s size by 20% per
-    caster level, up to three times the original size of the creature. The effectiveness of this spell is half of this on non-living objects, which are only enlarged 10% per level and to a maximum of
-    double the original size of the object. The caster can affect a 10' cube of living matter per level or a 5' cube per level of non-living matter. Magical item properties are not affected by this
-    spell. For instance, a wand will have the same function even though it is increased to the size of a staff, and potion dosages are not increased, though they may take longer to drink. Objects do
-    become stronger or heavier, so that a small rock gains the weight of an appropriately sized larger one, and a person enlarged will have a strength appropriate to their size (as an ogre or a giant,
-    for example) with corresponding strength adjustments. The damage done by an Enlarged character during melee is increased by the same percentage as their size. The reverse of Enlarge, Reduce, can
-    reduce objects or creatures in size by the same proportions as Enlarge. These spells cancel each other out. For either version of the spell a saving throw versus Magic is allowed to negate the
-    effect. This save can be forfeited if the recipient desires.
+    Causes instant growth (and corresponding increase in weight and damage done) of a single object or creature that is in visible range. This increase changes a creature’s size by 20% per caster
+    level, up to three times the original size of the creature. The effectiveness of this spell is half of this on non-living objects, which are only enlarged 10% per level and to a maximum of double
+    the original size of the object. The caster can affect a 10' cube of living matter per level or a 5' cube per level of non-living matter.
+  </p>
+  <p slot="spelldescription">
+    Magical item properties are not affected by this spell. For instance, a wand will have the same function even though it is increased to the size of a staff, and potion dosages are not increased,
+    though they may take longer to drink. Objects do become stronger or heavier, so that a small rock gains the weight of an appropriately sized larger one, and a person enlarged will have a strength
+    appropriate to their size (as an ogre or a giant, for example) with corresponding strength adjustments. The damage done by an Enlarged character during melee is increased by the same percentage as
+    their size.
+  </p>
+  <p slot="spelldescription">
+    The reverse of Enlarge, Reduce, can reduce objects or creatures in size by the same proportions as Enlarge. These spells cancel each other out. For either version of the spell a saving throw
+    versus Magic is allowed to negate the effect. This save can be forfeited if the recipient desires.
   </p>
 </Spell>
 
@@ -127,9 +135,11 @@ import SpellAside from '../../../../components/SpellAside.astro';
   <p slot="spelldescription">
     The affected creatures or objects in range fall slowly. Feather Fall instantly changes the rate at which the targets fall to that of a feather (about 5' per Round), and the subjects take no damage
     upon landing while the spell is in effect. The spell ends immediately when the subject stops falling. The spell can affect one or more objects or creatures, including gear and carried objects up
-    to each creature’s maximum encumbrance. The maximum volume is a 10' cube, and 200 pounds + 200 pounds per level can also be affected, such that a 1st level Magic-User can affect 400 pounds. The
-    spell can be cast with an instant utterance, quickly enough to save the caster or another creature if he unexpectedly falls, but Initiative, if appropriate, must be on the side of the caster. The
-    spell can be cast on falling items or creatures and missiles, but is ineffective against creatures firmly on the ground or flying. No saving throw is permitted.
+    to each creature’s maximum encumbrance. The maximum volume is a 10' cube, and 200 pounds + 200 pounds per level can also be affected, such that a 1st level Magic-User can affect 400 pounds.
+  </p>
+  <p slot="spelldescription">
+    The spell can be cast with an instant utterance, quickly enough to save the caster or another creature if he unexpectedly falls, but Initiative, if appropriate, must be on the side of the caster.
+    It can be cast on falling items or creatures and missiles, but is ineffective against creatures firmly on the ground or flying. No saving throw is permitted.
   </p>
 </Spell>
 
@@ -154,11 +164,13 @@ import SpellAside from '../../../../components/SpellAside.astro';
 <Spell SpellTitle="Identify" SpellDuration="Instantaneous" SpellRange="Touch">
   <p slot="spellsummary">Reveals one magical property of an item after extended study.</p>
   <p slot="spelldescription">
-    This spell allows the Magic-User to discern the magical properties of an item. The spell requires one uninterrupted day in a laboratory worth at least 1,000 sp to cast. At the end of the day, the
-    Magic-User will have successfully determined one magical property of an item. The character will not know if there are additional properties unless he casts Identify again and another magical
-    property of the item is determined. They will only know all of the magical properties of an item when they cast the spell and no new property is identified; both the “wasted” day and the “wasted”
-    casting of Identify confirming that the item has no further properties. Note that a cursed item will not be identified as cursed, but as the item it pretends to be. This spell does not reveal
-    command words. Each casting of the spell, successful or not, requires the expenditure of 100 sp worth of ingredients.
+    Allows the Magic-User to discern the magical properties of an item. The spell requires one uninterrupted day in a laboratory worth at least 1,000 sp to cast. At the end of the day, the Magic-User
+    will have successfully determined one magical property of an item. Each casting of the spell, successful or not, requires the expenditure of 100 sp worth of ingredients.
+  </p>
+  <p slot="spelldescription">
+    The character will not know if there are additional properties unless he casts Identify again and another magical property of the item is determined. They will only know all of the magical
+    properties of an item when they cast the spell and no new property is identified; both the “wasted” day and the “wasted” casting of Identify confirming that the item has no further properties.
+    Note that a cursed item will not be identified as cursed, but as the item it pretends to be. This spell does not reveal command words.
   </p>
 </Spell>
 
@@ -168,9 +180,11 @@ import SpellAside from '../../../../components/SpellAside.astro';
     This spell creates a light source equivalent to that of a torch in the target area of the spell. The effect is immobile if cast on an area, but if cast on an object it moves with the object. Once
     cast, the caster has no control over the light, but can end the spell if they so wish. If cast on a person or on the equipment of a person who does not wish to be the target of the spell, that
     person is allowed a saving throw versus Magic; success means that the spell is cast on the area the person is in, but not on a particular object. The light caused by the spell emits no heat, nor
-    can it be extinguished by water or high winds. The source of the light can be covered, which will block the light, but this will not end the spell. Darkness, the reverse of the spell causes an
-    area to be covered in total darkness; even creatures able to see in the dark are blind here. The spell can be targeted at a creature’s eyes specifically to blind it, assuming it has eyes in close
-    proximity to one another. The target gets a saving throw versus Magic. If successful, the spell fails to work at all.
+    can it be extinguished by water or high winds. The source of the light can be covered, which will block the light, but this will not end the spell.
+  </p>
+  <p slot="spelldescription">
+    Darkness, the reverse of the spell causes an area to be covered in total darkness; even creatures able to see in the dark are blind here. The spell can be targeted at a creature’s eyes
+    specifically to blind it, assuming it has eyes in close proximity to one another. The target gets a saving throw versus Magic. If successful, the spell fails to work at all.
   </p>
 </Spell>
 
@@ -185,15 +199,12 @@ import SpellAside from '../../../../components/SpellAside.astro';
 </Spell>
 
 <Spell SpellTitle="Magic Missile" SpellDuration="Instantaneous" SpellRange="60' + 10'/level">
-  <p slot="spellsummary">Fires an unerring bolt of magical force that deals automatic damage.</p>
+  <p slot="spellsummary">Fires an unerring bolt of magical force that deals automatic damage. &#x2697;</p>
   <p slot="spelldescription">
-    A missile of magical energy shoots forth from the caster’s fingertip and strikes its target, dealing damage equal to 1d4 per level of the caster (so a second level Magic-User deals 2d4 points of
-    damage). The missile strikes unerringly, even if the target is in melee combat or has less than total cover or total concealment. Specific parts of a creature cannot be singled out. The caster can
-    throw the full force of the missile at a single target, but if the caster is 2nd level or higher, they can choose to divide the dice of damage between targets as they wish. Dice must be assigned
-    to targets before any damage is rolled, and targets of these divided dice are allowed a saving throw versus Magic, with success meaning that the target takes half damage. Each Magic-User’s Magic
-    Missile is unique in appearance and always looks the same. When the caster writes a scroll, the resulting Missile looks identical to the normally cast version. When using a scroll written by
-    another Magic-User, or memorizing a spell out of another’s spellbook, the resulting spell will look like that other caster’s Missile. Each different ‘signature’ for a Magic Missile must be
-    researched and/or transcribed as if it were a different spell.
+    &#x2697; A missile of magical energy shoots forth from the caster’s fingertip and strikes its target, dealing damage equal to 1d4 per level of the caster (so a second level Magic-User deals 2d4
+    points of damage). The missile strikes unerringly, even if the target is in melee combat or has less than total cover or total concealment. Specific parts of a creature cannot be singled out. The
+    caster can throw the full force of the missile at a single target, but if the caster is 2nd level or higher, they can choose to divide the dice of damage between targets as they wish. Dice must be
+    assigned to targets before any damage is rolled.
   </p>
 </Spell>
 
