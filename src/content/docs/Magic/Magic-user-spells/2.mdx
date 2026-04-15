@@ -42,17 +42,16 @@ import SpellAside from '../../../../components/SpellAside.astro';
 <Spell SpellTitle="Audible Glamour" SpellDuration="1 Round/level" SpellRange="60' + 10'/level">
   <p slot="spellsummary">Creates illusory sounds that can move and change within range, mimicking real noises.</p>
   <p slot="spelldescription">
-    The caster of this spell is able to create false sound. The sound can be centered anywhere within range, and within that range the sound can fluctuate and move, imitating approaching or receding
-    footsteps, laughter, voices, or whatever else the caster desires. Beings are allowed a saving throw versus Magic to realize that the effect is illusory, but only if they actively attempt to
-    disbelieve.
+    The caster is able to create false sound. The sound can be centered anywhere within range, and within that range the sound can fluctuate and move, imitating approaching or receding footsteps,
+    laughter, voices, or whatever else the caster desires. Beings are allowed a saving throw versus Magic to realize that the effect is illusory, but only if they actively attempt to disbelieve.
   </p>
 </Spell>
 
 <Spell SpellTitle="Change Self" SpellDuration="1 Turn/level" SpellRange="0">
   <p slot="spellsummary">Alters the caster’s physical appearance, including clothing and apparent build, but not abilities or voice.</p>
   <p slot="spelldescription">
-    This spell creates a dweomer of illusion, altering the caster’s appearance. The illusion must take the appearance of a humanoid, not taller or shorter than the caster by more than 1', but apparent
-    weight and clothing or items can be altered in any way. This does not affect the voice, abilities, and skills of the caster—only his appearance.
+    Creates a dweomer of illusion, altering the caster’s appearance. The illusion must take the appearance of a humanoid, not taller or shorter than the caster by more than 1', but apparent weight and
+    clothing or items can be altered in any way. This does not affect the voice, abilities, and skills of the caster—only his appearance.
   </p>
 </Spell>
 
@@ -64,9 +63,8 @@ import SpellAside from '../../../../components/SpellAside.astro';
 <Spell SpellTitle="ESP" SpellDuration="1 Turn" SpellRange="60'">
   <p slot="spellsummary">Allows the caster to read the surface thoughts of one creature within range.</p>
   <p slot="spelldescription">
-    If you know how to listen, thoughts are as audible as any voice, and those who care not about the privacy of all living things can hear them. This spell allows the Magic-User to perceive the
-    thoughts of one character within 60' of him at a time. The caster understands the meaning of all thoughts even if he does not share the person’s language. The ability to hear thoughts is
-    obstructed by rock 2' thick or greater, or any amount of lead.
+    Allows the Magic-User to perceive the thoughts of one character within 60' of him at a time. The caster understands the meaning of all thoughts even if he does not share the person’s language. The
+    ability to hear thoughts is obstructed by rock 2' thick or greater, or any amount of lead.
   </p>
 </Spell>
 
@@ -82,52 +80,59 @@ import SpellAside from '../../../../components/SpellAside.astro';
 <Spell SpellTitle="Forget" SpellDuration="Permanent" SpellRange="30'">
   <p slot="spellsummary">Erases a short span of recent memories from one or more creatures.</p>
   <p slot="spelldescription">
-    This spell allows the caster to obliterate the memory of an opponent. The time span is equal to the previous 1 Round, +1 Round per 3 levels of the caster. This spell only affects memory, it does
-    not alter any actual events that have taken place or nullify any other spell effects. The spell is capable of affecting up to 4 beings in range who are allowed a saving throw versus Magic, which
-    is modified depending on how many creatures are targeted. No modifier is applied if 3 or 4 creatures are targeted, but if 2 are targeted the save is at –1, and –2 if only one being is targeted.
+    Allows the caster to obliterate the memory of an opponent. The time span is equal to the previous 1 Round, +1 Round per 3 levels of the caster. This spell only affects memory, it does not alter
+    any actual events that have taken place or nullify any other spell effects. The spell is capable of affecting up to 4 beings in range who are allowed a saving throw versus Magic, which is modified
+    depending on how many creatures are targeted. No modifier is applied if 3 or 4 creatures are targeted, but if 2 are targeted the save is at –1, and –2 if only one being is targeted.
   </p>
 </Spell>
 
-<Spell SpellTitle="Invisibility" SpellDuration="Instantaneous" SpellRange="Touch">
-  <p slot="spellsummary">Reveals one magical property of an item after a full day of uninterrupted study.</p>
+<Spell SpellTitle="Invisibility" SpellDuration="1 Turn/level" SpellRange="Touch">
+  <p slot="spellsummary">Makes the subject and all carried gear invisible until any offensive action is taken.</p>
   <p slot="spelldescription">
-    This spell allows the Magic-User to discern the magical properties of an item. The spell requires one uninterrupted day in a laboratory worth at least 1,000 sp to cast. At the end of the day, the
-    Magic- User will have successfully determined one magical property of an item. The character will not know if there are additional properties unless he casts Identify again and another magical
-    property of the item is determined. He will only know all of the magical properties of an item when he casts the spell and no new property is identified; both the “wasted” day and the “wasted”
-    casting of Identify confirming that the item has no further properties. Note that a cursed item will not be identified as cursed, but as the item it pretends to be. This spell does not reveal
-    command words. Each casting of the spell, successful or not, requires the expenditure of 100 sp worth of ingredients.
+    Causes the subject, including all carried equipment, to completely vanish from sight. Equipment that is dropped becomes visible, and items picked up disappear. Light sources carried by the subject
+    cannot be seen by others, but can be seen by the subject. They still make noise, emit odor, etc., as usual. They still have physical mass and can touch and be touched.
+  </p>
+  <p slot="spelldescription">
+    If they make any sort of offensive action, such as attacking someone, tripping someone, using force to break an object, setting fire to a structure, basically taking any violent action at all, the
+    invisibility is dispelled just after the violent deed is performed. Note that being successful in a violent deed is not necessary; an invisible character that attacks and misses a target still
+    becomes visible.
   </p>
 </Spell>
 
 <Spell SpellTitle="Knock" SpellDuration="Instantaneous" SpellRange="60'">
   <p slot="spellsummary">Magically opens locked, barred, or stuck doors, chests, and similar closures.</p>
   <p slot="spelldescription">
-    This spell allows the Magic-User to speak to a stuck, barred, locked, Held, or Wizard Locked door and convince it to open for him. It opens secret doors, as well as locked or trick-opening boxes
-    and chests. It also loosens welds, shackles, or chains (provided they serve to hold shut something which can be opened). If used to open a Wizard Locked door, the spell does not remove the Wizard
-    Lock, but simply suspends its functioning for one Turn. In all other cases, the door does not relock itself or become stuck again on its own. Knock will not raise a portcullis or operate any other
-    similar mechanism, nor will it affect ropes, vines, and the like. Each spell can undo a single means of preventing access.
+    Allows the Magic-User to speak to a stuck, barred, locked, Held, or Wizard Locked door and convince it to open for him. It opens secret doors, as well as locked or trick-opening boxes and chests.
+    It also loosens welds, shackles, or chains (provided they serve to hold shut something which can be opened). If used to open a Wizard Locked door, the spell does not remove the Wizard Lock, but
+    simply suspends its functioning for one Turn. Knock will not raise a portcullis or operate any other similar mechanism, nor will it affect ropes, vines, and the like. Each spell can undo a single
+    means of preventing access.
   </p>
 </Spell>
 
 <Spell SpellTitle="Levitate" SpellDuration="See Below" SpellRange="20'">
   <p slot="spellsummary">Allows vertical movement of a creature or object while the caster concentrates.</p>
   <p slot="spelldescription">
-    Levitate allows the caster to move himself, another creature, or an object up and down as desired. An unwilling creature can make a saving throw versus Magic to avoid the effects, and an object
-    must be unattended or the possessor is allowed a saving throw if he so wishes. By concentrating, the caster can mentally direct the recipient to move up or down as much as 20' each Round. The
-    caster cannot move the recipient horizontally, but the recipient could clamber along the face of a cliff, for example, or push against a ceiling to move laterally (generally at half his normal
-    land speed). The spell lasts as long as the caster actively concentrates on it. If the Magic- User moves, engages in combat, is damaged, or takes any other action, the spell ends immediately.
+    Allows the caster to move themselves, another creature, or an object up and down as desired. An unwilling creature can make a saving throw versus Magic to avoid the effects, and an object must be
+    unattended or the possessor is allowed a saving throw if they so wish. By concentrating, the caster can mentally direct the recipient to move up or down as much as 20' each Round. The caster
+    cannot move the recipient horizontally, but the recipient could clamber along the face of a cliff, for example, or push against a ceiling to move laterally (generally at half his normal land
+    speed).
+  </p>
+  <p slot="spelldescription">
+    The spell lasts as long as the caster actively concentrates on it. If the Magic- User moves, engages in combat, is damaged, or takes any other action, the spell ends immediately.
   </p>
 </Spell>
 
 <Spell SpellTitle="Light, Continual*" SpellDuration="1 day" SpellRange="120'">
   <p slot="spellsummary">Creates a steady, heatless light or its reverse, an area of magical darkness.</p>
   <p slot="spelldescription">
-    This spell creates a light source equivalent to that of a torch in the target area of the spell. The effect is immobile if cast on an area, but if cast on an object it moves with the object. Once
-    cast, the caster has no control over the light, but can end the spell if he so wishes. If cast on a person or on the equipment of a person who does not wish to be the target of the spell, that
-    person is allowed a saving throw versus Magic; success means the spell is cast on the area the person is in, but not on a particular object. The light caused by the spell emits no heat, nor can it
-    be extinguished by water or high winds. The source of the light can be covered, which will block the light, but this will not end the spell. Continual Darkness, the reverse of the spell causes an
-    area to be covered in total darkness; even creatures able to see in the dark are blind here. The spell can be targeted at a creature’s eyes specifically to blind it, assuming it has eyes in close
-    proximity to one another. The target gets a saving throw versus Magic. If successful, the spell fails to work at all.
+    Creates a light source equivalent to that of a torch in the target area of the spell. The effect is immobile if cast on an area, but if cast on an object it moves with the object. Once cast, the
+    caster has no control over the light, but can end the spell if he so wishes. If cast on a person or on the equipment of a person who does not wish to be the target of the spell, that person is
+    allowed a saving throw versus Magic; success means the spell is cast on the area the person is in, but not on a particular object. The light caused by the spell emits no heat, nor can it be
+    extinguished by water or high winds. The source of the light can be covered, which will block the light, but this will not end the spell.
+  </p>
+  <p slot="spelldescription">
+    Continual Darkness, the reverse of the spell causes an area to be covered in total darkness; even creatures able to see in the dark are blind here. The spell can be targeted at a creature’s eyes
+    specifically to blind it, assuming it has eyes in close proximity to one another. The target gets a saving throw versus Magic. If successful, the spell fails to work at all.
   </p>
 </Spell>
 
@@ -136,8 +141,11 @@ import SpellAside from '../../../../components/SpellAside.astro';
   <p slot="spelldescription">
     The caster can sense the direction of a well-known or clearly visualized object. The caster can search for general items, in which case the nearest one of its kind is located. Attempting to find a
     certain item requires a specific and accurate mental image; if the image is not close enough to the actual object, the spell fails. Living creatures or animate constructs cannot be located using
-    Locate Object. The reverse of this spell, Hide Object, makes the location of one object (which must be touched at the time of casting) completely unknown and unknowable to anyone not able to
-    directly sense it (through sight, hearing, smell, etc.) for the duration of the spell.
+    Locate Object.
+  </p>
+  <p slot="spelldescription">
+    The reverse of this spell, Hide Object, makes the location of one object (which must be touched at the time of casting) completely unknown and unknowable to anyone not able to directly sense it
+    (through sight, hearing, smell, etc.) for the duration of the spell.
   </p>
 </Spell>
 
@@ -153,7 +161,7 @@ import SpellAside from '../../../../components/SpellAside.astro';
   <p slot="spellsummary">Creates multiple illusory duplicates of the caster to confuse attackers.</p>
   <p slot="spelldescription">
     This spell grabs 1d4 duplicates of the caster from near-identical timelines to confuse foes and make it more difficult for the original caster to come to harm. Since all of the mirror images are
-    the caster, in the same situation and fighting the same battle in their own timeline, they are indistinguishable in every way from the caster and mimic his every motion. When an opponent makes a
+    the caster, in the same situation and fighting the same battle in their own timeline, they are indistinguishable in every way from the caster and mimic their every motion. When an opponent makes a
     successful attack against one of the duplicates, it instantly dies and dissipates into nothingness (the others remain). If an opponent attempts to attack a Magic-User obscured by this spell, it is
     randomly determined whether the to-hit roll is directed toward the caster or one of the duplicates. Note that the duplicates do not take independent action; they are just “mirror images” as the
     spell name implies.
@@ -189,34 +197,34 @@ import SpellAside from '../../../../components/SpellAside.astro';
 <Spell SpellTitle="Stinking Cloud" SpellDuration="1 Round/level" SpellRange="30'">
   <p slot="spellsummary">Creates a nauseating fog that incapacitates creatures within it.</p>
   <p slot="spelldescription">
-    Stinking Cloud creates a 20' cubed bank of fog centered anywhere within range, making living creatures within it helpless with nausea. This condition lasts as long as a creature is in the cloud
-    and for 1d4+1 Rounds after it leaves. Any creature that succeeds in a saving throw versus Poison when leaving the fog is not affected for the additional Rounds.
+    Creates a 20' cubed bank of fog centered anywhere within range, making living creatures within it helpless with nausea. This condition lasts as long as a creature is in the cloud and for 1d4+1
+    Rounds after it leaves. Any creature that succeeds in a saving throw versus Poison when leaving the fog is not affected for the additional Rounds.
   </p>
 </Spell>
 
 <Spell SpellTitle="Wall of Fog" SpellDuration="5 Rounds +1 Round/level" SpellRange="30'">
   <p slot="spellsummary">Summons a dense fog that blocks vision and obscures movement.</p>
   <p slot="spelldescription">
-    The caster of this spell creates an opaque, fog-like vapor in a 20' cube area per caster level. All beings caught within the vapor cannot see beyond 2'. Strong winds of natural or magical origin
-    can dissipate the Wall of Fog before its duration has expired.
+    The caster creates an opaque, fog-like vapor in a 20' cube area per caster level. All beings caught within the vapor cannot see beyond 2'. Strong winds of natural or magical origin can dissipate
+    the Wall of Fog before its duration has expired.
   </p>
 </Spell>
 
 <Spell SpellTitle="Web" SpellDuration="2 Turns/level" SpellRange="5'/level">
   <p slot="spellsummary">Entangles creatures in sticky webs that restrict movement and can be burned away.</p>
   <p slot="spelldescription">
-    This spell causes a large volume of sticky, disgusting strands of goo to shoot forth from the caster’s mouth into an area approximately 20 feet square. Creatures caught within the web become
-    entangled among the gluey fibers. Entangled creatures cannot move, but can break loose depending on their Strength. Any being with Strength in a human range can break free of the webs in 2d4
-    Turns. Creatures of higher Strength or magically augmented Strength above 18 can break free in 4 Rounds. Creatures larger than ogre size can rip through the web at will. The strands of a Web spell
-    are flammable. All creatures within flaming webs take 1d6 points of fire damage from the flames for 2 Rounds. After this time, all surviving creatures are free of the webs.
+    Causes a large volume of sticky, disgusting strands of goo to shoot forth from the caster’s mouth into an area approximately 20 feet square. Creatures caught within the web become entangled among
+    the gluey fibers. Entangled creatures cannot move, but can break loose depending on their Strength. Any being with Strength in a human range can break free of the webs in 2d4 Turns. Creatures of
+    higher Strength or magically augmented Strength above 18 can break free in 4 Rounds. Creatures larger than ogre size can rip through the web at will. The strands of a Web spell are flammable. All
+    creatures within flaming webs take 1d6 points of fire damage from the flames for 2 Rounds. After this time, all surviving creatures are free of the webs.
   </p>
 </Spell>
 
 <Spell SpellTitle="Wizard Lock" SpellDuration="Permanent" SpellRange="Touch">
   <p slot="spellsummary">Magically seals a door or portal as if it were securely locked.</p>
   <p slot="spelldescription">
-    Some doors are never meant to be opened. This spell magically holds shut a door, gate, window, or shutter of wood, metal, or stone. The magic affects the portal just as if it were securely closed
-    and normally locked. A Knock spell or Dispel Magic spell can negate a Wizard Lock spell, but the Wizard Lock will take effect when a portal opened with a Knock is closed again.
+    Magically holds shut a door, gate, window, or shutter of wood, metal, or stone. The magic affects the portal just as if it were securely closed and normally locked. A Knock spell or Dispel Magic
+    spell can negate a Wizard Lock spell, but the Wizard Lock will take effect when a portal opened with a Knock is closed again.
   </p>
 </Spell>
 

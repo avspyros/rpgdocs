@@ -40,29 +40,33 @@ import SpellAside from '../../../../components/SpellAside.astro';
 
 <Spell SpellTitle="Army of One" SpellDuration="1 Round/level" SpellRange="Touch">
   <p slot="spellsummary">Grants extra melee attacks against multiple adjacent foes.</p>
-  <p slot="spelldescription">The recipient becomes a peerless warrior, moving with inhuman reflexes in battle to strike enemies within immediate mêlée range.</p>
-  <p slot="spelldescription">The subject may make one melee attack for each opponent currently engaging him, with each attack directed at a different foe.</p>
+  <p slot="spelldescription">
+    The recipient becomes a peerless warrior, moving with inhuman reflexes in battle to strike enemies within immediate mêlée range. The subject may make one melee attack for each opponent currently
+    engaging him, with each attack directed at a different foe.
+  </p>
 </Spell>
 
 <Spell SpellTitle="Clairvoyance" SpellDuration="1 Turn/level" SpellRange="See Below">
   <p slot="spellsummary">Allows remote viewing and hearing of a distant location.</p>
   <p slot="spelldescription">
-    Enables the caster to see and hear events at a distant location that is either familiar or clearly identifiable. The spell has no effective range limit but cannot penetrate metal.
+    Enables the caster to see and hear events at a distant location that is either familiar or clearly identifiable. The spell has no effective range limit but cannot penetrate metal. The caster hears
+    sounds within a 10' radius of the focal point and, if the area is lit, sees as though standing there, in all directions at once.
   </p>
-  <p slot="spelldescription">The caster hears sounds within a 10' radius of the focal point and, if the area is lit, sees as though standing there, in all directions at once.</p>
 </Spell>
 
 <Spell SpellTitle="Detect Illusion" SpellDuration="3 Rounds + 2 Rounds/level" SpellRange="0">
   <p slot="spellsummary">Allows the caster to see through illusions.</p>
-  <p slot="spelldescription">The caster enchants himself with sight that penetrates illusion, revealing false images within an area 10' wide and 10' long per level.</p>
-  <p slot="spelldescription">By maintaining physical contact, the caster may grant the same ability to one other creature.</p>
+  <p slot="spelldescription">
+    The caster enchants himself with sight that penetrates illusion, revealing false images within an area 10' wide and 10' long per level. By maintaining physical contact, the caster may grant the
+    same ability to one other creature.
+  </p>
 </Spell>
 
 <Spell SpellTitle="Dispel Magic" SpellDuration="Instantaneous" SpellRange="120'">
   <p slot="spellsummary">Negates active spells and suppresses magic within an area.</p>
   <p slot="spelldescription">
-    Empowers the proper forces of existence to expel the foul energies known as magic as if they never were. The spell affects a 20' cubic area. All spells in that area that are currently in effect
-    are automatically negated. If cast on the same Segment in combat as a spell from an enemy combatant, Dispel Magic can be used to disrupt and negate that spell.
+    All spells in a 20' cubic area that are currently in effect are automatically negated. If cast on the same Segment in combat as a spell from an enemy combatant, Dispel Magic can be used to disrupt
+    and negate that spell.
   </p>
   <p slot="spelldescription">
     Monsters with magical ability or able to create magical effects (including Elves, but not Magic- Users) lose the ability to use these powers for 2d6 Turns if they are within the area of effect and
@@ -70,9 +74,8 @@ import SpellAside from '../../../../components/SpellAside.astro';
   </p>
   <p slot="spelldescription">
     All magical items within the area of effect are temporarily disenchanted. They regain their enchantment after 2d6 Turns. If the caster casts Dispel Magic as a touch effect, then any item so
-    touched is permanently disenchanted.
+    touched is permanently disenchanted. Dispel Magic negates magical curses or diseases for 2d6 Turns only.
   </p>
-  <p slot="spelldescription">Dispel Magic negates magical curses or diseases for 2d6 Turns only.</p>
 </Spell>
 
 <Spell SpellTitle="Explosive Runes" SpellDuration="Permanent until triggered" SpellRange="Touch">
@@ -119,8 +122,10 @@ import SpellAside from '../../../../components/SpellAside.astro';
 
 <Spell SpellTitle="Gust of Wind" SpellDuration="1 Round" SpellRange="10'/level">
   <p slot="spellsummary">Creates a powerful blast of wind that pushes creatures and extinguishes flames.</p>
-  <p slot="spelldescription">Summons forth a powerful blast of air, forceful enough to blow out unprotected flames.</p>
-  <p slot="spelldescription">The wind is strong enough to hurl a small flying creature backwards by 1d6 × 10', and will hold medium-sized creatures back from moving.</p>
+  <p slot="spelldescription">
+    Summons forth a powerful blast of air, forceful enough to blow out unprotected flames. The wind is strong enough to hurl a small flying creature backwards by 1d6 × 10', and will hold medium-sized
+    creatures back from moving.
+  </p>
 </Spell>
 
 <Spell SpellTitle="Haste*" SpellDuration="1 Round/level" SpellRange="60'">
@@ -178,9 +183,7 @@ import SpellAside from '../../../../components/SpellAside.astro';
 
 <Spell SpellTitle="Phantasmal Psychedelia" SpellDuration="1 Round/level" SpellRange="10'/level">
   <p slot="spellsummary">Creates a convincing illusory creature that can cause real harm.</p>
-  <p slot="spelldescription">
-    This spell creates a creature the caster has previously seen that will obey his every mental command. However, it exists only in the minds of those who see, hear, or smell it.
-  </p>
+  <p slot="spelldescription">Creates a creature the caster has previously seen that will obey his every mental command. However, it exists only in the minds of those who see, hear, or smell it.</p>
   <p slot="spelldescription">
     The first time the phantasmal creature causes damage in combat, the victim receives a saving throw versus Magic. On a success, the creature ceases to exist for that character and no damage is
     taken; otherwise, the illusion is as deadly as a real creature.
@@ -190,36 +193,41 @@ import SpellAside from '../../../../components/SpellAside.astro';
 
 <Spell SpellTitle="Protection from Normal Missiles" SpellDuration="1 Round/level" SpellRange="Touch">
   <p slot="spellsummary">Grants immunity to small, non-magical missile attacks.</p>
-  <p slot="spelldescription">While under the effects of this spell, the caster or subject is completely unharmed by small and non-magical missiles. Only the subject receives this protection.</p>
-  <p slot="spelldescription">The spell does not protect against large hurled boulders, enchanted arrows, or any spells, including those with missile-like qualities.</p>
+  <p slot="spelldescription">
+    While under the effects of this spell, the caster or subject is completely unharmed by small and non-magical missiles. Only the subject receives this protection. The spell does not protect against
+    large hurled boulders, enchanted arrows, or any spells, including those with missile-like qualities.
+  </p>
 </Spell>
 
 <Spell SpellTitle="Secret Page" SpellDuration="Permanent" SpellRange="Touch">
   <p slot="spellsummary">Disguises written content to appear as something else.</p>
-  <p slot="spelldescription">This spell allows the caster to disguise a single page in a book (or inscriptions on a tombstone, a framed painting, or any analogous medium) as something else.</p>
-  <p slot="spelldescription">The caster sees the information as it truly is, but all others see the illusory content determined at the time of casting.</p>
+  <p slot="spelldescription">
+    Allows the caster to disguise a single page in a book (or inscriptions on a tombstone, a framed painting, or any analogous medium) as something else. The caster sees the information as it truly
+    is, but all others see the illusory content determined at the time of casting.
+  </p>
 </Spell>
 
 <Spell SpellTitle="Speak with Dead" SpellDuration="See Below" SpellRange="10'">
   <p slot="spellsummary">Forces a human corpse to answer a limited number of questions.</p>
   <p slot="spelldescription">
-    This spell rips the spirit of a corpse from the afterlife and returns it to its body. The habitation is imperfect, and the spirit can only move the lips and tongue to answer questions.
+    Rips the spirit of a corpse from the afterlife and returns it to its body. The habitation is imperfect, and the spirit can only move the lips and tongue to answer questions.The corpse’s knowledge
+    is limited to what it knew in life, including languages spoken. Answers are often brief, cryptic, or repetitive.
   </p>
-  <p slot="spelldescription">The corpse’s knowledge is limited to what it knew in life, including languages spoken. Answers are often brief, cryptic, or repetitive.</p>
   <p slot="spelldescription">
     Decent or devout individuals are eager to answer, having found the afterlife a void of awareness and sensation. Even the agony of briefly reanimating a decaying body is preferable to that
-    emptiness.
+    emptiness. Cads and heretics, having found unexpected peace in death, resent being disturbed and may attempt a saving throw versus Magic to resist answering questions.
   </p>
-  <p slot="spelldescription">Cads and heretics, having found unexpected peace in death, resent being disturbed and may attempt a saving throw versus Magic to resist answering questions.</p>
-  <p slot="spelldescription">The spell permits three questions. If the death occurred more than a day ago, one fewer question may be asked; if more than a year, one fewer still.</p>
-  <p slot="spelldescription">The spell does not affect undead creatures. The head or at least the mouth must be intact. Speak with Dead functions only on human corpses.</p>
+  <p slot="spelldescription">
+    The spell permits three questions. If the death occurred more than a day ago, one fewer question may be asked; if more than a year, one fewer still. It does not affect undead creatures. The head
+    or at least the mouth must be intact. Speak with Dead functions only on human corpses.
+  </p>
 </Spell>
 
 <Spell SpellTitle="Strange Waters II" SpellDuration="See Below" SpellRange="10'">
   <p slot="spellsummary">Creates magical fish that grant unpredictable effects when eaten.</p>
   <p slot="spelldescription">
-    This spell creates a small sphere of water containing twenty small fish that crashes to the ground. The fish begin suffocating immediately and die in one Turn. If eaten before dying, a fish
-    delivers a magical effect to the consumer. Each fish appears identical, and its effect cannot be known without eating it.
+    Creates a small sphere of water containing twenty small fish that crashes to the ground. The fish begin suffocating immediately and die in one Turn. If eaten before dying, a fish delivers a
+    magical effect to the consumer. Each fish appears identical, and its effect cannot be known without eating it.
   </p>
   <p slot="spelldescription">
     <ol>
