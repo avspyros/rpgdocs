@@ -32,30 +32,35 @@ import SpellAside from '../../../../components/SpellAside.astro';
   <p slot="spellsummary">Grants bonus points the target can spend to improve future rolls.</p>
   <p slot="spelldescription">
     Bestows the favor of the Cleric's deity upon the subject. That subject receives **1d6 + caster's level** points to allocate to any future die rolls—**To-Hit, saving throws, skill checks, surprise
-    checks, whatever the subject desires—except damage rolls.** The subject trades the points on a one-for-one basis and can adjust the roll by that many points however they see fit. The number of
-    points to be used on a roll must be declared before the roll is made. All unused points are lost at dawn the following day. No rolls relating to damage or anything concerning the use of magic can
-    be modified by Bless.
+    checks, whatever the subject desires—except damage rolls.**
+  </p>
+  <p slot="spelldescription">
+    The subject trades the points on a one-for-one basis and can adjust the roll by that many points however they see fit. The number of points to be used on a roll must be declared before the roll is
+    made. All unused points are lost at dawn the following day. No rolls relating to damage or anything concerning the use of magic can be modified by Bless.
   </p>
 </Spell>
 
 <Spell SpellTitle="Command" SpellDuration="1 Round" SpellRange="10'">
   <p slot="spellsummary">Forces a target to obey a single-word command for one round.</p>
   <p slot="spelldescription">
-    When a Cleric casts this spell, they can give the subject a single-word command, which it obeys to the best of its ability. The single word must make sense as a single command, such as approach,
-    drop, fall, flee, halt, surrender, sleep, etc. Although a target could be instructed to die, this will only make the target collapse into a comatose state for a single Round. Note that the caster
-    must be able to speak the language of the target. Any intended target that has more than 5 levels or Hit Dice, or an Intelligence of over 12 is entitled to a saving throw versus Magic. This spell
-    is ineffective against undead.
+    A single-word command, which must be obeyed by the subject to the best of its ability. The single word must make sense as a single command, such as approach, drop, fall, flee, halt, surrender,
+    sleep, etc. Although a target could be instructed to die, this will only make the target collapse into a comatose state for a single Round.
+  </p>
+  <p slot="spelldescription">
+    Note that the caster must be able to speak the language of the target. Any intended target that has more than 5 levels or Hit Dice, or an Intelligence of over 12 is entitled to a saving throw
+    versus Magic. This spell is ineffective against undead.
   </p>
 </Spell>
 
 <Spell SpellTitle="Cure Light Wounds*" SpellDuration="Instantaneous" SpellRange="Touch">
   <p slot="spellsummary">Heals minor injuries or removes one temporary negative condition.</p>
   <p slot="spelldescription">
-    By the power of the Cleric’s faith, this spell restores 1d6 HP to one damaged character, plus a number of points equal to the level of the caster. For example, if the caster is 5th level, the
-    spell restores 1d6+5 HP. The spell can also be used to remove one temporary negative condition instead of restoring lost HP. For example, if a character is paralyzed, stunned, or blinded for a set
-    period of time, then this spell will remove any of these conditions. It will not work on permanent conditions, and only one condition (or damage) can be treated per casting of the spell.
-    Recipients of the spell can only be restored up to their normal maximum HP, and no more. Any excess restored points are lost. The reverse of the spell can only be used to inflict points of damage.
+    Restores 1d6 + caster level HP to one damaged character. For example, if the caster is 5th level, the spell restores 1d6+5 HP. The spell can also be used to remove one temporary negative condition
+    instead of restoring lost HP. For example, if a character is paralyzed, stunned, or blinded for a set period of time, then this spell will remove any of these conditions. It will not work on
+    permanent conditions, and only one condition (or damage) can be treated per casting of the spell. Recipients of the spell can only be restored up to their normal maximum HP, and no more. Any
+    excess restored points are lost.
   </p>
+  <p slot="spelldescription">The reverse of the spell can only be used to inflict points of damage.</p>
 </Spell>
 
 <Spell SpellTitle="Detect Chaos*" SpellDuration="Instantaneous" SpellRange="Line of Sight">
@@ -63,10 +68,13 @@ import SpellAside from '../../../../components/SpellAside.astro';
   <p slot="spelldescription">
     Allows the caster to know if anything that is within their field of vision (or on their person) is Chaotic. For the purposes of this spell, Chaotic is defined as, but not limited to, undead
     creatures, any extra-dimensional or extra-planar creatures that are not specifically Powers of Law or angels, any creature with innate magical abilities (including Magic-Users, but not Clerics),
-    artifacts, symbols, or sacred places dedicated to evil gods, and supernatural creatures incapable of being good. Mortal creatures, physical objects not directly connected to evil deities, traps,
-    poison, or places where great atrocities have taken place are not considered Chaotic or evil for the purposes of this spell. It detects supernatural disturbances, not ill intent or foul deeds.
-    Curiously, this spell does not detect magical items or effects. The reverse of this spell, Detect Law, detects Law instead of Chaos.
+    artifacts, symbols, or sacred places dedicated to evil gods, and supernatural creatures incapable of being good.
   </p>
+  <p slot="spelldescription">
+    Mortal creatures, physical objects not directly connected to evil deities, traps, poison, or places where great atrocities have taken place are not considered Chaotic or evil for the purposes of
+    this spell. It detects supernatural disturbances, not ill intent or foul deeds. Curiously, this spell does not detect magical items or effects.
+  </p>
+  <p slot="spelldescription">The reverse of this spell, Detect Law, detects Law instead of Chaos.</p>
 </Spell>
 
 <Spell SpellTitle="Invisibility to Undead*" SpellDuration="1 Turn/level" SpellRange="Touch">
@@ -74,8 +82,11 @@ import SpellAside from '../../../../components/SpellAside.astro';
   <p slot="spelldescription">
     The subject of this spell becomes completely unnoticed by undead creatures for the duration of the spell. Undead creatures cannot see, hear, or smell the subject at all for the duration of the
     spell or until the subject does something to intentionally gain an undead creature’s attention (including attacking). This breaks the spell completely, with all undead in the area then able to
-    sense the subject. The reverse of this spell, Undead Attraction, causes all present undead to ignore all living beings other than the subject until the subject is dead or until one of the ignored
-    beings attacks the undead.
+    sense the subject.
+  </p>
+  <p slot="spelldescription">
+    The reverse of this spell, Undead Attraction, causes all present undead to ignore all living beings other than the subject until the subject is dead or until one of the ignored beings attacks the
+    undead.
   </p>
 </Spell>
 
@@ -93,7 +104,7 @@ import SpellAside from '../../../../components/SpellAside.astro';
   </p>
   <p slot="spelldescription">
     Beings and manifestations that have no real world essence without the forces of Chaos or magic (incorporeal undead, demons extra-dimensional beings, etc., but not angels or other powers of Law)
-    are not able to physically touch those protected by this spell at all. The reverse of this spell, Protection from Law, instead protects against Lawful creatures and Cleric magic.
+    are not able to physically touch those protected by this spell at all.
   </p>
   <p slot="spelldescription">The reverse of this spell, Protection from Law, instead protects against Lawful creatures and Cleric magic.</p>
 </Spell>
@@ -109,10 +120,11 @@ import SpellAside from '../../../../components/SpellAside.astro';
 <Spell SpellTitle="Remove Fear*" SpellDuration="See below" SpellRange="Touch">
   <p slot="spellsummary">Bolsters courage, suppressing magical fear and ensuring steady morale.</p>
   <p slot="spelldescription">
-    This spell instill courage in the subject, and potentially removes the effect of magic-induced fear by allowing the target a saving throw versus Magic to attempt to remove the effects. The subject
-    receives a saving throw bonus of +1 per level of the caster. The subject automatically succeeds in any morale checks for a number of Rounds equal to the caster’s level. Remove Fear counters and
-    dispels Cause Fear. The reverse, Cause Fear, will cause a subject who is touched to run away, hysterical, at full running movement for a number of Rounds equal to the caster’s level.
+    Instills courage in the subject, and potentially removes the effect of magic-induced fear by allowing the target a saving throw versus Magic to attempt to remove the effects. The subject receives
+    a saving throw bonus of +1 per level of the caster. The subject automatically succeeds in any morale checks for a number of Rounds equal to the caster’s level. Remove Fear counters and dispels
+    Cause Fear. The reverse, Cause Fear, will cause a subject who is touched to run away, hysterical, at full running movement for a number of Rounds equal to the caster’s level.
   </p>
+  <p slot="spelldescription">The reverse, Cause Fear, will cause a subject who is touched to run away, hysterical, at full running movement for a number of Rounds equal to the caster’s level.</p>
 </Spell>
 
 <Spell SpellTitle="Sanctuary" SpellDuration="2 Rounds/level" SpellRange="Touch">
