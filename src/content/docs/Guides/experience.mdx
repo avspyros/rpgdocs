@@ -3,7 +3,9 @@ title: Experience
 description: Experience and leveling up
 ---
 
-## Experience points &#x2697;
+import { Aside } from '@astrojs/starlight/components';
+
+## Experience points
 
 At the end of every session of play, Experience Points will be awarded to characters who participated in the game. These Experience awards are to be divided equally amongst the surviving participants
 of the adventure. Characters present for portions of the adventure should only get a share of Experience for the activities in which they participated. Experience Points are gained in three
@@ -20,17 +22,18 @@ ways—Defeating Enemies, Recovering Treasure and completing Adventures or chapt
 
 | Enemy Hit Dice | XP Award |
 | -------------- | -------- |
-| < 1            | 10       |
-| 1              | 20       |
-| 2              | 50       |
-| 3              | 100      |
-| 4              | 150      |
-| 5              | 200      |
-| 6              | 500      |
-| 7              | 1,000    |
-| 8              | 1,500    |
-| 9              | 2,000    |
-| 10             | 2,500    |
+| < 1            | 5        |
+| 1              | 10       |
+| 2              | 25       |
+| 3              | 50       |
+| 4              | 75       |
+| 5              | 100      |
+| 6              | 250      |
+| 7              | 500      |
+| 8              | 750      |
+| 9              | 1,000    |
+| 10             | 1,250    |
+| 11+            | 1,500    |
 
 ### Recovering Treasure
 
@@ -43,11 +46,36 @@ The following treasures count for XP purposes:
 Treasure is calculated for XP only after it has been returned to a secure location. One silver piece worth of treasure is worth 1 Experience Point. Experience is divided between all surviving party
 members involved in an adventure.
 
+### Optional Experience Rules
+
+<Aside type="note" title="Notes" icon="pencil">
+  These rules can be used for quicker and more flavorful advancement. Getting XP for completing Adventures or chapters of Adventures, receiving more XP for defeating enemies and gaining Action Points
+  for engaging play.
+</Aside>
+
+Use this table for defeating enemies:
+
+| Enemy Hit Dice | XP Award |
+| -------------- | -------- |
+| < 1            | 10       |
+| 1              | 20       |
+| 2              | 50       |
+| 3              | 100      |
+| 4              | 150      |
+| 5              | 200      |
+| 6              | 500      |
+| 7              | 1,000    |
+| 8              | 1,500    |
+| 9              | 2,000    |
+| 10             | 2,500    |
+
 ### Completing Adventures
 
-When the PCs have finished a chapter of their campaign or an adventure (or scenario), the GM may grant them some XP as bonus for completion.
+When the PCs have finished a chapter of their campaign or an adventure (or scenario), the GM may grant them some XP as bonus for the completion. These can range from 100 up to as much as the GM
+believes is fair depending on their level and the difficulty of the adventure. A good rule of thumb would be to award the PCs 10-25% of the XP needed for their next level advancement.
 
 ### Action Points
 
-An Action point can be used by the player to roll 2 dice and keep the highest (or lowest) number. Applies to: attack rolls, saving throws, skill checks. PCs can have up to 3 Action points available at
-each given time. 1 Point is awarded while gaining a level or as a bonus for achieving something significant or completing a milestone in the campaign.
+An Action Point can be used by the player to roll 2 dice and keep the highest (or lowest) number. Applies to: attack rolls, saving throws, skill checks. PCs can have **up to 3 Action Points**
+available at each given time. The player can declare to use a AP even after the roll is made. 1 Point is awarded while gaining a level or as a bonus for achieving something significant or completing a
+milestone in the campaign.

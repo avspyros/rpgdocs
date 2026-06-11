@@ -23,7 +23,11 @@ tableOfContents: true
 
 ---
 
-### Caltrops &#x2697;
+<!-- In the future add a link to an image or an external source that showcases the weapons -->
+
+### Caltrops
+
+_(homebrew rule)_
 
 A bag contains 20 small or 10 large caltrops.
 
@@ -34,7 +38,7 @@ To cover a 5' square:
 
 Any humanoid moving through the area must Save vs. Paralysis:
 
-- Careful placement: –2 penalty to the save.
+- Careful placement: normal save.
 - Quick scatter: +2 bonus to the save.
 
 Failure: Movement is halved and –2 AC while in the area, until spending 1 round to remove the caltrops. Success: No effect.
@@ -79,8 +83,6 @@ These weapons must be wielded with two hands. Two-handed swords, mauls, and grea
 ### Weapon, Medium
 
 These weapons include standard swords, battle axes, and maces. Halflings must wield them two-handed.
-
-![Infesto](/Mace_2b.png)
 
 ### Weapon, Minor
 
