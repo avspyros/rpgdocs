@@ -4,22 +4,22 @@ description: Melee Weapons Table.
 tableOfContents: true
 ---
 
-| Item           | Dmg  | Cost (sp) |
-| -------------- | ---- | --------- |
-| Caltrops       | 0    | 1         |
-| Cestus         | 1d3  | 10        |
-| Garrote        | 1d6  | 5         |
-| Lance          | 1d10 | 30        |
-| Mancatcher     | –    | 20        |
-| Polearm        | 1d8  | 30        |
-| Rapier         | 1d8  | 15        |
-| Spear          | 1d6  | 3         |
-| Staff          | 1d4  | 3         |
-| Weapon, Great  | 1d10 | 50        |
-| Weapon, Medium | 1d8  | 20        |
-| Weapon, Minor  | 1d4  | 5         |
-| Weapon, Small  | 1d6  | 10        |
-| Whip           | 1d3  | 10        |
+| Item           | Dmg  | City cost     | Rural cost |
+| -------------- | ---- | ------------- | ---------- |
+| Caltrop        | 0    | 1 sp (/piece) | –          |
+| Cestus         | 1d3  | 10 sp         | –          |
+| Garrote        | 1d6  | 5 sp          | –          |
+| Lance          | 1d10 | 30 sp         | –          |
+| Mancatcher     | –    | 20 sp         | –          |
+| Polearm        | 1d8  | 30 sp         | –          |
+| Rapier         | 1d8  | 15 sp         | –          |
+| Spear          | 1d6  | 5 sp          | 3 sp       |
+| Staff          | 1d4  | 5 sp          | 3 sp       |
+| Weapon, Great  | 1d10 | 50 sp         | 50 sp      |
+| Weapon, Medium | 1d8  | 20 sp         | 20 sp      |
+| Weapon, Minor  | 1d4  | 5 sp          | 5 sp       |
+| Weapon, Small  | 1d6  | 10 sp         | 10 sp      |
+| Whip           | 1d3  | 10 sp         | 25 sp      |
 
 ---
 
