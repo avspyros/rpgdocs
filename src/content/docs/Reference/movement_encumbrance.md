@@ -7,8 +7,9 @@ description: Movement & Encumbrance Tables.
 - Carried sacks full of stuff count as an oversized item. 100 coins count as one regular item.
 - Chain and Plate armor add to the number of Encumbrance points but do not get recorded with the rest of the usual equipment for encumbrance purposes.
 - Multiple small items of the same type (spikes, arrows, etc.) count as one item for this purpose.
-- Worn clothing, armor, and jewelry do not count for encumbrance purposes.
+- Worn clothing, armor, and jewelry do not count for encumbrance purposes (heavier armors are an exception, see below).
 - All weapons count as separate items.
+- The following pieces of armor count as one item: tassets, helmets, buff coat.
 - Very small single items do not count for encumbrance purposes.
 - Oversized items are counted separately.
 - Oversized items include great and other two-handed weapons, any item that requires two hands to carry or is as tall as the carrying character.
@@ -17,8 +18,8 @@ description: Movement & Encumbrance Tables.
 
 | Character is:                               |                   |
 | ------------------------------------------- | ----------------- |
-| wearing Chain armor                         | +1 Point          |
-| wearing Plate armor                         | +2 Points         |
+| wearing Chain or Pikeman's armor            | +1 Point          |
+| wearing Plate or Full armor                 | +2 Points         |
 | carrying 6 or more different items overall  | +1 Point          |
 | carrying 11 or more different items overall | +1 Point          |
 | carrying 16 or more different items overall | +1 Point          |
