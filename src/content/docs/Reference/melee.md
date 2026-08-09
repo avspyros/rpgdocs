@@ -15,7 +15,7 @@ tableOfContents: true
 | Rapier         | 1d8  | 15 sp         | –          |
 | Spear          | 1d6  | 5 sp          | 3 sp       |
 | Staff          | 1d4  | 5 sp          | 3 sp       |
-| Weapon, Great  | 1d10 | 50 sp         | 50 sp      |
+| Weapon, Great  | 1d10 | 50 sp         | -          |
 | Weapon, Medium | 1d8  | 20 sp         | 20 sp      |
 | Weapon, Minor  | 1d4  | 5 sp          | 5 sp       |
 | Weapon, Small  | 1d6  | 10 sp         | 10 sp      |
