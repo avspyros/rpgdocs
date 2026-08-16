@@ -26,5 +26,3 @@ tableOfContents: false
 - Light crossbows can only be fired every other round and ignore 2 AC points, heavy crossbows fire every third round and ignore 4 AC points.
 - Most times, firearms can only be fired once each combat.
 - Slings fired with stones instead of bullets have half the listed range.
-
-![Crossbow](/crossbow.png)
