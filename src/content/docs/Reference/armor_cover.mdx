@@ -1,0 +1,57 @@
+---
+title: Armor & Cover
+description: Armor, Shields & Cover Tables.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Notes:" type="note">
+  <ul>
+    {/* prettier-ignore */}
+    <li>Items in <em>italics</em> are considered Non-Encumbering items for encumbrance purposes.</li>
+    {/* prettier-ignore */}
+    <li>Items in <strong><em>bold and italics</em></strong> are considered to be Oversized.</li>
+    <li>Items marked with E1 item count as 1 Encumbrance Point.</li>
+    <li>Items marked with E2 count as 2 Encumbrance Points.</li>
+    <li>All others count as 1 item each for encumbrance purposes.</li>
+    <li>A dash (-) means the item cannot be purchased in rural areas.</li>
+  </ul>
+</Aside>
+
+### Armor
+
+| Item                    | AC  | Cost (sp) |
+| ----------------------- | --- | --------- |
+| None                    | 12  | –         |
+| _Leather_               | 14  | 25 (50)   |
+| Chain (E1)              | 16  | 100       |
+| Plate (E2)              | 18  | 1,000     |
+| _**Shield**_ (in Mêlèe) | +1  | 10 (25)   |
+| - (vs Missiles)         | +2  | –         |
+
+### Optional (Early Modern) Armor
+
+| Item                   | AC  | Cost (sp) | Special  |
+| ---------------------- | --- | --------- | -------- |
+| Buff Coat              | +1  | 15 (30)   |          |
+| Pikeman's Armor (E1)   | 14  | 50 (100)  |          |
+| - Tassets              | +1  | 25 (50)   |          |
+| Full Armor (E2)        | 18  | 1,500     |          |
+| Helm, Lobster Tail Pot | +1  | 25 (50)   | +2 ST \* |
+| Helm, Morion           | +1  | 15 (30)   | +1 ST \* |
+| _Helm, Secrete_        | –   | 5 (10)    | +1 ST \* |
+
+---
+
+\* Bonus to physical damage Saving Throws.
+
+### Cover
+
+| Amount | AC Bonus |
+| ------ | -------- |
+| 25%    | +2       |
+| 50%    | +4       |
+| 75%    | +7       |
+| 90%    | +10      |
+
+---

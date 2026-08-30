@@ -25,32 +25,40 @@ tableOfContents: false
 
 ---
 
-| Retainer            | Daily Wage | Monthly Wage         | Live-in Wage | Space Requirements | Share |
-| ------------------- | ---------- | -------------------- | ------------ | ------------------ | ----- |
-| Accountant          | –          | 5% of amount handled | –            | 10' + 20'          | –     |
-| Alchemist           | –          | 250 sp               | 187 sp       | 15'                | –     |
-| Animal Handler      | 14 sp      | 140 sp               | 105 sp       | 10'                | –     |
-| Armorer             | –          | 50 sp                | 37 sp        | 10'                | –     |
-| Butler              | –          | 150 sp               | 112.5 sp     | 10'                | –     |
-| Coachman            | 6 sp       | 60 sp                | 45 sp        | 10'                | –     |
-| Craftsman           | –          | 100 sp               | 75 sp        | 10' + 20'          | –     |
-| Guard               | 8.4 sp     | 84 sp                | 63 sp        | 10'                | –     |
-| Guide               | 14 sp      | –                    | –            | –                  | 1/10  |
-| Henchman            | –          | –                    | –            | 10'                | 1/2   |
-| Laborer             | 5.6 sp     | 56 sp                | 42 sp        | 10'                | –     |
-| Linkboy             | 4.2 sp     | 42 sp                | 31.5 sp      | 10'                | –     |
-| Mercenary, Archer   | –          | 125 sp               | 93.75 sp     | 5'                 | 1/5   |
-| Mercenary, Cavalry  | –          | 200 sp               | 150 sp       | 5'                 | 1/5   |
-| Mercenary, Infantry | –          | 100 sp               | 75 sp        | 5'                 | 1/5   |
-| Mercenary, Polearm  | –          | 150 sp               | 112.5 sp     | 10'                | 1/5   |
-| Physician           | 28 sp      | 280 sp               | 210 sp       | 20'                | –     |
-| Sailor              | –          | –                    | 63 sp        | –                  | 1/5   |
-| Sailor, Captain     | –          | –                    | 250 sp       | –                  | 1     |
-| Sailor, Navigator   | –          | –                    | 100 sp       | –                  | 1/2   |
-| Sailor, Oarsman     | –          | –                    | 30 sp        | –                  | 1/5   |
-| Scholar             | –          | 100 sp               | 75 sp        | 10'                | –     |
-| Servant             | 5.6 sp     | 56 sp                | 42 sp        | 10'                | –     |
-| Slave               | (1 sp)     | –                    | –            | 5'                 | –     |
-| Slave Master        | –          | 70 sp                | 52.5 sp      | 10'                | –     |
-| Spy                 | –          | 200 sp               | –            | –                  | –     |
-| Teamster            | 10 sp      | 100 sp               | 75 sp        | 10'                | –     |
+| Retainer            | D/M/L Wage (sp) | Space     | Share |
+| ------------------- | --------------- | --------- | ----- |
+| Accountant          | – / 5% \* / –   | 10' + 20' | –     |
+| Alchemist           | – / 250 / 187   | 15'       | –     |
+| Animal Handler      | 14 / 140 / 105  | 10'       | –     |
+| Armorer             | – / 50 / 37     | 10'       | –     |
+| Butler              | – / 150 / 112.5 | 10'       | –     |
+| Coachman            | 6 / 60 / 45     | 10'       | –     |
+| Craftsman           | – / 100 / 75    | 10' + 20' | –     |
+| Guard               | 8.4 / 84 / 63   | 10'       | –     |
+| Guide               | 14 / – / –      | –         | 1/10  |
+| Henchman            | –               | 10'       | 1/2   |
+| Laborer             | 5.6 / 56 / 42   | 10'       | –     |
+| Linkboy             | 4.2 / 42 / 31.5 | 10'       | –     |
+| Mercenary, Archer   | – / 125 / 93.75 | 5'        | 1/5   |
+| Mercenary, Cavalry  | – / 200 / 150   | 5'        | 1/5   |
+| Mercenary, Infantry | – / 100 / 75    | 5'        | 1/5   |
+| Mercenary, Polearm  | – / 150 / 112.5 | 10'       | 1/5   |
+| Physician           | 28 / 280 / 210  | 20'       | –     |
+| Sailor              | – / – / 63      | –         | 1/5   |
+| Sailor, Captain     | – / – / 250     | –         | 1     |
+| Sailor, Navigator   | – / – / 100     | –         | 1/2   |
+| Sailor, Oarsman     | – / – / 30      | –         | 1/5   |
+| Scholar             | – / 100 / 75    | 10'       | –     |
+| Servant             | 5.6 / 56 / 42   | 10'       | –     |
+| Slave               | 1 / – / –       | 5'        | –     |
+| Slave Master        | – / 70 / 52.5   | 10'       | –     |
+| Spy                 | – / 200 / –     | –         | –     |
+| Teamster            | 10 / 100 / 75   | 10'       | –     |
+
+---
+
+**D/M/L Wage (sp):** Daily, monthly or live-in wage amount in sp.
+
+**Space:** Space required for the Retainer to be hired.
+
+\* of amount handled

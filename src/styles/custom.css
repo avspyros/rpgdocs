@@ -23,9 +23,9 @@
   --sl-color-gray-3: #635451;
   --sl-color-gray-4: #978784;
   --sl-color-gray-5: #c8c0be;
-  --sl-color-gray-6: #c54b4ba6;
-  --sl-color-gray-7: #f9f5f5;
-  --sl-color-black: #f1e4c0;
+  --sl-color-gray-6: #c97676a6;
+  --sl-color-gray-7: #a1999791;
+  --sl-color-black: #e9dab1;
 }
 
 .main-pane table {
@@ -56,4 +56,11 @@
   text-decoration: none;
   border: 1px solid;
   padding: 0.5rem;
+}
+
+@media screen and (width <= 600px) {
+  table th,
+  table td {
+    font-size: 90%;
+  }
 }
