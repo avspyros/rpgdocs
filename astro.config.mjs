@@ -13,7 +13,7 @@ export default defineConfig({
         src: './src/assets/book-logo.png',
         replacesTitle: true
       },
-      favicon: '/favicon.png',
+      favicon: '/favicon.svg',
       customCss: ['./src/styles/custom.css']
     })
   ],

@@ -3,10 +3,20 @@ title: Equipment
 description: Equipment Tables.
 ---
 
-- Items in italics are considered Non-Encumbering items for encumbrance purposes, although the GM can rule that quantities of the items do count towards encumbrance.
-- Items in bold and italics are considered to be Oversized.
-- A quiver plus the arrows or bolts it carries (20 maximum) count as one item together for [encumbrance](/reference/movement_encumbrance) purposes.
-- If a cost in parenthesis exists, it refers to the different rural price. A dash means the item cannot be purchased in rural areas.
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="Encumbrance and availability:" type="note">
+  <ul>
+    {/* prettier-ignore */}
+    <li>Items in <em>italics</em> are considered Non-Encumbering items, although the GM can rule that quantities of the items do count towards encumbrance.</li>
+    <li>A quiver plus the arrows or bolts it carries (20 maximum) are considered one item.</li>
+    {/* prettier-ignore */}
+    <li>Items in <strong><em>bold and italics</em></strong> are considered to be Oversized.</li>
+    <li>All others count as 1 item each for encumbrance purposes.</li>
+    <li>If a cost in parenthesis exists, it refers to the variant rural price. A dash means the item cannot be purchased in rural areas.</li>
+    <li>A dash (-) means the item cannot be purchased in rural areas.</li>
+  </ul>
+</Aside>
 
 | Containers   | Cost         |
 | ------------ | ------------ |
