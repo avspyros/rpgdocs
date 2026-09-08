@@ -2,8 +2,11 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import netlify from '@astrojs/netlify';
 
-// https://astro.build/config
+const localStatic = process.env.LOCAL_STATIC === 'true';
+
 export default defineConfig({
+  output: localStatic ? 'static' : 'server',
+
   integrations: [
     starlight({
       title: 'RPG Docs',
@@ -17,14 +20,5 @@ export default defineConfig({
       customCss: ['./src/styles/custom.css']
     })
   ],
-  output: 'server',
-  adapter: netlify(),
-  vite: {
-    resolve: {
-      alias: {
-        '@': '/src',
-        '~': '/src'
-      }
-    }
-  }
+  ...(localStatic ? {} : { adapter: netlify() })
 });
