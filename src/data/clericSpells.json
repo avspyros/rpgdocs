@@ -21,7 +21,14 @@
     "Resist Fire",
     "Silence 15' Radius"
   ],
-  "3rd level": ["Cure Disease", "Dispel Magic", "Magic Vestment", "Remove Curse", "Sacrifice", "Water Walk"],
+  "3rd level": [
+    "Cure Disease",
+    "Dispel Magic",
+    "Magic Vestment",
+    "Remove Curse",
+    "Sacrifice",
+    "Water Walk"
+  ],
   "4th level": [
     "Cure Serious Wounds",
     "Detect Lie",

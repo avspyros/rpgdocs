@@ -10,6 +10,7 @@ sidebar:
 import { Card, Aside } from '@astrojs/starlight/components';
 import Spell from '../../../../components/Spell.astro';
 import SpellAside from '../../../../components/SpellAside.astro';
+import SpellList from '../../../../components/SpellList.astro';
 
 <SpellAside />
 
@@ -17,26 +18,7 @@ import SpellAside from '../../../../components/SpellAside.astro';
 
 <div id="top"></div>
 
-1. [Army of One](#army-of-one)
-2. [Clairvoyance](#clairvoyance)
-3. [Detect Illusion](#detect-illusion)
-4. [Dispel Magic](#dispel-magic)
-5. [Explosive Runes](#explosive-runes)
-6. [False Alignment](#false-alignment)
-7. [Fly](#fly)
-8. [Gaseous Form](#gaseous-form)
-9. [Gust of Wind](#gust-of-wind)
-10. [Haste\*](#haste)
-11. [Hold Person](#hold-person)
-12. [Howl of the Moon](#howl-of-the-moon)
-13. [Invisibility 10' Radius](#invisibility-10-radius)
-14. [Phantasmal Psychedelia](#phantasmal-psychedelia)
-15. [Protection from Normal Missiles](#protection-from-normal-missiles)
-16. [Secret Page](#secret-page)
-17. [Speak with Dead](#speak-with-deead)
-18. [Strange Waters II](#strange-waters-ii)
-19. [Suggestion](#suggestion)
-20. [Water Breathing\*](#water-breathing)
+<SpellList SpellCaster="Magic-User" Level="3rd Level" />
 
 <Spell SpellTitle="Army of One" SpellDuration="1 Round/level" SpellRange="Touch">
   <p slot="spellsummary">Grants extra melee attacks against multiple adjacent foes.</p>

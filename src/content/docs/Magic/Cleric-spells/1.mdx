@@ -10,6 +10,7 @@ sidebar:
 import { Card, Aside } from '@astrojs/starlight/components';
 import Spell from '../../../../components/Spell.astro';
 import SpellAside from '../../../../components/SpellAside.astro';
+import SpellList from '../../../../components/SpellList.astro';
 
 <SpellAside />
 
@@ -17,16 +18,7 @@ import SpellAside from '../../../../components/SpellAside.astro';
 
 <div id="top"></div>
 
-1. [Bless](#bless)
-2. [Command](#command)
-3. [Cure Light Wounds\*](#cure-light-wounds)
-4. [Detect Chaos\*](#detect-chaos)
-5. [Invisibility to Undead\*](#invisibility-to-undead)
-6. [Protection from Chaos\*](#protection-from-chaos)
-7. [Purify Food and Drink\*](#purify-food-and-drink)
-8. [Remove Fear\*](#remove-fear)
-9. [Sanctuary](#sanctuary)
-10. [Turn Undead](#turn-undead)
+<SpellList SpellCaster="Cleric" Level="1st level" />
 
 <Spell SpellTitle="Bless" SpellDuration="Instantaneous" SpellRange="Touch">
   <p slot="spellsummary">Grants bonus points the target can spend to improve future rolls.</p>

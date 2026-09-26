@@ -11,6 +11,7 @@ sidebar:
 import { Card, Aside } from '@astrojs/starlight/components';
 import Spell from '../../../../components/Spell.astro';
 import SpellAside from '../../../../components/SpellAside.astro';
+import SpellList from '../../../../components/SpellList.astro';
 
 <SpellAside />
 
@@ -18,14 +19,7 @@ import SpellAside from '../../../../components/SpellAside.astro';
 
 <div id="top"></div>
 
-1. [Augury](#augury)
-2. [Delay Poison](#delay-poison)
-3. [Enthrall](#enthrall)
-4. [Heat Metal](#heat-metal)
-5. [Heroism](#heroism)
-6. [Resist Cold](#resist-cold)
-7. [Resist Fire](#resist-fire)
-8. [Silence 15' Radius](#silence-15-radius)
+<SpellList SpellCaster="Cleric" Level="2nd level" />
 
 <Spell SpellTitle="Augury" SpellDuration="Instantaneous" SpellRange="0">
   <p slot="spellsummary">Reveals whether a contemplated action will likely result in benefit or harm in the near future.</p>

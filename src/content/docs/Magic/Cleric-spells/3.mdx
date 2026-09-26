@@ -10,6 +10,7 @@ sidebar:
 import { Card, Aside } from '@astrojs/starlight/components';
 import Spell from '../../../../components/Spell.astro';
 import SpellAside from '../../../../components/SpellAside.astro';
+import SpellList from '../../../../components/SpellList.astro';
 
 <SpellAside />
 
@@ -17,12 +18,7 @@ import SpellAside from '../../../../components/SpellAside.astro';
 
 <div id="top"></div>
 
-1. [Cure Disease\*](#cure-disease)
-2. [Dispel Magic](#dispel-magic)
-3. [Magic Vestment](#magic-vestment)
-4. [Remove Curse\*](#remove-curse)
-5. [Sacrifice\*](#sacrifice)
-6. [Water Walk](#water-walk)
+<SpellList SpellCaster="Cleric" Level="3rd level" />
 
 <Spell SpellTitle="Cure Disease*" SpellDuration="Instantaneous" SpellRange="Touch">
   <p slot="spellsummary">Cures all diseases or, in reverse, inflicts a deadly wasting illness.</p>

@@ -11,6 +11,7 @@ sidebar:
 import { Card, Aside } from '@astrojs/starlight/components';
 import Spell from '../../../../components/Spell.astro';
 import SpellAside from '../../../../components/SpellAside.astro';
+import SpellList from '../../../../components/SpellList.astro';
 
 <SpellAside />
 
@@ -18,26 +19,7 @@ import SpellAside from '../../../../components/SpellAside.astro';
 
 <div id="top"></div>
 
-1. [Audible Glamour](#audible-glamour)
-2. [Change Self](#change-self)
-3. [Detect Invisible](#detect-invisible)
-4. [ESP](#esp)
-5. [Force of Forbidment](#force-of-forbidment)
-6. [Forget](#forget)
-7. [Invisibility](#invisibility)
-8. [Knock](#knock)
-9. [Levitate](#levitate)
-10. [Light, Continual\*](#light-continual)
-11. [Locate Object\*](#locate-object)
-12. [Magic Mouth](#magic-mouth)
-13. [Mirror Image](#mirror-image)
-14. [Phantasmal Force](#phantasmal-force)
-15. [Ray of Enfeeblement](#ray-of-enfeeblement)
-16. [Speak with Animals](#speak-with-animals)
-17. [Stinking Cloud](#stinking-cloud)
-18. [Wall of Fog](#wall-of-fog)
-19. [Web](#web)
-20. [Wizard Lock](#wizard-lock)
+<SpellList SpellCaster="Magic-User" Level="2nd Level" />
 
 <Spell SpellTitle="Audible Glamour" SpellDuration="1 Round/level" SpellRange="60' + 10'/level">
   <p slot="spellsummary">Creates illusory sounds that can move and change within range, mimicking real noises.</p>

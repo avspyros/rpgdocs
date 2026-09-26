@@ -10,6 +10,7 @@ sidebar:
 import { Card, Aside } from '@astrojs/starlight/components';
 import Spell from '../../../../components/Spell.astro';
 import SpellAside from '../../../../components/SpellAside.astro';
+import SpellList from '../../../../components/SpellList.astro';
 
 <SpellAside />
 
@@ -17,27 +18,7 @@ import SpellAside from '../../../../components/SpellAside.astro';
 
 <div id="top"></div>
 
-0. [Read Magic](#read-magic)
-1. [Bookspeak](#bookspeak)
-2. [Charm Person](#charm-person)
-3. [Comprehend Languages\*](#comprehend-languages)
-4. [Detect Magic](#detect-magic)
-5. [Enlarge\*](#enlarge)
-6. [Faerie Fire](#faerie-fire)
-7. [Feather Fall](#feather-fall)
-8. [Floating Disc](#floating-disc)
-9. [Hold Portal](#hold-portal)
-10. [Identify](#identify)
-11. [Light\*](#light)
-12. [Magic Aura\*](#magic-aura)
-13. [Magic Missile](#magic-missile)
-14. [Mending](#mending)
-15. [Message](#message)
-16. [Shield](#shield)
-17. [Sleep](#sleep)
-18. [Spider Climb](#spider-climb)
-19. [Summon](#summon)
-20. [Unseen Servant](#unseen-servant)
+<SpellList SpellCaster="Magic-User" Level="1st Level" />
 
 <Spell SpellTitle="Read Magic" SpellDuration="Instantaneous" SpellRange="0">
   <p slot="spellsummary">Allows the caster to decipher magical writings and later read them without recasting the spell.</p>
@@ -261,8 +242,8 @@ import SpellAside from '../../../../components/SpellAside.astro';
 </Spell>
 
 <Spell SpellTitle="Summon" SpellDuration="See Below" SpellRange="10'">
-  <p slot="spellsummary">This spell has a huge description. It is easier to use this link: https://summon.totalpartykill.ca/</p>
-  <p slot="spelldescription">Just use this: https://summon.totalpartykill.ca/</p>
+  <p slot="spellsummary">Temporarily unavailable</p>
+  <p slot="spelldescription">This spell has a huge description in the official rules. Refer to it there.</p>
 </Spell>
 
 <Spell SpellTitle="Unseen Servant" SpellDuration="1 Hour/level" SpellRange="30'">

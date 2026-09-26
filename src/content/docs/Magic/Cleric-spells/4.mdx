@@ -1,0 +1,25 @@
+---
+title: 4th Level Spells
+description: Cleric 4th Spell List
+prev: true
+
+sidebar:
+  order: 4
+---
+
+import { Card, Aside } from '@astrojs/starlight/components';
+import Spell from '../../../../components/Spell.astro';
+import SpellAside from '../../../../components/SpellAside.astro';
+import SpellList from '../../../../components/SpellList.astro';
+
+<SpellAside />
+
+---
+
+<div id="top"></div>
+
+<SpellList SpellCaster="Cleric" Level="4th level" />
+
+<div class="back-to-top">
+  <a href="#top">Back to top ^</a>
+</div>

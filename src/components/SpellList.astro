@@ -1,0 +1,29 @@
+---
+import clericSpells from '../data/clericSpells.json';
+import magicSpells from '../data/magicSpells.json';
+
+export interface Props {
+  SpellCaster: 'Cleric' | 'Magic-User' | 'Elf';
+  Level: string;
+}
+
+const { SpellCaster, Level } = Astro.props;
+
+const spellLists: Record<string, string[]> =
+  SpellCaster === 'Cleric' ? clericSpells : magicSpells;
+
+const spells = spellLists[Level] ?? [];
+
+const slug = (name: string) =>
+  name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+---
+
+{spells.length > 0 ? (
+  <ol>
+    {spells.map((spell) => (
+      <li><a href={`#${slug(spell)}`}>{spell}</a></li>
+    ))}
+  </ol>
+) : (
+  <p>No spells found for {SpellCaster} at {Level}.</p>
+)}
