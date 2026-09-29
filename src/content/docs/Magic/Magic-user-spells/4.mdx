@@ -4,7 +4,7 @@ description: Magic-User 4th Level Spell List
 prev: true
 
 sidebar:
-  order: 3
+  order: 4
 ---
 
 import { Card, Aside } from '@astrojs/starlight/components';
@@ -19,6 +19,184 @@ import SpellList from '../../../../components/SpellList.astro';
 <div id="top"></div>
 
 <SpellList SpellCaster="Magic-User" Level="4th Level" />
+
+<Spell SpellTitle="Charm Monster" SpellDuration="See Below" SpellRange="120'">
+  <p slot="spellsummary">Makes one large creature or several smaller creatures enraptured by the caster if they fail a save vs. Magic.</p>
+  <p slot="spelldescription">
+    Affects 1 target with more than 4 Hit Dice, or 3d6 targets with 4 or fewer Hit Dice (undead are immune). The target is not mind-controlled, but retains its personality while viewing the caster
+    with absolute fascination and a desire to please.
+  </p>
+  <p slot="spelldescription">
+    Requests against the target's nature or interests trigger a save vs. Magic to refuse (success refuses the order without breaking the spell). Promising appropriate rewards bypasses this save.
+  </p>
+  <p slot="spelldescription">
+    Abuse, neglect, or violent acts trigger new saving throws to break the spell entirely (murderous violence grants +5 to the save). Intelligent targets remember everything once the spell ends.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Confusion" SpellDuration="1 Round/level" SpellRange="120'">
+  <p slot="spellsummary">Causes living creatures in a 15' radius area to act randomly each round on a failed save vs. Magic.</p>
+  <p slot="spelldescription">
+    Affects living creatures in a 15' radius. Targets that fail a saving throw vs. Magic cannot act normally and must roll 1d6 on their initiative count each round. See table below
+  </p>
+  <p slot="spelldescription">
+    If an indicated action cannot be performed, the target babbles incoherently instead. Attacked targets automatically retaliate against their attacker on their next turn, ignoring the roll result.
+  </p>
+</Spell>
+
+1. Attacks caster or caster’s allies
+2. Acts normally
+3. Babbles incoherently
+4. Meanders away for 1 Turn
+5. Attacks nearest creature
+6. Attacks own allies.
+
+<Spell SpellTitle="Creation, Minor" SpellDuration="Instantaneous" SpellRange="Touch">
+  <p slot="spellsummary">Creates a nonliving vegetable matter object up to 1 cubic foot per caster level.</p>
+  <p slot="spelldescription">Fabricates an item made of plant-based material (e.g., rope, wood, cloth, basket) up to a maximum volume of 1 cubic foot per caster level.</p>
+  <p slot="spelldescription">Requires a tiny piece of the same material as a spell component (e.g., a splinter of wood to create a door, a piece of straw for a basket).</p>
+</Spell>
+
+<Spell SpellTitle="Dig" SpellDuration="Instantaneous" SpellRange="30'">
+  <p slot="spellsummary">Excavates earth, sand, or mud in 10' cube increments, leaving pits or trenches.</p>
+  <p slot="spelldescription">
+    Digs soil, mud, or sand in 10' cube increments, depositing the earth around the perimeter. Digging straight down risks wall collapse per 5' depth (Soil: 15% cumulative, Sand: 35% cumulative, Mud:
+    55% cumulative).
+  </p>
+  <p slot="spelldescription">
+    Creatures passing within 1' of an opening must save vs. Paralyzation to avoid falling in. Pits dug directly under a stationary target fall in automatically, while fast-moving targets get a save
+    vs. Magic to avoid falling.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Dimension Door" SpellDuration="Instantaneous" SpellRange="10'">
+  <p slot="spellsummary">Instantly teleports a target to a precise known or relative location within 360'.</p>
+  <p slot="spelldescription">Transfers the target to any exact spot desired within 360'. Unwilling targets are granted a save vs. Magic to resist.</p>
+  <p slot="spelldescription">
+    Destination can be specified by relative direction/distance (e.g., 100' south, 20' up) without line of sight. If the destination is occupied by a solid object, the spell fails.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Extension" SpellDuration="See Below" SpellRange="0">
+  <p slot="spellsummary">Extends the duration of an active spell previously cast by the caster by 50%.</p>
+  <p slot="spelldescription">Increases the remaining and total duration of a currently active spell cast by the same Magic-User by 50%.</p>
+</Spell>
+
+<Spell SpellTitle="Globe of Invulnerability, Minor" SpellDuration="1 Round/level" SpellRange="0">
+  <p slot="spellsummary">Creates a 10' diameter immobile sphere that blocks all 1st–3rd level Magic-User spell effects.</p>
+  <p slot="spelldescription">
+    Forms an immobile 10' sphere centered on the caster that completely prevents 1st, 2nd, and 3rd level Magic-User spells from affecting anyone inside. Spells can still be cast outward from inside
+    the globe.
+  </p>
+  <p slot="spelldescription">Spells of 4th level or higher, as well as spells already active before casting, are unaffected. The sphere can be dispelled by Dispel Magic.</p>
+</Spell>
+
+<Spell SpellTitle="Hallucinatory Terrain" SpellDuration="Permanent" SpellRange="240'">
+  <p slot="spellsummary">Alters the visual, auditory, and olfactory appearance of an area of terrain.</p>
+  <p slot="spelldescription">Disguises terrain to look, sound, and smell like a different type of terrain across an area of up to one 10' x 10' square per caster level.</p>
+  <p slot="spelldescription">The entire area to be disguised must fit completely within the spell's 240' range limit.</p>
+</Spell>
+
+<Spell SpellTitle="Invisibility, Improved" SpellDuration="1 Turn/level" SpellRange="Touch">
+  <p slot="spellsummary">Renders a target completely invisible, allowing them to attack without breaking the effect.</p>
+  <p slot="spelldescription">
+    Makes a target and their carried equipment completely invisible. Dropped items become visible, and picked-up items vanish. Carried light sources remain visible only to the subject.
+  </p>
+  <p slot="spelldescription">The subject still produces sound, scent, and physical mass. Unlike standard Invisibility, taking aggressive or offensive actions does not break the spell.</p>
+</Spell>
+
+<Spell SpellTitle="Mnemonic Enhancer" SpellDuration="Instantaneous" SpellRange="0">
+  <p slot="spellsummary">Allows the caster to prepare or retain up to 3 total levels of extra spells.</p>
+  <p slot="spelldescription">Grants up to 3 additional spell levels (e.g., three 1st-level spells, one 3rd-level spell) beyond the caster's normal daily maximum.</p>
+  <p slot="spelldescription">
+    Alternatively, casting this prior to casting other spells allows the Magic-User to discharge up to 3 spell levels while retaining them in memory for one additional casting.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Plant Growth" SpellDuration="Permanent" SpellRange="120'">
+  <p slot="spellsummary">Causes normal vegetation to become a dense thicket, drastically slowing movement.</p>
+  <p slot="spelldescription">Causes existing vegetation across a customizable area (up to a 20' square per caster level) to grow into an impassable thicket.</p>
+  <p slot="spelldescription">Movement speed through the affected area drops to 10' (or 20' for large creatures). Requires natural brush or trees to cast; has no effect on plant creatures.</p>
+</Spell>
+
+<Spell SpellTitle="Polymorph Others" SpellDuration="Permanent" SpellRange="60'">
+  <p slot="spellsummary">Transforms a living creature into another type of being permanently unless dispelled.</p>
+  <p slot="spelldescription">
+    Transforms one target into a different creature (unwilling targets receive a save vs. Magic). The target retains its original Hit Points, but acquires all physical and mental traits of the new
+    form (including Hit Dice limits up to twice original HD, Intelligence, instincts, and alignment).
+  </p>
+  <p slot="spelldescription">Cannot copy a specific individual's appearance. The effect is negated by Dispel Magic, and the subject reverts to its natural form upon death.</p>
+</Spell>
+
+<Spell SpellTitle="Polymorph Self" SpellDuration="1 Turn/level" SpellRange="0">
+  <p slot="spellsummary">Transforms the caster into a typical member of another creature species.</p>
+  <p slot="spelldescription">Allows the caster to assume the form of any creature with Hit Dice equal to or less than their own. Cannot imitate a specific individual.</p>
+  <p slot="spelldescription">
+    Retains original Intelligence, Hit Points, saving throws, and attack capability while gaining the physical attributes and attacks (e.g., flight, Strength, natural weapons) of the new form. Magical
+    and special abilities (e.g., gaze attacks) are not gained, and spellcasting is disabled while transformed.
+  </p>
+  <p slot="spelldescription">Can be ended by Dispel Magic. The caster reverts to their natural form upon death.</p>
+</Spell>
+
+<Spell SpellTitle="Protection from Normal Weapons" SpellDuration="1 Round/level" SpellRange="Touch">
+  <p slot="spellsummary">Grants complete immunity to non-magical weapons.</p>
+  <p slot="spelldescription">Makes the target immune to all non-magical weapon attacks.</p>
+  <p slot="spelldescription">
+    Monsters with 4 Hit Dice or greater (excluding character levels) can still harm the target with non-weapon natural attacks. Offers no protection against spells or magical effects.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Seven Gates" SpellDuration="4d6 Turns" SpellRange="See Below">
+  <p slot="spellsummary">Activates seven pre-marked gates within a 5-mile radius for dimensional travel.</p>
+  <p slot="spelldescription">Activates seven pre-prepared gates marked at designated locations up to 5 miles apart. The first gate forms directly in front of the caster.</p>
+  <p slot="spelldescription">
+    Entering a gate requires rolling a 1d8 to determine the exit gate. A result of 8 traps the traveler between dimensions for 1d6 Turns; afterwards, they may roll a save vs. Magic each Turn to emerge
+    at a random gate before the spell duration expires.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Shadow Monsters" SpellDuration="1 Round/level" SpellRange="30'">
+  <p slot="spellsummary">Creates semi-real illusions of monsters in a 20' square area that deal real or reduced damage.</p>
+  <p slot="spelldescription">
+    Summons pseudo-real monsters of a single type within a 20' x 20' area, up to a total HD equal to the caster's level. Shadow monsters have 2 Hit Points per normal Hit Die.
+  </p>
+  <p slot="spelldescription">
+    Targets receive a save vs. Magic. If failed, the monsters attack and deal full damage as normal for their creature type. If successful, targets realize their nature, treating the monsters as AC 12
+    and taking only one-quarter normal damage.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Speak with Plants" SpellDuration="1 Round/level" SpellRange="0">
+  <p slot="spellsummary">Enables communication with normal plants and plant creatures, and can persuade them to clear paths.</p>
+  <p slot="spelldescription">Allows the caster to ask questions and receive answers from both normal vegetation and plant creatures.</p>
+  <p slot="spelldescription">
+    Plants can be asked to move to clear impassable or overgrown paths. Does not automatically make plant creatures friendly, though friendly ones may perform favors or services.
+  </p>
+</Spell>
+
+<Spell SpellTitle="Wall of Fire" SpellDuration="1 Round/level" SpellRange="80' or 0">
+  <p slot="spellsummary">Creates a wall or moving ring of fire that damages creatures passing through or standing nearby.</p>
+  <p slot="spelldescription">
+    Creates a flaming barrier (either a stationary wall up to 20' square per level at 80' range, or a 20' high ring with a radius up to 5' per level centered on and moving with the caster).
+  </p>
+  <p slot="spelldescription">
+    One side emits searing heat; creatures within 10' of the hot side take 1d6 damage. Passing through the flames deals 2d6 damage. Undead take double damage from all effects of the wall.
+  </p>
+  <p slot="spelldescription">Persists for as long as the caster concentrates, or lasts for 1 Round per level once concentration ends.</p>
+</Spell>
+
+<Spell SpellTitle="Wall of Ice" SpellDuration="12 Turns" SpellRange="120'">
+  <p slot="spellsummary">Creates a customizable, translucent ice wall that blocks weak creatures and damages stronger ones breaking through.</p>
+  <p slot="spelldescription">Summons an immobile ice wall up to 1,200 square feet in any shape or dimension. Must rest on a solid surface and cannot be cast in spaces occupied by objects.</p>
+  <p slot="spelldescription">Creatures with less than 4 Hit Dice cannot pass through. Creatures with 4 or more Hit Dice suffer 1d6 damage when breaking through.</p>
+  <p slot="spelldescription">Deals double damage to fiery or heat-adapted creatures.</p>
+</Spell>
+
+<Spell SpellTitle="Wizard Eye" SpellDuration="1 Turn/level" SpellRange="0">
+  <p slot="spellsummary">Creates an invisible floating sensor that provides darkvision and scouts ahead.</p>
+  <p slot="spelldescription">Summons an invisible magical sensor with 60' darkvision that sends visual information back to the caster.</p>
+  <p slot="spelldescription">Moves at a rate of up to 120' per Turn in any direction. Blocked by solid barriers, but can pass through apertures as small as 1 inch in diameter.</p>
+</Spell>
 
 <div class="back-to-top">
   <a href="#top">Back to top ^</a>

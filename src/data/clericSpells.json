@@ -5,7 +5,7 @@
     "Cure Light Wounds",
     "Detect Evil",
     "Invisibility to Undead",
-    "Protection from Evil",
+    "Protection from Chaos",
     "Purify Food & Drink",
     "Remove Fear",
     "Sanctuary",
@@ -34,7 +34,7 @@
     "Detect Lie",
     "Divination",
     "Neutralize Poison",
-    "Protection from Evil 10' Radius",
+    "Protection from Chaos 10' Radius",
     "Spell Immunity"
   ]
 }

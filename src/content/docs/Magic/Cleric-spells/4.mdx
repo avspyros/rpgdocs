@@ -20,6 +20,64 @@ import SpellList from '../../../../components/SpellList.astro';
 
 <SpellList SpellCaster="Cleric" Level="4th level" />
 
+<Spell SpellTitle="Cure Serious Wounds" SpellDuration="Instantaneous" SpellRange="Touch">
+  <p slot="spellsummary">Heals a character or removes one temporary negative condition.</p>
+  <p slot="spelldescription">Restores 1d6 + caster level + target level Hit Points to a damaged character (up to their normal maximum; excess points are lost).</p>
+  <p slot="spelldescription">
+    Alternatively, it can remove one temporary negative condition (e.g., paralysis, stun, blindness) instead of restoring Hit Points. It has no effect on permanent conditions.
+  </p>
+  <p slot="spelldescription">The reversed version of this spell inflicts damage instead.</p>
+</Spell>
+
+<Spell SpellTitle="Detect Lie" SpellDuration="Instantaneous" SpellRange="0">
+  <p slot="spellsummary">Determines if a single spoken statement made in the past hour was true or false.</p>
+  <p slot="spelldescription">Allows the caster to determine if one statement spoken directly to them in the past hour was the truth or a lie.</p>
+  <p slot="spelldescription">Does not detect honest mistakes or untrue statements made by charmed or bewitched individuals, as they believe what they are saying.</p>
+</Spell>
+
+<Spell SpellTitle="Divination" SpellDuration="Instantaneous" SpellRange="0">
+  <p slot="spellsummary">Gains vague information about a specific area, building, or dungeon location.</p>
+  <p slot="spelldescription">
+    Provides general details about a specified site, including relative creature strength, total treasure, nature of defensive resistances, and overall alignment tendencies (good, evil, chaotic,
+    lawful).
+  </p>
+  <p slot="spelldescription">Base chance of success is 60% + 1% per caster level, rolled secretly by the GM. On a failed roll, false information is provided instead.</p>
+</Spell>
+
+<Spell SpellTitle="Neutralize Poison" SpellDuration="Instantaneous" SpellRange="Touch">
+  <p slot="spellsummary">Removes poison from a target or revives a recent victim of fatal poison.</p>
+  <p slot="spelldescription">
+    Removes all venom/poison from a touched creature or object, stopping further poison effects and removing temporary conditions. It does not restore lost Hit Points or reverse permanent effects.
+  </p>
+  <p slot="spelldescription">If cast within 1 Turn (10 minutes) of a character's death from poison, it revives them.</p>
+  <p slot="spelldescription">The reversed version (Inflict Poison) gives the caster a deadly touch that forces the first target hit to save vs. Poison or die.</p>
+</Spell>
+
+<Spell SpellTitle="Protection from Chaos, 10' Radius" SpellDuration="1 Round/level" SpellRange="0">
+  <p slot="spellsummary">Creates a 10' radius barrier that penalizes Chaotic attackers, grants saves against Magic-User spells, and blocks extra-planar entities.</p>
+  <p slot="spelldescription">
+    Emits a 10' mobile aura centered on the caster. Chaotic creatures take a penalty to hit subjects equal to caster level, and subjects gain a bonus to saves vs. Chaotic attacks equal to caster
+    level.
+  </p>
+  <p slot="spelldescription">
+    Grants a saving throw vs. Magic-User spells and effects that normally do not allow one (halves damage; completely negates non-damaging effects). However, subjects must also save against beneficial
+    Magic-User spells cast on them. Spells cast from inside the aura are penalized identically.
+  </p>
+  <p slot="spelldescription">
+    Supernatural or inherently Chaotic beings (incorporeal undead, demons, Elves, etc.) cannot enter the zone. Forcing the barrier against such creatures disrupts the spell.
+  </p>
+  <p slot="spelldescription">The reversed version (Protection from Good, 10' Radius) protects against Lawful creatures and Cleric magic instead.</p>
+</Spell>
+
+<Spell SpellTitle="Spell Immunity" SpellDuration="1 Turn/level (shared)" SpellRange="Touch">
+  <p slot="spellsummary">Grants targets substantial bonuses to saving throws against all spells and spell-like abilities.</p>
+  <p slot="spelldescription">
+    Improves saving throws against magic by granting a +8 bonus vs. mind-affecting effects (Charm, Command, Fear), a +5 bonus vs. powerful compulsions (e.g., Geas), and a +3 bonus vs. all other
+    spells.
+  </p>
+  <p slot="spelldescription">The caster can target one creature for the full duration per caster level, or split the total duration evenly among multiple touched targets.</p>
+</Spell>
+
 <div class="back-to-top">
   <a href="#top">Back to top ^</a>
 </div>
